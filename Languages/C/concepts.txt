@@ -1,0 +1,49 @@
+Data Types: 
+    C provides several basic data types such as 
+    int, 
+    float, 
+    char, 
+    etc., 
+    and allows the creation of user-defined data types using 
+    struct, 
+    enum, 
+    and union.
+
+Variables: 
+    Variables are used to store data values. They must be declared before they can be used.
+
+Operators: 
+    C supports various operators such as arithmetic operators (+, -, *, /), relational operators (==, !=, <, >), logical operators (&&, ||, !), etc.
+
+Control Structures:
+    Conditional Statements: if, else if, else, switch.
+
+Loops: 
+    for, while, do-while.
+
+Jump Statements: 
+    break, continue, return, goto.
+
+Functions: 
+    Functions are blocks of code that perform a specific task. C allows the creation of user-defined functions and supports standard library functions.
+
+Arrays: 
+    Arrays are collections of data elements of the same type stored in contiguous memory locations. They can be one-dimensional or multi-dimensional.
+
+Pointers: 
+    Pointers are variables that store memory addresses. They are widely used for dynamic memory allocation, accessing array elements, and creating data structures like linked lists and trees.
+
+Strings: 
+    C does not have a built-in string data type. Instead, strings are represented as arrays of characters terminated by a null character ('\0'). The standard library provides functions for string manipulation.
+
+Structures: 
+    Structures allow the creation of user-defined data types by grouping together variables of different data types under a single name.
+
+File Handling: 
+    C provides functions for file input/output operations, allowing reading from and writing to files on disk.
+
+Preprocessor Directives: 
+    Preprocessor directives are commands to the compiler that perform tasks such as including header files, defining constants, and performing conditional compilation.
+
+Dynamic Memory Allocation: 
+    C provides functions like malloc(), calloc(), realloc(), and free() for dynamic memory allocation and deallocation.

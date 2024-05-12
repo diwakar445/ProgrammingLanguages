@@ -1,0 +1,74 @@
+Variables: 
+    let, 
+    const, 
+    and var for declaring variables.
+    
+Data Types: 
+    Including primitives like 
+    number, 
+    string, 
+    boolean, 
+    null, 
+    undefined, 
+    symbol, 
+    and bigint, 
+    as well as complex types like -
+    arrays, 
+    objects, 
+    functions, 
+    and tuples.
+    
+Type Annotations and Inference: 
+    TypeScript supports static typing through type annotations (: type) and type inference.
+    
+Functions: 
+    Including named functions, anonymous functions, arrow functions, optional parameters, default parameters, rest parameters, and function overloading.
+    
+Interfaces: 
+    Defining object shapes and contracts.
+    
+Classes: 
+    Object-oriented programming constructs like classes, inheritance, access modifiers (public, private, protected), and constructors.
+    
+Enums: 
+    Enumerations with named constants.
+    
+Generics: 
+    Writing reusable code with type parameters.
+    
+Modules and Namespaces: 
+    Organizing code into modules and namespaces for better encapsulation and organization.
+    
+Type Assertions: 
+    Asserting or casting types to a different type.
+    
+Type Guards: 
+    Checking types at runtime to narrow down the type of a variable.
+    
+Union and Intersection Types: 
+    Combining multiple types together using | and & respectively.
+    
+Type Aliases: 
+    Creating custom names for types.
+    
+Conditional Types: 
+    Conditionally selecting types based on other types.
+    
+Mapped Types: 
+    Creating new types based on existing types.
+    
+Decorators: 
+    Adding metadata and behavior to classes and class members.
+    
+Mixins: 
+    Combining multiple classes into a single class.
+    
+Promises and Async/Await: 
+    Handling asynchronous code with promises and async/await syntax.
+    
+Error Handling: 
+    Using try, catch, and finally blocks for error handling.
+    
+Iterators and Generators: 
+    Creating iterable objects and generators for lazy evaluation.
+    

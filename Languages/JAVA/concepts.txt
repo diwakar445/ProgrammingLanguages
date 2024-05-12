@@ -1,0 +1,70 @@
+Variables and Data Types: 
+    Declaring variables to store data and defining their types such as 
+    int, 
+    double, 
+    boolean, etc.
+
+Operators: 
+    Arithmetic operators (+, -, *, /, %), relational operators (==, !=, <, >, <=, >=), logical operators (&&, ||, !), etc.
+
+Control Flow Statements:
+    Conditional Statements: if, else if, else, switch.
+    
+Looping Statements: 
+    for, while, do-while, foreach.
+
+Branching Statements: b
+    reak, continue, return.
+
+Methods (Functions): 
+    Defining reusable blocks of code with parameters and return types.
+
+Classes and Objects: 
+    Creating blueprints for objects with fields (attributes) and methods (functions).
+
+Inheritance: 
+    Creating new classes based on existing classes, inheriting fields and methods.
+
+Polymorphism: 
+    The ability of objects to take on multiple forms, achieved through method overriding and method overloading.
+
+Abstraction: 
+    Hiding implementation details and showing only essential features of an object.
+
+Encapsulation: 
+    Wrapping data (fields) and methods within a single unit (class) and restricting access to certain components.
+
+Interfaces: 
+    Defining a contract for classes to implement, specifying method signatures without providing the implementation.
+
+Packages: 
+    Organizing classes into namespaces to prevent naming conflicts and enhance modularity.
+
+Exception Handling: 
+    Managing runtime errors and exceptions using try, catch, finally blocks.
+
+Arrays: 
+    Collections of variables of the same type accessed by an index.
+
+Strings: 
+    Representing sequences of characters, with various methods for manipulation.
+
+Collections Framework: 
+    Interfaces and classes for representing and manipulating collections of objects, such as List, Set, Map, etc.
+
+Concurrency: 
+    Handling multiple tasks simultaneously through threads, synchronization, and locks.
+
+File I/O: 
+    Reading from and writing to files using InputStream, OutputStream, Reader, Writer, etc.
+
+Generics: 
+    Writing classes and methods that can work with any data type.
+
+Annotations: 
+    Adding metadata to classes, methods, and other program elements for compile-time or runtime processing.
+
+Lambda Expressions: 
+    Anonymous functions that enable functional programming style.
+
+
