@@ -1,0 +1,40 @@
+-----------------------------------------------------------------
+1. computeAmount().lacs(15).crore(5).crore(2).lacs(20).thousand(45).crore(7).value();
+
+-----------------------------------------------------------------
+2. var obj = {
+    helloWorld: funtion () {
+        return "Hello World" + this.name;
+    },
+    name: "Hello",
+}
+
+var obj2 = {
+    helloWorld: obj.helloWorld,
+    name: "Bye",
+}
+
+console.log(obj2.helloWorld());
+
+a. what will be the o/p
+b. how to print other name than the initial o/p by just changing the cosuming code.
+
+-----------------------------------------------------------------
+3. Please create a function model(state, element), to bind
+    state.value to the HTMLInputElement element.
+    const inpput = document.createElement("input");
+    const state = {value: "Hi"};
+    function model(state, input) {
+        // write code here
+    }
+
+    console.log(inpput.value); // "Hi"
+    state.value = "Dev";
+    console.log(inpput.value); // "Dev"
+
+    input.value = "engineering";
+    input.dispatchEvent(new Event("change"));
+    console.log(state.value);  // "engineering"
+
+
+
