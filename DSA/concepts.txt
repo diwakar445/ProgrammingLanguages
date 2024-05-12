@@ -1,0 +1,45 @@
+Basic Concepts:
+    Variables and Data Types
+    Operators and Expressions
+    Conditional Statements (if, else if, else)
+    Loops (for, while, do-while)
+    Arrays and Strings
+    Functions and Methods
+    Recursion
+
+Data Structures:
+    Arrays
+    Linked Lists (Singly Linked List, Doubly Linked List)
+    Stacks and Queues
+    Trees (Binary Tree, Binary Search Tree, AVL Tree, B-tree)
+    Graphs (Directed Graph, Undirected Graph, Weighted Graph)
+    Hash Tables (Hash Maps, Hash Sets)
+    Heaps (Min Heap, Max Heap)
+    Tries (Prefix Tree)
+
+Algorithms:
+    Sorting Algorithms (Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort)
+    Searching Algorithms (Linear Search, Binary Search)
+    Graph Traversal Algorithms (Depth-First Search, Breadth-First Search)
+    Tree Traversal Algorithms (Inorder, Preorder, Postorder)
+    Dynamic Programming
+    Greedy Algorithms
+    Divide and Conquer
+    Backtracking
+    String Algorithms (Pattern Matching, String Searching)
+    Computational Geometry
+    Bit Manipulation
+    Parallel Algorithms
+    Randomized Algorithms
+
+Advanced Concepts:
+    Complexity Analysis (Time Complexity, Space Complexity)
+    Big O Notation
+    Data Structure Design Patterns
+    Advanced Graph Algorithms (Dijkstra's Algorithm, Bellman-Ford Algorithm, Floyd-Warshall Algorithm, Topological Sorting)
+    Network Flow Algorithms (Ford-Fulkerson Algorithm, Edmonds-Karp Algorithm)
+    String Matching Algorithms (Knuth-Morris-Pratt Algorithm, Rabin-Karp Algorithm)
+    Approximation Algorithms
+    NP-Completeness and NP-Hard Problems
+    Computational Geometry Algorithms (Convex Hull, Closest Pair)
+    Parallel and Distributed Algorithms

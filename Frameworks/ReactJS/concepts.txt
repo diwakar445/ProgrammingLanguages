@@ -1,0 +1,60 @@
+JSX (JavaScript XML): 
+    JSX allows you to write HTML-like code directly in JavaScript, making it easier to create UI components.
+    
+Components: 
+    Components are the building blocks of React applications. They can be either functional components or class components.
+    
+Props (Properties): 
+    Props are used to pass data from parent components to child components. They are read-only and cannot be modified by the child components.
+    
+State: 
+    State is used to manage the internal data and UI state of a component. It allows components to re-render when the state changes.
+    
+Lifecycle Methods: 
+    Lifecycle methods are methods that are called at different stages of a component's lifecycle, such as mounting, updating, and unmounting.
+    
+Hooks: 
+    Hooks are functions that allow you to use state and other React features in functional components. The most commonly used hooks are useState, useEffect, useContext, and useRef.
+    
+Event Handling: 
+    React allows you to handle events, such as onClick, onChange, onSubmit, etc., using event handlers.
+    
+Conditional Rendering: 
+    React allows you to conditionally render UI components based on certain conditions using if statements, ternary operators, or logical && operator.
+    
+Lists and Keys: 
+    React provides a way to render lists of data using the map function. Keys are used to help React identify which items have changed, are added, or are removed.
+    
+Forms: 
+    React provides controlled components for form handling, where form elements like input, textarea, and select are controlled by React state.
+    
+Context API: 
+    Context API allows you to pass data through the component tree without having to pass props manually at every level.
+    
+Higher-Order Components (HOCs): 
+    HOCs are functions that take a component and return a new component with additional functionality.
+    
+Render Props: 
+    Render Props is a technique for sharing code between React components using a prop whose value is a function.
+    
+Error Boundary: 
+    Error Boundary is a React component that catches JavaScript errors anywhere in its child component tree and logs those errors.
+    
+Virtual DOM (Document Object Model): 
+    React uses a virtual DOM to improve performance by minimizing the number of DOM manipulations.
+    
+Server-side Rendering (SSR): 
+    SSR is the process of rendering React components on the server and sending the HTML to the client, which improves SEO and initial load time.
+    
+Static Site Generation (SSG): 
+    SSG is the process of generating static HTML files for each page of a website at build time, which improves performance and SEO.
+    
+Code Splitting: 
+    Code splitting is the process of splitting your code into smaller chunks and loading them only when needed, which improves performance by reducing initial bundle size.
+    
+Contextual APIs (e.g., React Router, Redux): 
+    Libraries like React Router and Redux provide contextual APIs for managing routing and state in React applications.
+    
+Testing: 
+    React applications can be tested using tools like Jest, React Testing Library, and Enzyme for unit testing, integration testing, and end-to-end testing.
+    
