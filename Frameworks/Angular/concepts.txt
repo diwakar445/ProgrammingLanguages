@@ -1,0 +1,60 @@
+Components: 
+    The building blocks of an Angular application, responsible for defining views and logic.
+    
+Templates: 
+    HTML files associated with Angular components that define the UI structure.
+    
+Directives: 
+    HTML attributes or elements that extend the functionality of HTML in Angular templates.
+    
+Data Binding: 
+    Establishing a connection between the UI and the application logic to ensure synchronization of data.
+    
+Services: 
+    Reusable components that encapsulate business logic and functionality to be shared across components.
+    
+Dependency Injection (DI): 
+    A design pattern used in Angular to manage the dependencies of components and services.
+    
+Modules: 
+    Containers for organizing related components, directives, pipes, and services into cohesive units.
+    
+Routing: 
+    Navigating between different views and components based on the URL.
+    
+Forms: 
+    Handling user input and validation using template-driven or reactive forms.
+    
+HTTP Client: 
+    Making HTTP requests to fetch or send data to a server.
+    
+Pipes: 
+    Transforming data in the template before displaying it to the user.
+    
+Interceptors: 
+    Middleware used to intercept HTTP requests and responses to perform transformations or error handling.
+    
+Lifecycle Hooks: 
+    Methods provided by Angular to execute logic at specific points in the lifecycle of a component.
+    
+Lazy Loading: 
+    Loading modules and components asynchronously to improve application performance.
+    
+Testing: 
+    Writing unit tests, integration tests, and end-to-end tests to ensure the correctness and reliability of Angular applications.
+    
+Authentication and Authorization: 
+    Implementing user authentication and authorization mechanisms to secure Angular applications.
+    
+Internationalization (i18n): 
+    Supporting multiple languages and locales in Angular applications.
+    
+State Management: 
+    Managing application state using techniques such as services, RxJS, or state management libraries like NgRx or Akita.
+    
+Performance Optimization: 
+    Techniques for improving the performance of Angular applications, such as tree shaking, lazy loading, and optimizing change detection.
+    
+Server-Side Rendering (SSR): 
+    Rendering Angular applications on the server to improve performance and SEO.
+    
