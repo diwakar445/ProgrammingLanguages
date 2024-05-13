@@ -8,6 +8,7 @@ Basic Concepts:
     Recursion
 
 Data Structures:
+    Strings
     Arrays
     Linked Lists (Singly Linked List, Doubly Linked List)
     Stacks and Queues
