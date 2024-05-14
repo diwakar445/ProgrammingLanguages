@@ -1,0 +1,16 @@
+C: 
+    Invented in 1972 by Dennis Ritchie at Bell Labs. 
+    C is a general-purpose, procedural programming language.
+Java: 
+    Invented in 1995 by James Gosling at Sun Microsystems. 
+    Java is a general-purpose, object-oriented programming language known for its platform independence and write once, run anywhere (WORA) philosophy.
+Python: 
+    Invented in 1991 by Guido van Rossum. Python is a high-level, 
+    general-purpose programming language known for its simplicity and readability.
+JavaScript: 
+    Invented in 1995 by Brendan Eich at Netscape Communications Corporation. 
+    JavaScript is a high-level, interpreted programming language primarily used for adding interactivity to web pages.
+TypeScript: 
+    Invented in 2012 by Microsoft. 
+    TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. 
+    It adds optional static typing, interfaces, and other features to JavaScript.
