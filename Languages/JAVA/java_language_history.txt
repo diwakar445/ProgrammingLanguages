@@ -31,10 +31,15 @@ Industry Trends and Market Demand:
     Sun Microsystems, the company behind Java, recognized the growing demand for a modern, platform-independent programming language that could address the needs of a rapidly evolving software industry. Java was developed to capitalize on these market opportunities.
 
 **********************************************************************************************************************************
+**** what are the other programming languages similar to JAVA programming language ******
 **********************************************************************************************************************************
+******** what are the programming languages derived from JAVAprogramming language  **********
 **********************************************************************************************************************************
+******** what are the different JAVA programming Language compilers available today  **********
 **********************************************************************************************************************************
+******** what are the different frontend or backend frameworks created using JAVA programming language available today  **********
 **********************************************************************************************************************************
+********* what are the drawbacks of JAVA programming language  ***********
 **********************************************************************************************************************************
 **********************************************************************************************************************************
 **********************************************************************************************************************************
