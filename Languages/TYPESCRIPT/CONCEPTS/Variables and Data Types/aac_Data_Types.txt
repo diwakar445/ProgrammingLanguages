@@ -1,0 +1,97 @@
+
+************************************************************************************************************************************
+**********   List of Datatypes available in Typescript programming Language ************
+In TypeScript, there are various data types that you can use to define variables. Here's a list of common data types along with code examples:
+
+1. **Boolean**:
+   - Represents a logical value `true` or `false`.
+   ```typescript
+   let isTrue: boolean = true;
+   let isFalse: boolean = false;
+   ```
+
+2. **Number**:
+   - Represents numeric values, including integers and floating-point numbers.
+   ```typescript
+   let count: number = 10;
+   let price: number = 99.99;
+   ```
+
+3. **String**:
+   - Represents textual data enclosed in single quotes (`'`) or double quotes (`"`).
+   ```typescript
+   let name: string = "John Doe";
+   let message: string = 'Hello, TypeScript!';
+   ```
+
+4. **Array**:
+   - Represents a collection of elements of the same type, accessed by an index.
+   ```typescript
+   let numbers: number[] = [1, 2, 3, 4, 5];
+   let names: string[] = ["Alice", "Bob", "Charlie"];
+   ```
+
+5. **Tuple**:
+   - Represents an array with a fixed number of elements, where each element may be of a different type.
+   ```typescript
+   let person: [string, number] = ["Alice", 30];
+   ```
+
+6. **Object**:
+   - Represents a collection of key-value pairs, where keys are strings and values can be of any type.
+   ```typescript
+   let user: { name: string, age: number } = { name: "Alice", age: 30 };
+   ```
+
+7. **Function**:
+   - Represents a callable object that can accept parameters and return a value.
+   ```typescript
+   let greet: (name: string) => void = function(name) {
+       console.log("Hello, " + name + "!");
+   };
+   ```
+
+8. **Any**:
+   - Represents a dynamic type that can hold any value. Use of `any` disables type checking.
+   ```typescript
+   let dynamic: any = "Hello, TypeScript!";
+   dynamic = 10; // No error
+   ```
+
+9. **Void**:
+   - Represents the absence of a return value. Typically used for functions that do not return anything.
+   ```typescript
+   function sayHello(): void {
+       console.log("Hello, world!");
+   }
+   ```
+
+10. **Enum**:
+    - Represents a set of named constants, where each constant has an associated numeric value.
+    ```typescript
+    enum Color { Red, Green, Blue };
+    let color: Color = Color.Green;
+    ```
+
+11. **Unknown**:
+    - Represents a type-safe counterpart of `any`. Unlike `any`, values of type `unknown` cannot be assigned to other types without type assertion or type narrowing.
+    ```typescript
+    let unknownValue: unknown = 10;
+    if (typeof unknownValue === "number") {
+        console.log(unknownValue + 5); // No error
+    }
+    ```
+
+These are the main data types available in TypeScript. Depending on your use case, you can choose the appropriate type for your variables to ensure type safety and better code readability.
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
