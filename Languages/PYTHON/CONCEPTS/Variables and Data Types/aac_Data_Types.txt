@@ -1,0 +1,78 @@
+
+************************************************************************************************************************************
+**********   List of Datatypes available in Python programming Language ************
+In Python, there are several built-in data types that you can use to store and manipulate different kinds of data. Here's a list of some common data types along with code examples:
+
+1. **Integer (int)**: Represents whole numbers without fractional parts.
+   ```python
+   num = 10
+   ```
+
+2. **Float (float)**: Represents decimal numbers.
+   ```python
+   pi = 3.14
+   ```
+
+3. **String (str)**: Represents a sequence of characters enclosed in single ('') or double ("") quotes.
+   ```python
+   name = "John"
+   ```
+
+4. **Boolean (bool)**: Represents logical values True or False.
+   ```python
+   is_valid = True
+   ```
+
+5. **List**: Represents an ordered collection of items, which can be of different data types.
+   ```python
+   numbers = [1, 2, 3, 4, 5]
+   ```
+
+6. **Tuple**: Similar to lists, but tuples are immutable (cannot be modified).
+   ```python
+   coordinates = (10, 20)
+   ```
+
+7. **Dictionary (dict)**: Represents a collection of key-value pairs enclosed in curly braces {}.
+   ```python
+   person = {"name": "John", "age": 30}
+   ```
+
+8. **Set**: Represents an unordered collection of unique elements.
+   ```python
+   unique_numbers = {1, 2, 3, 4, 5}
+   ```
+
+9. **NoneType (None)**: Represents the absence of a value or a null value.
+   ```python
+   value = None
+   ```
+
+10. **Bytes and Bytearray**: Represents sequences of bytes (for handling binary data).
+    ```python
+    binary_data = b'hello'
+    ```
+
+11. **Complex (complex)**: Represents complex numbers with a real and imaginary part.
+    ```python
+    complex_num = 3 + 4j
+    ```
+
+12. **Range**: Represents a sequence of numbers generated based on start, stop, and step parameters.
+    ```python
+    numbers_range = range(1, 10, 2)
+    ```
+
+These are some of the basic data types available in Python. Each data type has its own characteristics and methods for manipulation. Additionally, Python also supports custom data types created using classes and objects.
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************

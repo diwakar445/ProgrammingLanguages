@@ -1,0 +1,107 @@
+
+************************************************************************************************************************************
+**********   List of Datatypes available in Java programming Language ************
+In Java, there are several data types available for storing different types of values. Here's a list of common data types in Java along with code examples:
+
+1. **Primitive Data Types**:
+   - These are basic data types provided by Java.
+   
+   - **byte**: 8-bit integer.
+     ```java
+     byte age = 30;
+     ```
+
+   - **short**: 16-bit integer.
+     ```java
+     short temperature = -10;
+     ```
+
+   - **int**: 32-bit integer.
+     ```java
+     int count = 1000;
+     ```
+
+   - **long**: 64-bit integer.
+     ```java
+     long population = 7000000000L;
+     ```
+
+   - **float**: 32-bit floating point.
+     ```java
+     float price = 10.99f;
+     ```
+
+   - **double**: 64-bit floating point.
+     ```java
+     double pi = 3.14159;
+     ```
+
+   - **char**: 16-bit Unicode character.
+     ```java
+     char grade = 'A';
+     ```
+
+   - **boolean**: Represents true or false.
+     ```java
+     boolean isRaining = true;
+     ```
+
+2. **Reference Data Types**:
+   - These are non-primitive data types that reference objects in memory.
+
+   - **String**: Represents a sequence of characters.
+     ```java
+     String name = "John Doe";
+     ```
+
+   - **Array**: Represents a collection of elements of the same type.
+     ```java
+     int[] numbers = {1, 2, 3, 4, 5};
+     ```
+
+   - **Class**: Represents user-defined types.
+     ```java
+     class Person {
+         String name;
+         int age;
+     }
+     ```
+
+   - **Interface**: Represents a contract for classes to implement.
+     ```java
+     interface Printable {
+         void print();
+     }
+     ```
+
+   - **Enum**: Represents a set of named constants.
+     ```java
+     enum Day {
+         SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+     }
+     ```
+
+   - **Custom Objects**: User-defined classes and objects.
+     ```java
+     class Point {
+         int x;
+         int y;
+     }
+     Point p = new Point();
+     p.x = 10;
+     p.y = 20;
+     ```
+
+These are the main data types available in Java. Each data type has its specific use cases and limitations, and choosing the appropriate data type is crucial for writing efficient and readable code.
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************

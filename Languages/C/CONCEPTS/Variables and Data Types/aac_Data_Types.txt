@@ -1,1 +1,118 @@
+
+************************************************************************************************************************************
 **********   List of Datatypes available in C programming Language ************
+In C programming, there are several data types available for representing different kinds of values. Here's a list of common data types along with code examples:
+
+1. **Integer Types**:
+   - `int`: Represents integer values.
+     ```c
+     int num = 10;
+     ```
+   - `short`: Represents short integer values.
+     ```c
+     short count = 100;
+     ```
+   - `long`: Represents long integer values.
+     ```c
+     long population = 1000000L;
+     ```
+   - `long long`: Represents very long integer values.
+     ```c
+     long long bigNumber = 123456789LL;
+     ```
+
+2. **Floating-Point Types**:
+   - `float`: Represents single-precision floating-point values.
+     ```c
+     float price = 99.99f;
+     ```
+   - `double`: Represents double-precision floating-point values.
+     ```c
+     double pi = 3.141592653589793;
+     ```
+   - `long double`: Represents extended-precision floating-point values.
+     ```c
+     long double preciseValue = 123456789.987654321L;
+     ```
+
+3. **Character Types**:
+   - `char`: Represents single characters.
+     ```c
+     char letter = 'A';
+     ```
+   - `signed char`: Represents signed characters.
+     ```c
+     signed char grade = 'B';
+     ```
+   - `unsigned char`: Represents unsigned characters.
+     ```c
+     unsigned char code = 65;
+     ```
+
+4. **Void Type**:
+   - `void`: Represents an empty data type.
+     ```c
+     void nothing;
+     ```
+
+5. **Enumeration Types**:
+   - `enum`: Represents a set of named integer constants.
+     ```c
+     enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+     enum Day today = Tuesday;
+     ```
+
+6. **Derived Types**:
+   - `typedef`: Creates an alias for an existing data type.
+     ```c
+     typedef unsigned long ulong;
+     ulong value = 100UL;
+     ```
+
+7. **Arrays**:
+   - Represents a collection of elements of the same data type.
+     ```c
+     int numbers[5] = {1, 2, 3, 4, 5};
+     ```
+
+8. **Pointers**:
+   - Represents memory addresses.
+     ```c
+     int *ptr;
+     int num = 10;
+     ptr = &num;
+     ```
+
+9. **Structures**:
+   - Represents a collection of variables under a single name.
+     ```c
+     struct Person {
+         char name[50];
+         int age;
+     };
+     struct Person person1;
+     ```
+
+10. **Union**:
+    - Represents a data structure that can hold different types of data.
+      ```c
+      union Data {
+          int i;
+          float f;
+          char str[20];
+      };
+      ```
+
+These are some of the commonly used data types in C programming. Each data type has its own range of values and memory requirements, so it's important to choose the appropriate type based on the requirements of your program.
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
+************************************************************************************************************************************
