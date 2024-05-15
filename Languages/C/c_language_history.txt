@@ -94,7 +94,7 @@ Digital Mars C/C++ Compiler: The Digital Mars C/C++ Compiler is a commercial com
 TinyCC (TCC): TinyCC is another small and fast C compiler that is designed for embedded systems and lightweight applications. It is known for its simplicity and ease of use.
 
 **********************************************************************************************************************************
-********* what are the drawbacks of C programming language  ***********8
+********* what are the drawbacks of C programming language  ***********
 
 While C is a powerful and widely used programming language, it also has its drawbacks. Here are some of the common drawbacks of C:
 
