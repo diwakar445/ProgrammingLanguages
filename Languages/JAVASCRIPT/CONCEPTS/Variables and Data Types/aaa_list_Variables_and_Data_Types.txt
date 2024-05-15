@@ -1,0 +1,35 @@
+**********   List of Variables and Datatypes available in Javascript programming Language ************
+In JavaScript, variables can hold various types of data, and the language itself provides several built-in data types. Here's a list of variables and data types available in JavaScript:
+
+Undefined:
+    The undefined type represents a variable that has been declared but has not been assigned a value yet.
+Null:
+    The null type represents the intentional absence of any object value.
+Boolean:
+    The boolean type represents a logical value indicating true or false.
+Number:
+    The number type represents numeric data, including integer and floating-point numbers.
+String:
+    The string type represents textual data enclosed within single quotes ('') or double quotes ("").
+Symbol:
+    The symbol type represents unique identifiers that are used as property keys in objects.
+BigInt:
+    The bigint type represents arbitrary precision integers, allowing for the representation of larger numbers than the standard number type.
+Object:
+    The object type represents a collection of key-value pairs, where keys are strings (or symbols) and values can be of any data type, including other objects.
+Function:
+    Functions are a subtype of objects in JavaScript and represent executable code blocks that can be invoked.
+
+Additionally, JavaScript provides the typeof operator, which can be used to determine the data type of a variable or expression at runtime. It returns a string indicating the data type of the operand.
+
+Example usage of typeof:
+
+typeof undefined;  // "undefined"
+typeof null;       // "object" (historical quirk, should be "null")
+typeof true;       // "boolean"
+typeof 42;         // "number"
+typeof 'hello';    // "string"
+typeof Symbol();   // "symbol"
+typeof BigInt(42); // "bigint"
+typeof {};         // "object"
+typeof function(){}; // "function"
