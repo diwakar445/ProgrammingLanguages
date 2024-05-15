@@ -1,0 +1,22 @@
+**********   List of Variables and Datatypes available in typescript programming Language ************
+
+Primitive Types:
+    Boolean: Represents a logical value (true or false).
+    Number: Represents numeric values, including integers, floats, and decimals.
+    String: Represents textual data enclosed in single quotes (') or double quotes (").
+    Null: Represents the intentional absence of any object value.
+    Undefined: Represents a variable that has been declared but not assigned a value.
+    Symbol: Represents a unique and immutable value used as an identifier for object properties.
+
+Object Types:
+    Array: Represents a collection of elements of the same type, accessed by an index.
+    Tuple: Represents an array with a fixed number of elements, where each element may be of a different type.
+    Object: Represents a collection of key-value pairs, where keys are strings and values can be of any type.
+    Function: Represents a callable object that can accept parameters and return a value.
+
+Special Types:
+    Any: Represents a dynamic type that can hold any value. Use of any disables type checking.
+    Void: Represents the absence of a return value. Typically used for functions that do not return anything.
+    Never: Represents the type of values that never occur. Used for functions that never return or always throw errors.
+    Enum: Represents a set of named constants, where each constant has an associated numeric value.
+    Unknown: Represents a type-safe counterpart of any. Unlike any, values of type unknown cannot be assigned to other types without type assertion or type narrowing.

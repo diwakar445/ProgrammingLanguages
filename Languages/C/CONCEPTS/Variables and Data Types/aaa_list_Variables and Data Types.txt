@@ -1,0 +1,38 @@
+**********   List of Variables and Datatypes available in C programming Language ************
+In C programming, variables are containers for storing data, and data types specify the type of data that can be stored in a variable. Here are the basic data types and variables available in C:
+
+Basic Data Types:
+
+int: Used for integer values (whole numbers).
+char: Used for single characters or small integer values.
+float: Used for floating-point numbers (decimal numbers).
+double: Used for double-precision floating-point numbers (larger decimal numbers).
+void: Represents an empty data type or absence of a type.
+
+Modifiers:
+
+short: Used to reduce the range of values stored in an integer.
+long: Used to increase the range of values stored in an integer.
+signed: Specifies that a data type can hold both positive and negative values.
+unsigned: Specifies that a data type can hold only non-negative values (positive or zero).
+
+Derived Data Types:
+
+Arrays: Used to store a collection of elements of the same data type.
+Pointers: Used to store memory addresses of other variables or functions.
+Structures: Used to group together variables of different data types under a single name.
+Unions: Similar to structures but share the same memory location for all members.
+Enums: Used to define a set of named integer constants.
+
+Qualifiers:
+
+const: Specifies that a variable's value cannot be changed once initialized.
+volatile: Indicates that a variable can be modified unexpectedly by external sources.
+
+Variables in C are declared by specifying their data type followed by the variable name. 
+For example:
+
+int age;
+char grade;
+float salary;
+double pi;

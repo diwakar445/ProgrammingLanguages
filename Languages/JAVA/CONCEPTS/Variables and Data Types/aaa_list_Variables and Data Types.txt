@@ -1,0 +1,48 @@
+**********   List of Variables and Datatypes available in Java programming Language ************
+In Java, variables are declared with a specific data type, which determines the type of data that can be stored in the variable. Here is a list of commonly used data types and variables in Java:
+
+Primitive Data Types:
+
+Java has eight primitive data types:
+
+byte: 8-bit integer data type.
+short: 16-bit integer data type.
+int: 32-bit integer data type.
+long: 64-bit integer data type.
+float: 32-bit floating-point data type.
+double: 64-bit floating-point data type.
+char: 16-bit Unicode character data type.
+boolean: Represents true or false values.
+
+Reference Data Types:
+
+Reference data types are used to refer to objects:
+
+Object: The root class of all Java classes.
+String: Represents a sequence of characters.
+Array: Represents a collection of elements of the same type.
+Class: Represents a class or interface.
+Interface: Represents a reference to an interface.
+Enumeration: Represents a set of named constants.
+Arrays:
+
+Arrays are used to store multiple values of the same type:
+
+int[]: Array of integers.
+double[]: Array of doubles.
+String[]: Array of strings.
+Object[]: Array of objects.
+User-Defined Data Types:
+
+User-defined data types are created using classes and interfaces:
+
+class: Defines a blueprint for creating objects.
+interface: Defines a contract for classes to implement.
+enum: Defines a special data type for a set of constants.
+package: Organizes classes and interfaces into namespaces.
+
+Special Types:
+
+Special types are used for specific purposes:
+void: Represents the absence of a return value.
+null: Represents the absence of an object reference.

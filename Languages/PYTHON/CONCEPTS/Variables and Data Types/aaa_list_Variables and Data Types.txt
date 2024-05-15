@@ -1,0 +1,12 @@
+**********   List of Variables and Datatypes available in Python programming Language ************
+In Python, variables can hold values of various data types. Here's a list of common data types and examples of variables that can hold them:
+
+Integer (int): Whole numbers without decimal points.
+Float (float): Numbers with decimal points.
+String (str): Sequence of characters enclosed in single, double, or triple quotes.
+Boolean (bool): Represents either True or False.
+List (list): Ordered collection of items, mutable.
+Tuple (tuple): Ordered collection of items, immutable.
+Dictionary (dict): Collection of key-value pairs, mutable.
+Set (set): Unordered collection of unique items.
+NoneType (None): Represents the absence of a value or a null value.
