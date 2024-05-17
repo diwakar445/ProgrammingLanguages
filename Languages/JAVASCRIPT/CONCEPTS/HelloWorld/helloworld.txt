@@ -1,0 +1,70 @@
+*********** HelloWorld program in Javascript Programming Language ***************
+        
+        I Know
+1.Printing to console
+    console.log("Hello World");
+2.Printing as alert
+    alert("Hello World");
+3.Printing as error
+    console.error("Hello World");
+4.Printing as directory
+    console.dir("Hello World");
+****************************************************************************************
+Sure, here are examples of different types of console log statements in JavaScript:
+
+1. **`console.log()`**: Used for general logging and debugging purposes.
+
+```javascript
+console.log("This is a log message.");
+```
+
+2. **`console.error()`**: Used to log error messages.
+
+```javascript
+console.error("This is an error message.");
+```
+
+3. **`console.warn()`**: Used to log warning messages.
+
+```javascript
+console.warn("This is a warning message.");
+```
+
+4. **`console.info()`**: Used to log informational messages.
+
+```javascript
+console.info("This is an informational message.");
+```
+
+5. **`console.debug()`**: Used to log debug messages.
+
+```javascript
+console.debug("This is a debug message.");
+```
+
+6. **`console.dir()`**: Used to display an interactive list of the properties of a specified JavaScript object.
+
+```javascript
+const obj = { name: "John", age: 30 };
+console.dir(obj);
+```
+
+7. **`console.table()`**: Used to display tabular data as a table.
+
+```javascript
+const data = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 25 },
+  { name: "Bob", age: 40 }
+];
+console.table(data);
+```
+
+8. **`console.assert()`**: Used to log a message if an assertion is false.
+
+```javascript
+console.assert(2 + 2 === 5, "Error: Math is broken!");
+```
+
+These are some of the commonly used console log statements in JavaScript, each serving different purposes in logging and debugging.
+
