@@ -18,13 +18,13 @@ Sure, here are examples of different types of console log statements in JavaScri
 console.log("This is a log message.");
 ```
 
-2. **`console.error()`**: Used to log error messages.
+2. **`console.error()`**: Used to log error messages intentional.
 
 ```javascript
 console.error("This is an error message.");
 ```
 
-3. **`console.warn()`**: Used to log warning messages.
+3. **`console.warn()`**: Used to log warning messages intentional.
 
 ```javascript
 console.warn("This is a warning message.");
