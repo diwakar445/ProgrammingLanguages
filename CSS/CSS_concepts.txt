@@ -1,0 +1,66 @@
+CSS Interview questions
+https://www.geeksforgeeks.org/css-interview-questions-and-answers/?ref=lbp
+
+CSS Interview Questions For Freshers:
+1. What is CSS?
+2. Why do we use CSS?
+3. What are the advantages of CSS?
+4. What are the disadvantages of CSS?
+5. What is the current version of CSS?
+6. How is CSS different from CSS 3?
+7. List the CSS Frameworks.
+8. What is the syntax for CSS?
+9. In how many ways can we add CSS to our HTML file?
+10. Which type of CSS holds the highest priority?
+11. What are CSS Selectors?
+12. How can we add comments in CSS?
+13. What does the ‘a’ in rgba mean?
+14. What are CSS HSL Colors?
+15. What are CSS backgrounds, list the properties?
+16. What are the different CSS border properties?
+17. What does margin: 40px 100px 120px 80px signify?
+18. What is the difference between margin and padding?
+19. What is CSS Box Model?
+21. How can we format text in CSS?
+22. What are the different CSS link states?
+23. Can we add an image as a list item marker?
+24. How can we hide an element in CSS?
+25. What is the difference between display: none and visibility: hidden?
+
+CSS Interview Questions for Experienced
+26. Can we overlap elements in CSS?
+27. What are the various positioning properties in CSS?
+28. What is CSS overflow?
+29. What does the CSS float property do?
+30. What does display:inline-block do?
+31. How can we vertically center a text in CSS?
+32. How can we center an image in CSS?
+33. What are CSS Combinators?
+34. What are pseudo-classes in CSS?
+35. What are pseudo-elements in CSS?
+36. How can we add gradients in CSS?
+37. Can we add 2D transformations to our project using CSS?
+38. Can we add 3D transformations to our project using CSS?
+39. What are CSS transitions?
+40. How can we animate using CSS?
+41. What does the CSS box-sizing property do?
+42. How can we make our website responsive using CSS?
+43. What is CSS flexbox?
+44. What is CSS Grid?
+45. What is the difference between flexbox and grid?
+46. What is the best way to include a CSS file? Why use @import?
+47. How case-sensitive is CSS?
+48. What does CSS Animations allow?
+49. What is @keframes used for?
+50. What are CSS counters?
+51. What is meant by universal selector?
+52. What is RWD?
+53. What is the difference between class and id selector?
+54. How can we use pagination in CSS?
+55. What is CSS Image reflection?
+56. How can we create multiple columns of text-like newspapers using CSS?
+57. How can we give a shadow effect to our text in CSS?
+58. What is !important?
+59. What is specificity in CSS?
+60. What are the attribute selectors?
+
