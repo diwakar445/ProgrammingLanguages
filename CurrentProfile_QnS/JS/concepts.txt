@@ -1,0 +1,101 @@
+https://www.geeksforgeeks.org/javascript-interview-questions-and-answers/?ref=lbp
+
+JavaScript Interview Questions for Freshers
+
+1. What are the differences between Java and JavaScript?
+2. What are JavaScript Data Types? 
+3. Which symbol is used for comments in JavaScript?
+4. What would be the result of 3+2+”7″?
+5. What is the use of the isNaN function?
+6. Which is faster in JavaScript and ASP script?
+7. What is negative infinity?
+8. Is it possible to break JavaScript Code into several lines?
+9. Which company developed JavaScript?
+10. What are undeclared and undefined variables?
+11. Write a JavaScript code for adding new elements dynamically. 
+12. What are global variables? How are these variables declared, and what are the problems associated with them?
+13. What do you mean by NULL in JavaScript?
+14. How to delete property-specific values?
+15. What is a prompt box?
+16. What is the ‘this’ keyword in JavaScript?
+17. Explain the working of timers in JavaScript. Also elucidate the drawbacks of using the timer, if any.
+18. What is the difference between ViewState and SessionState?
+19. How to submit a form using JavaScript?
+20. Does JavaScript support automatic type conversion?
+
+JavaScript Intermediate Interview Questions
+
+21. What are all the looping structures in JavaScript ?
+22. How can the style/class of an element be changed?
+23. Explain how to read and write a file using JavaScript?
+24. What is called Variable typing in JavaScript ?
+25. How to convert the string of any base to integer in JavaScript?
+26. Explain how to detect the operating system on the client machine?
+27. What are the types of Pop up boxes available in JavaScript?
+28. What is the difference between an alert box and a confirmation box?
+29. What is the disadvantage of using innerHTML in JavaScript?
+30. What is the use of void(0) ?
+
+
+JavaScript Interview Questions for Experienced
+
+31. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
+32. How to get the status of a CheckBox?
+33. How to explain closures in JavaScript and when to use it?
+34. What is the difference between call() and apply() methods ?
+35. How to target a particular frame from a hyperlink in JavaScript ?
+36. Write the errors shown in JavaScript?
+37. What is the difference between JavaScript and Jscript?
+38. What does var myArray = [[]]; statement declares?
+39. How many ways an HTML element can be accessed in JavaScript code? 
+40. What is the difference between innerHTML & innerText? 
+41. What is an event bubbling in JavaScript?
+
+
+JavaScript Interview Questions and Answers (2024) – Intermediate Level
+
+1. What are all the looping structures in JavaScript ?
+2. How can the style/class of an element be changed?
+3. Explain how to read and write a file using JavaScript?
+4. What is called Variable typing in JavaScript ?
+5. How to convert the string of any base to integer in JavaScript?
+6. Explain how to detect the operating system on the client machine?
+7. What are the types of Pop up boxes available in JavaScript?
+8. What is the difference between an alert box and a confirmation box?
+9. What is the disadvantage of using innerHTML in JavaScript?
+10. What is the use of void(0) ?
+11. What are JavaScript Cookies ?
+12. How to create a cookie using JavaScript?
+13. How to read a cookie using JavaScript?
+14. How to delete a cookie using JavaScript?
+15. What are escape characters and escape() function?
+16. Whether JavaScript has a concept-level scope?
+17. How generic objects can be created in JavaScript?
+18. Which keywords are used to handle exceptions?
+19. What is the use of the blur function?
+20. What is the unshift method in JavaScript?
+
+JavaScript Interview Questions and Answers (2024) – Advanced Level
+
+1. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
+2. How to get the status of a CheckBox?
+3. How to explain closures in JavaScript and when to use it?
+4. What is the difference between call() and apply() methods ?
+5. How to target a particular frame from a hyperlink in JavaScript ?
+6. Write the errors shown in JavaScript?
+7. What is the difference between JavaScript and Jscript?
+8. What does var myArray = [[]]; statement declares? 
+9. How many ways an HTML element can be accessed in JavaScript code? 
+10. What is the difference between innerHTML & innerText? 
+11. What is an event bubbling in JavaScript?
+12. What will be the output of the following code?
+13. How are JavaScript and ECMA Script related? 
+14. How to hide JavaScript code from old browsers that don’t support JavaScript? 
+15. What will be the output of the following code?
+16. In JavaScript, answer if the following expressions result in true or false.
+17. How to use any browser for debugging?
+18. What is javascript Hoisting? 
+19. What is the syntax of ‘Self Invoking Function’ ? 
+20. How to use external JavaScript file in another JavaScript file? 
+
+
