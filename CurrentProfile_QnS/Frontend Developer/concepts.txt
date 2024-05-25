@@ -1,0 +1,83 @@
+Frontend Developer Interview Questions
+https://www.geeksforgeeks.org/front-end-developer-interview-questions/?ref=lbp
+
+Front End Developer Interview Questions for Freshers
+
+1. What is HTML?
+2. What are Semantic elements in HTML?
+3. What are the Empty elements in HTML?
+4. Differentiate between the Inline and the Block elements in HTML.
+5. What is list in HTML? Explain different types of list available in HTML.
+6. What is the basic structure of an HTML document?
+7. Explain the elements used in the basic structure of an HTML document.
+8. Explain tags in HTML.
+9. Why ‘alt’ attribute is used with the <img> tag in HTML?
+10. What is the difference between the <div> and <span> tag in HTML?
+11. Why the <meta charset = “UTF-8”> tag is used?
+12. What is the purpose of using the ‘role’ attribute in HTML?
+13. Differentiate between the GET and the POST methods in HTML forms.
+14. What is the use of the <iframe> tag?
+15. Explain the features of HTML5?
+16. What is localStorage?
+17. What is sessionStorage?
+18. Differentiate between localStorage and sessionStorage.
+19. What is the purpose of using <figure> and <figcaption> elements in HTML5?
+20. Write the HTML code to create a table with 3 columns and 3 rows.
+21. How you can merge the rows and columns of a HTML table?
+22. Describe data attributes in HTML.
+23. What is CSS?
+24. Explain selectors in CSS.
+25. Explain the precedence of the Class, Id and Element selectors in CSS.
+26. What are the best practices for using JavaScript and CSS?
+27. What is difference between visibility: hidden and display: none properties in CSS?
+28. Mention the issues faced by developers while running the CSS in Internet Explorer (IE)?
+29. Explain box-model in CSS.
+30. What is the purpose of z-index property in CSS?
+31. What is the use of float property?
+32. Explain different ways to display an element at the center of the web page.
+33. Describe the use of the position property in CSS.
+34. What are pseudo classes and pseudo elements in CSS?
+35. Why is the ‘!important’ used in CSS?
+36. What is the purpose of ‘box-sizing’ property in CSS?
+37. Tell me about CSS preprocessors and their advantage over pure CSS?
+38. What is the meaning of ‘Cascading’ in Cascading Style Sheet?
+39. Explain Media Queries in CSS.
+40. Describe CSS sprites and their importance to improve website performance.
+41. How you can optimize the loading of CSS files in browser?
+42. How to create responsive designs?
+
+Front End Developer Interview Questions for Experienced
+
+43. What is JavaScript?
+44. What is difference between == and === in JavaScript?
+45. How to defer an element’s event handler if it depends on an external script that takes some time to load?
+46. Optimal strategy for winning a game where let’s say, I start with 1, opponent can cite a number X within the range [2, 11]. Then I have to say a number in the range [X + 1, X + 10], then opponent, then me, and so on. Whoever says 100 in the end wins and the game ends.
+47. Why would you use the prototype in JS?
+48. What is the meaning of ‘this’ in JS?
+49. Namespaces in JavaScript
+50. Difference between null and undefined in JS.
+51. Explain closures in JS with an example of statements in loop
+52. What is event loop in JavaScript?
+53. Explain hoisting in JS?
+54. What are different Data types in JS?
+55. If the typeof([]) is object, then What is the content and the length of b in below code?
+56. Different ways to create objects in JS?
+57. How to implement inheritance in JS?
+58. Explain call(),apply() and bind() methods in JavaScript.
+59. What is event delegation in JavaScript?
+60. Tell me about key features of JavaScript.
+61. What is the use of “use strict” directive in JavaScript?
+62. What is event propagation in JavaScript?
+63. Define event bubbling in JavaScript?
+64. What is event capturing?
+65. What are callback functions in JavaScript?
+66. What is callback hell and how to avoid it?
+67. Explain Promises in JavaScript.
+68. What is the use of async await in JavaScript?
+69. Explain the concept of currying in JavaScript?
+70. What is the purpose of passing defer or async attributes to the script tag?
+71. Explain try catch block in JavaScript.
+72. How to stop event propagation in JavaScript?
+73. How to prevent the default behaviour of a event in JavaScript?
+74. Describe the concept of CORS?
+75. Explain debouncing in JavaScript?
