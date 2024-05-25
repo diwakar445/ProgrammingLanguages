@@ -85,11 +85,18 @@ These are some of the commonly used console log statements in JavaScript, each s
           1. structuredClone(org) --> used to deep copy the object
           2. JSON.parse(JSON.stringify(org));
           3. Object.freeze(org);
+          
       
 
     2.info
+      used to display informative messages , logger services, (filter in dev tools)
+
     3.error
+      used to log manual error messages for better debugging
+
     4.warn
+      used to log warning messages like deprecation etc. to dev tools console/ web browser console
+      
     5.dir
     6.assert
     7.table
