@@ -1,0 +1,90 @@
+Node.js Interview Questions
+https://www.geeksforgeeks.org/node-interview-questions-and-answers/?ref=lbp
+
+Node.js Interview Questions and Answers for Freshers
+
+1. What is Node.js?
+2. What is the difference between Node.js and JavaScript?
+3. Is Node.js single-threaded?
+4. What kind of API function is supported by Node.js?
+5. What is the difference between Synchronous and Asynchronous functions?
+6. What is a module in Node.js?
+7. What is npm and its advantages?
+8. What is middleware?
+9. How does Node.js handle concurrency even after being single-threaded?
+10. What is control flow in Node.js?
+11. What do you mean by event loop in Node.js?
+12. What is the order in which control flow statements get executed?
+13. What are the main disadvantages of Node.js?
+14. What is REPL in Node.js?
+15. How to import a module in Node.js?
+16. What is the difference between Node.js and AJAX?
+17. What is package.json in Node.js?
+18. How to write hello world using node.js?
+19. What is the most popular Node.js framework used these days?
+20. What are promises in Node.js?
+
+Intermediate Node.js Interview Questions and Answers
+
+21. What is event-driven programming in Node.js?
+22. What is buffer in Node.js?
+23. What are streams in Node.js?
+24. Explain crypto module in Node.js
+25. What is callback hell?
+26. Explain the use of timers module in Node.js
+27. Difference between setImmediate() and process.nextTick() methods
+28. What is the difference between setTimeout() and setImmediate() method?
+29. What is the difference between spawn() and fork() method?
+30. Explain the use of passport module in Node.js
+31. What is fork in Node.js?
+32. What are the three methods to avoid callback hell?
+33. What is body-parser in Node.js?
+34. What is CORS in Node.js?
+35. Explain the tls module in Node.js?
+
+Advanced Node.js Interview Questions for Experienced
+
+36. What is a cluster in Node.js?
+37. Explain some of the cluster methods in Node.js
+38. How to manage sessions in Node.js?
+39. Explain the types of streams in Node.js
+40. How can we implement authentication and authorization in Node.js?
+41. Explain the packages used for file uploading in Node.js?
+42. Explain the difference between Node.js and server-side scripting languages like Python
+43. How to handle database connection in Node.js?
+44. How to read command line arguments in Node.js?
+45. Explain the Node.js redis module
+46. What is web socket?
+47. Explain the util module in Node.js
+48. How to handle environment variables in Node.js?
+49. Explain DNS module in Node.js
+50. What are child processes in Node.js?
+51. What is tracing in Node.js?
+
+Node Interview Questions and Answers (2024) – Intermediate Level
+
+1. What is event-driven programming in Node.js?
+2. What is buffer in Node.js?
+3. What are streams in Node.js?
+4. Explain crypto module in Node.js
+5. What is callback hell?
+6. Explain the use of timers module in Node.js
+7. Difference between setImmediate() and process.nextTick() methods
+8. What is the difference between setTimeout() and setImmediate() method?
+9. What is the difference between spawn() and fork() method?
+10. Explain the use of passport module in Node.js
+11. What is fork in Node.js?
+12. What are the three methods to avoid callback hell?
+13. What is body-parser in Node.js?
+14. What is CORS in Node.js?
+15. Explain the tls module in Node.js?
+16. What is the use of url module in Node.js?
+17. What is REST API?
+18. Explain the engine Google uses for Node.js
+19. Name the tool used for writing consistent code
+20. What are the different kinds of HTTP requests?
+
+Node Interview Questions and Answers (2024) – Advanced Level
+
+19. What is reactor pattern in node.js?
+20. How to Connect Node.js to a MongoDB Database?
