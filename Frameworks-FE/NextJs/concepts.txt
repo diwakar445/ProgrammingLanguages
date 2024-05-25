@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/nextjs/?ref=shm
+
 Routing: 
     Next.js provides easy-to-use routing capabilities through its built-in routing system, allowing you to define routes for your application's pages.
     

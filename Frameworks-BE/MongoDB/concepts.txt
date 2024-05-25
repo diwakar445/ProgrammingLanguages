@@ -1,0 +1,5 @@
+https://www.geeksforgeeks.org/mongodb-tutorial/?ref=shm
+https://www.geeksforgeeks.org/getting-started-with-database-management-system/?ref=shm
+https://www.geeksforgeeks.org/sql-tutorial/?ref=shm
+https://www.geeksforgeeks.org/mysql-tutorial/?ref=shm
+https://www.geeksforgeeks.org/postgresql-tutorial/?ref=shm

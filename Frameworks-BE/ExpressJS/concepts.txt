@@ -1,0 +1,84 @@
+https://www.geeksforgeeks.org/express-js/?ref=shm
+
+
+Express Basic:
+Introduction to Express
+Steps to create Express Application
+Design first Application using Express
+How to Structure my Application in Express JS 
+Unique features of Express
+How to send response from server to client using Node and Express ?
+Why Express ‘app’ and ‘server’ files kept separately ?
+How to implement JWT authentication in Express app
+How to expire session after 1 min of inactivity in express-session of Express JS
+Express Error Handling
+Express Functions:
+Express express():
+Expresson() Function
+express.raw() Function
+express.Router() Function
+express.static() Function
+express.text() Function
+express.urlencoded() Function
+express() function Complete Reference
+Express Applications Function:
+app.locals Property
+app.mountpath Property
+Mount Event
+app.all() Function
+app.delete() Function
+app.disable() Function
+app.disabled() Function
+app.enable() Function
+app.enabled() Function
+Application Complete Reference
+Express Requests Function:
+req.app Property
+req.baseUrl Property
+req.body Property
+req.cookies Property
+req.fresh Property
+req.accepts() Function
+req.acceptsCharsets() Function
+req.acceptsEncodings() Function
+req.acceptsLanguages() Function
+Request Complete Reference
+Express Response Function:
+res.app Property
+res.headersSent Property
+res.locals Property
+res.append() Function
+res.attachment() Function
+res.cookie() Function
+res.clearCookie() Function
+res.download() Function
+res.end() Function
+Response Complete Reference
+Express Router Function:
+router.all() Function
+router.METHOD() Function
+router.param() function
+router.route() Function
+router.use() Function
+Router Complete Reference
+Express Advanced Topics:
+Node vs Express
+Middlewares in Express
+How to update record in Cassandra using Express 
+What is the use of next() function in Express JS
+How to create custom middleware in express
+Why Express is used in Web Development
+What is Express Generator
+Express HTTP methods
+How to create routes using Express and Postman?
+Why Express Is Used For Enterprise App Development
+REST API using the Express to perform CRUD
+What is express-session middleware in Express
+Advanced Concepts
+Template Engines: Use template engines like EJS or Pug for dynamic content rendering.
+Error Handling: Implement custom error handling middleware to gracefully handle exceptions.
+Authentication: Integrate authentication middleware (e.g., Passport.js) for secure user sessions.
+
+
+
+https://www.geeksforgeeks.org/top-50-express-js-interview-questions-and-answers/
