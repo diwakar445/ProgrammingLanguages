@@ -1,0 +1,109 @@
+https://www.geeksforgeeks.org/react-interview-questions/?ref=lbp
+
+React Interview Questions For Freshers
+
+1. What is ReactJS?
+2. Explain the MVC architecture?
+3. Explain the building blocks of React?
+4. Explain props and state in React with differences
+5. What is virtual DOM in React?
+6. What is JSX?
+7. What are components and their type in React?
+8. How do browsers read JSX?
+9. Explain the steps to create a react application and print Hello World?
+10. How to create an event in React?
+11. Explain the creation of a List in react?
+12. What is a key in React?
+13. How to write a comment in React?
+14. Explain the difference between React and Angular?
+15. Explain the use of render method in React?
+16. What is state in React?
+17. Explain props in React?
+18. What is higher-order component in React?
+19. Explain the difference between functional and class component in React?
+20. Explain one way data binding in React?
+
+React Intermediate Interview Questions
+
+21. What is conditional rendering in React?
+22. What is react router?
+23. Explain the components of a react-router
+24. Explain the lifecycle methods of components
+25. Explain the methods used in mounting phase of components
+26. What is this.setState function in React?
+27.  What is the use of ref in React?
+28. What are hooks in React?
+29. Explain the useState hook in React?
+30. Explain the useEffect hook in react?
+31. What is React Fragments?
+32. What is a react developer tool?
+33. How to use styles in ReactJS?
+34. Explain styled components in React?
+35. What is prop drilling and its disadvantages?
+
+React Interview Questions For Experienced
+
+36. What is custom hooks in React?
+37. How to optimize a React code?
+38. What is the difference between useref and createRef in React ?
+39. What is react-redux?
+40. What are benefits of using react-redux?
+41. Explain the core components of react-redux?
+42. How can we combine multiple reducers in React?
+43. What is context API?
+44. Explain provider and consumer in ContextAPI?
+45. Explain CORS in React?
+46. What is axios and how to use it in React?
+47. Write a program to create a counter with increment and decrement?
+48. Explain why and how to update state of components using callback?
+49. What is React-Material UI?
+50. What is flux architecture in redux?
+
+
+React Interview Questions and Answers (2024) – Intermediate Level
+
+1. What is conditional rendering in React?
+2. What is react router?
+3. Explain the components of a react-router
+4. Explain the lifecycle methods of components
+5. Explain the methods used in mounting phase of components
+6. What is this.setState function in React?
+7.  What is the use of ref in React?
+8. What are hooks in React?
+9. Explain the useState hook in React?
+10. Explain the useEffect hook in react?
+11. What is React Fragments?
+12. What is a react developer tool?
+13. How to use styles in ReactJS?
+14. Explain styled components in React?
+15. What is prop drilling and its disadvantages?
+16. What are controlled and uncontrolled components in react?
+17. What is useRef hook in react?
+18. Explain the componentDidMount method in React?
+19. Difference between ES6 and ES5 syntax in React
+20. What are synthetic event in React?
+
+React Interview Question and Answers (2024) – Advance Level
+
+1. What is custom hooks in React?
+2. How to optimize a React code?
+3. What is the difference between useref and createRef in React ?
+4. What is react-redux?
+5. What are benefits of using react-redux?
+6. Explain the core components of react-redux?
+7. How can we combine multiple reducers in React?
+8. What is context API?
+9. Explain provider and consumer in ContextAPI?
+10. Explain CORS in React?
+11. What is axios and how to use it in React?
+12. Write a program to create a counter with increment and decrement?
+13. Explain why and how to update state of components using callback?
+14. What is React-Material UI?
+15. What is flux architecture in redux?
+16. Explain the useMemo hook in react?
+17. Does React useState Hook update immediately ?
+18. When to use useCallback, useMemo and useEffect ?
+19. Explain the types of router in React?
+20. What is StrictMode in React ?
+
+

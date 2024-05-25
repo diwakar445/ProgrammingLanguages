@@ -1,0 +1,81 @@
+61 Angular Interview Questions in 2024: Prepare Like a Pro
+https://www.simplilearn.com/tutorials/angular-tutorial/angular-interview-questions
+
+Most Asked Angular Interview Questions
+
+1. What is Angular? Why was it introduced?
+2. What is TypeScript?
+3. What is data binding? Which type of data binding does Angular deploy?
+4. What are Single Page Applications (SPA)?
+5. Differentiate between Angular and AngularJS
+6. What are decorators in Angular?
+7. Mention some advantages of Angular.
+8. What are the new updates with Angular10? 
+9. What are Templates in Angular?
+10. What are Annotations in Angular?
+
+Angular Interview Questions For Beginners
+
+11. What are Directives in Angular?
+12. What is an AOT compilation? What are its advantages?
+13. What are Components in Angular?
+14. What are Pipes in Angular? 
+15. What is the PipeTransform interface?
+16. What are Pure Pipes?
+17. What are Impure Pipes?
+18. What is an ngModule?
+19. What are filters in Angular? Name a few of them
+20. What is view encapsulation in Angular?
+21. What are controllers?
+22. What do you understand by scope in Angular?
+23. Explain the lifecycle hooks in Angular
+24. What is String Interpolation in Angular?
+25. What are Template statements?
+
+Angular Interview Questions For Advanced Level 
+
+26. What is the difference between AOT and JIT?
+27. Explain the @Component Decorator.
+28. What are Services in Angular? 
+29. What are Promises and Observables in Angular?
+30. What is ngOnInit? How is it defined?
+31. How to use ngFor in a tag? 
+32. What are Template and Reactive forms?
+33. What is Bootstrap? How is it embedded into Angular? 
+34. What is Eager and Lazy loading? 
+35. What type of DOM does Angular implement?
+36. Why were client-side frameworks like Angular introduced?
+37. How does an Angular application work?
+38. Explain components, modules and services in Angular.
+39. How are Angular expressions different from JavaScript expressions?
+40. Angular by default, uses client-side rendering for its applications.
+41. How do you share data between components in Angular?
+42. Explain the concept of dependency injection.
+43. Explain MVVM architecture.
+
+
+Angular Interview Questions for Experienced
+
+44. What are RxJs in Angular?
+45. What exactly is a parameterized pipe?
+46. What are class decorators?
+47. What are Method decorators?
+48. What are property decorators?
+49. What are router links?
+50. What exactly is the router state?
+51. What does Angular Material mean?
+52. What is transpiling in Angular?
+53. What are HTTP interceptors?
+54. What is Change Detection, and how does the Change Detection Mechanism work?
+55. What is a bootstrapping module?
+
+Angular Scenario Based Interview Questions
+
+56. How do you choose anc from a component template?
+57. How do you deal with errors in observables?
+58. How to include SASS into an Angular project?
+59. What happens when we use the script tag within a template?
+60. Write a code to share data from the Parent to Child Component?
+61. Create a TypeScript class with a constructor and a function.
+
+

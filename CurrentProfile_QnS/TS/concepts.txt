@@ -1,0 +1,52 @@
+TypeScript Interview Questions and Answers
+
+1. Explain the data types available in TypeScript.
+2. Explain the behavior of arrays in TypeScript.
+3. In how many ways we can declare variables in TypeScript?
+4. How you can declare a explicit variables in Typescript?
+5. How to declare a function with typed annotation in TypeScript?
+6. Describe the any type in TypeScript.
+7. What are the advantages of using TypeScript?
+8. List some disadvantages of using TypeScript.
+9. Explain the void type in TypeScript.
+10. What is type null and its use in TypeScript?
+11. Describe the syntax for creating objects in TypeScript.
+12. Can we specify the optional properties to TypeScript Object, if Yes, explain How?
+13. Explain the undefined type in TypeScript.
+14. What is never type and its uses in TypeScript?
+15. Explain the working of enums in TypeScript?
+16. Is TypeScript strictly statically typed language?
+17. Is template literal supported by TypeScript?
+18. Differentiate between the .ts and .tsx file extensions given to the TyppeScript file.
+19. Explain typeof operator in TypeScript and where to use it.
+20. Explain the parameter destructuring in TypeScript.
+21. What are interfaces in TypeScript?
+22. In what situation you should use a class and a interface?
+23. What are the differences between the classes and the interfaces in TypeScript?
+24. How you can compile a TypeScript file?
+25. How to combine multiple TypeScript files and convert them into single JavaScript file?
+26. How to compile a TypeScript file at real time while updating the file?
+27. Is it possible to call the constructor function of the base class using the child class?
+28. How to declare a class in TypeScript?
+29. How to declare a arrow function in TypeScript?
+30. How to define a function which accepts the optional parameters?
+31. How the inheritance can be used in TypeScript?
+32. What are modules in TypeScript?
+33. In how many ways you can classify Modules?
+34. What is the use of tsconfig.json file in TypeScript?
+35. What are Decorators in TypeScript?
+36. What are the different ways for controlling the visibility of member data?
+37. How to debug a TypeScript file?
+38. How to convert a .ts file into TypeScript Definition file?
+39. Is it possible to create the static classes in TypeScript?
+40. Describe anonymous functions and their uses in TypeScript?
+41. Explain the union types in TypeScript?
+42. Explain type alias in TypeScript?
+43. Is it possible to create the immutable Object properties in TypeScript?
+44. What is “in” operator and why it is used in TypeScript?
+45. Expalin conditional typing in TypeScript?
+46. Explain noImplicitAny in TypeScript.
+47. Explain type inference in TypeScript.
+48. Which principles of Object Oriented Programming are supported by TypeScript?
+49. In how many ways you can use the for loop in TypeScript?
+50. Explain Mixins in TypeScript
