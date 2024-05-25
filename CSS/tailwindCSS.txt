@@ -1,0 +1,53 @@
+Tailwind CSS Interview Questions
+https://www.geeksforgeeks.org/tailwind-css-interview-questions-and-answers/?ref=lbp
+
+1. Why do we use Tailwind CSS?
+2. Explain the concept of utility-first in Tailwind CSS
+3. How to integrate Tailwind CSS into the HTML file?
+4. How to set up the Tailwind CSS in a project?
+5. What are the benefits and its limitations of Tailwind CSS ?
+6. Is Tailwind CSS open-source (FREE to use)?
+7. How does Tailwind CSS differ from other CSS frameworks?
+8. What is Drop Shadow in Tailwind CSS ? Explain various utility classes.
+9. What is the primary purpose of the container class in Tailwind CSS?
+10. How does Tailwind CSS handle flex direction in its utility classes?
+11. How to manage order property in Tailwind CSS utility classes?
+12. Can we change the base font-family in Tailwind config?
+13. Do Tailwind CSS 3 Classes Override Previous Classes?
+14. How to create a form with Tailwind CSS?
+15. How to use CSS animations with Tailwind CSS?
+16. How to make text bold in Tailwind CSS?
+17. How to center both horizontally and vertically?
+18. How to install Tailwind CSS custom forms?
+19. How to download Tailwind CSS Typography?
+20. How to define horizontal spacing and vertical spacing between elements with Tailwind CSS?
+21. How to create a Card component using Tailwind CSS ?
+22. Can we use both Tailwind CSS and Bootstrap 4 at the same time ?
+23. How to Center an Image using Tailwind CSS ?
+24. How to resize the elements with Tailwind CSS?
+25. Does Tailwind CSS provide overscroll behavior customization?
+26. How can Tailwind CSS Typography be downloaded and integrated into a project?
+27. Why are CSS classes missing in production when using Tailwind and Next.js ?
+28. How can you use Tailwind CSS to position two elements to the left and right?
+29. How to add new colors to tailwind-css and keep the originals ones ?
+30. How to align form elements to center using Tailwind CSS ?
+31. How to use Tailwind Forms Plugin with React Select ?
+32. How to Achieve Pixel-Perfect Design with Tailwind CSS Coding?
+33. How to create a fixed or sticky header with Tailwind CSS?
+34. How to use CSS Grid with Tailwind CSS?
+35. How can Tailwind CSS be utilized to implement box shadows effectively?
+36. How does Tailwind CSS handle opacity, and what features does it provide for controlling the opacity of elements?
+37. How to create a flexbox layout with Tailwind CSS? 
+38. How to style elements based on state (e.g., hover, focus) in Tailwind CSS?
+39. How to use responsive variants in Tailwind CSS?
+40. What is the purpose of the Tailwind CSS fill class?
+41. How to apply Cursor Effect with Tailwind CSS?
+42. How to apply border collapse property to the elements with Tailwind CSS?
+43. How to Apply Transform property to the elements with Tailwind CSS?
+44. How to apply Rotate property to the elements with Tailwind CSS?
+45. How to apply Translate property to the elements with Tailwind CSS?
+46. Why and how the Transition Timing Function used in Tailwind CSS ?
+47. Explain Letter Spacing in Tailwind CSS?
+48. How to change the Text Color with the Tailwind CSS utility classes?
+49. How to use Gradient Color Stops to the elements?
+50. How to make element Background with Opacity in Tailwind CSS ?

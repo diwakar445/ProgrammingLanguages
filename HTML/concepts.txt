@@ -1,0 +1,70 @@
+Basic HTML questions:
+https://www.geeksforgeeks.org/html-interview-questions-answers-set-1/?ref=lbp
+
+1. What is HTML?
+2. Difference between HTML and XHTML
+3. What are the various markup languages available?
+4. What is the difference between HTML and HTML 5?
+5. What is the current version of HTML?
+6. What is !DOCTYPE?
+7. What are elements and tags, and what are the differences between them?
+8. What are the various heading tags and their importance?
+9. How to redirect to a particular section of a page using HTML?
+10. What are attributes?
+11. Are <b> and <strong> tags same? If not, then why?
+12. What is the difference between <em> and <i> tags?
+13. How are comments added in HTML?
+14. What are the different formats in which colors in HTML can be declared?
+15. How to create a link in HTML?
+16. What is the use of the target attribute in the <link> tag?
+17. What is the use of alt attribute in images?
+18. What are the HTML tags used to display a table?
+19. What are the different types of lists in HTML?
+20. What is the difference between block and inline elements?
+
+(2024) – Intermediate Level
+https://www.geeksforgeeks.org/html-interview-questions-answers-set-2/?ref=lbp
+
+1. Are <div> and <span> tags similar?
+2. Differences between <div> & <span> tag:
+3. What is the difference between classes and id?
+4. How can we create a nested webpage in HTML?
+5. What are the tags that can be used inside the <head> tag?
+6. What are meta tags? How are they important?
+7. What is HTML Layout?
+8. What are semantic elements?
+9. What are HTML entities?
+10. How can we add symbols in HTML?
+11. What is HTML Encoding?
+12. What is the difference between the POST method and the GET method?
+13. What is HTML Canvas?
+14. What is SVG?
+15. What are the different multimedia formats supported by HTML?
+16. How can we allow the browser to tell our location using HTML Geolocation API?
+17. What is HTML Web Storage API?
+18. What are forms in HTML?
+
+
+HTML Interview Questions and Answers (2024) – Advanced Level
+https://www.geeksforgeeks.org/html-interview-questions-answers-set-3/?ref=lbp
+
+1. What is an anchor tag in HTML?
+2. What are void elements?
+3. How to change an inline element into a block-level element?
+4. How Container tag is different from the Empty tag in HTML?
+5. What tags are used to separate a section of text?
+6. In how many ways you can apply CSS to your HTML file?
+7. How to include one CSS file in another?
+8. How can you apply JS in your HTML?
+9. What are logical and physical tags in HTML?
+10. What is MathML in HTML 5?
+11. What is the difference between <html lang=”en’> and <html lang=”en-US’>?
+12. How to create scrolling text or images on a webpage?
+13. What do you mean by manifest file in HTML5?
+14. How to open a hyperlink in another window or tab in HTML?
+15. Explain Web Worker in HTML.
+16. Define multipart form data.
+17. How to add Scalable Vector Graphics to your web page?
+18. What are the media element tags introduced by HTML5?
+19. How to handle JavaScript Events in HTML?
+20. What is the difference between Cellpadding and Cellspacing in HTML Table?
