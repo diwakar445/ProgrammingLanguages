@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link/>
+        <meta/>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <!-- <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <div></div>
+        <p></p>
+        <span></span>
+        <ol>
+            <li></li>
+        </ol>
+        <ul>
+            <li></li>
+        </ul>
+        <a></a>
+        <section></section>
+        <header></header>
+        <footer></footer>
+        <nav></nav>
+        <input/>
+        <sameer>text</sameer> -->
+        <!-- custom html tag creation using web components are supported by modern browsers and need polyfills in old browsers -->
+        <custom-html-element></custom-html-element>
+        <script>
+            class customHTMLTAG extends HTMLElement {
+                constructor(){
+                    super();
+                    const shadow = this.attachShadow({mode:"open"});
+                    const container = document.createElement('div');
+                    container.textContent = "Hello World";
+                    shadow.appendChild(container);
+                }
+            }
+            customElements.define("custom-html-element", customHTMLTAG);
+        </script>
+    </body>
+</html>
