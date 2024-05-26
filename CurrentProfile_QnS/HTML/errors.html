@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Possible Errors in HTML Document
+    </title>
+</head>
+
+<body>
+    <!-- --------------------------------------------------- -->
+    <p> P tag  <!--Mismatched Tags browser will create closing p tag automatically-->
+    <div>
+        Div tag
+        </p>   <!--Mismatched Tags Browser crates open p tag -->
+    </div>
+    <!-- --------------------------------------------------- -->
+    <p>This paragraph has no closing tag. <!--Un closed tags will be closed by browser-->
+    <div>This division also lacks a closing tag.
+    <!-- --------------------------------------------------- -->
+    <img src="xyz.img" altf="IMAGE"> <!--Invalid attributes or attribute values-->
+    <!-- --------------------------------------------------- -->
+    <p>This is a paragraph with  <!--in correct nesting  </p> will  be created-->
+        <h2>heading inside.</h2> <!--new line-->
+    </p>  <!--new line empty <p></p> will be created-->
+
+    <font color="red">This is red text.</font> <!-- <font> tag is obsolete / deprecated in HTML5 -->
+
+    <p>Café</p> <!-- Without specifying character encoding, non-ASCII characters may not render correctly -->
+
+</body>
+
+</html>
