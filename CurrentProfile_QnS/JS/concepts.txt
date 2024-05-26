@@ -2,6 +2,7 @@ https://www.geeksforgeeks.org/javascript-interview-questions-and-answers/?ref=lb
 
 JavaScript Interview Questions for Freshers
 
+a. DOM, CSS OM, other Object Models as part of web development
 1. What are the differences between Java and JavaScript?
 2. What are JavaScript Data Types? 
 3. Which symbol is used for comments in JavaScript?
