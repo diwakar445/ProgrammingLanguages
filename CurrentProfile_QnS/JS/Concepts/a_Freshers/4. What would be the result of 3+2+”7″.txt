@@ -1,0 +1,7 @@
+4. What would be the result of 3+2+”7″?
+
+        - in js variable coersion happens inside the statement;
+        ex: 4 + "4" ===> + operator converts 4 (Number) to "4" (string) and concat them to resultant string ===> "44" (string)
+        ex: 4 - "4" ===> - operator converts "4" (string) to 4 (Number) and concat them to resultant string ===> 0 (Number)
+
+        hence 3+2+”7″ ===> (3+2) + "7" ==> 5+"7" ==> "57" (string)
