@@ -24,20 +24,6 @@ a. DOM, CSS OM, other Object Models as part of web development
 19. How to submit a form using JavaScript?
 20. Does JavaScript support automatic type conversion?
 
-JavaScript Intermediate Interview Questions
-
-21. What are all the looping structures in JavaScript ?
-22. How can the style/class of an element be changed?
-23. Explain how to read and write a file using JavaScript?
-24. What is called Variable typing in JavaScript ?
-25. How to convert the string of any base to integer in JavaScript?
-26. Explain how to detect the operating system on the client machine?
-27. What are the types of Pop up boxes available in JavaScript?
-28. What is the difference between an alert box and a confirmation box?
-29. What is the disadvantage of using innerHTML in JavaScript?
-30. What is the use of void(0) ?
-
-
 JavaScript Interview Questions for Experienced
 
 31. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
