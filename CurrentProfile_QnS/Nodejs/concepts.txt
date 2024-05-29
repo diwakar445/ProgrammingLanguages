@@ -24,24 +24,6 @@ Node.js Interview Questions and Answers for Freshers
 19. What is the most popular Node.js framework used these days?
 20. What are promises in Node.js?
 
-Intermediate Node.js Interview Questions and Answers
-
-21. What is event-driven programming in Node.js?
-22. What is buffer in Node.js?
-23. What are streams in Node.js?
-24. Explain crypto module in Node.js
-25. What is callback hell?
-26. Explain the use of timers module in Node.js
-27. Difference between setImmediate() and process.nextTick() methods
-28. What is the difference between setTimeout() and setImmediate() method?
-29. What is the difference between spawn() and fork() method?
-30. Explain the use of passport module in Node.js
-31. What is fork in Node.js?
-32. What are the three methods to avoid callback hell?
-33. What is body-parser in Node.js?
-34. What is CORS in Node.js?
-35. Explain the tls module in Node.js?
-
 Advanced Node.js Interview Questions for Experienced
 
 36. What is a cluster in Node.js?

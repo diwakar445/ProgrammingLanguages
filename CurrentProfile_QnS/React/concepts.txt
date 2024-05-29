@@ -23,24 +23,6 @@ React Interview Questions For Freshers
 19. Explain the difference between functional and class component in React?
 20. Explain one way data binding in React?
 
-React Intermediate Interview Questions
-
-21. What is conditional rendering in React?
-22. What is react router?
-23. Explain the components of a react-router
-24. Explain the lifecycle methods of components
-25. Explain the methods used in mounting phase of components
-26. What is this.setState function in React?
-27.  What is the use of ref in React?
-28. What are hooks in React?
-29. Explain the useState hook in React?
-30. Explain the useEffect hook in react?
-31. What is React Fragments?
-32. What is a react developer tool?
-33. How to use styles in ReactJS?
-34. Explain styled components in React?
-35. What is prop drilling and its disadvantages?
-
 React Interview Questions For Experienced
 
 36. What is custom hooks in React?
