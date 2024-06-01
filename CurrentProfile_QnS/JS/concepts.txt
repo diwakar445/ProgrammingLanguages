@@ -2,7 +2,7 @@ https://www.geeksforgeeks.org/javascript-interview-questions-and-answers/?ref=lb
 
 JavaScript Interview Questions for Freshers
 
-a. DOM, CSS OM, other Object Models as part of web development
+a. DOM, CSS OM, other Object Models as part of web development?
 1. What are the differences between Java and JavaScript?
 2. What are JavaScript Data Types? 
 3. Which symbol is used for comments in JavaScript?
@@ -41,7 +41,7 @@ JavaScript Interview Questions for Experienced
 
 JavaScript Interview Questions and Answers (2024) – Intermediate Level
 
-1. What are all the looping structures in JavaScript ?
+1. What are all the looping structures in JavaScript?
 2. How can the style/class of an element be changed?
 3. Explain how to read and write a file using JavaScript?
 4. What is called Variable typing in JavaScript ?
