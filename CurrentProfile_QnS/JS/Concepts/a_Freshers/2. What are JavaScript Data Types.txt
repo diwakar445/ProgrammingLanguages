@@ -1,0 +1,127 @@
+2.  What are JavaScript Data Types? 
+
+    - Primitive
+        Number,String,Boolean,Undefined,Null,Symbol,BigInt
+    - Non Primitive (or Object) (or reference)
+        Object,Array,Function,Date,RegExp
+--------------------------------------------------------------------------------------------------------------------------------
+JavaScript has a variety of data types that can be broadly categorized into two groups: primitive types and object types. Here are the main data types in JavaScript:
+
+### Primitive Data Types
+
+1. **Number**
+   - Represents both integer and floating-point numbers.
+   - Examples: `42`, `3.14`, `-7`, `1e3` (1 * 10^3).
+   - Special values include `NaN` (Not-a-Number) and `Infinity`.
+
+   ```javascript
+   let age = 25;
+   let price = 19.99;
+   let notANumber = NaN;
+   let infinity = Infinity;
+   ```
+
+2. **String**
+   - Represents sequences of characters.
+   - Can be enclosed in single quotes (`'`), double quotes (`"`), or backticks (`` ` `` for template literals).
+   - Examples: `'Hello'`, `"World"`, `` `Hello, ${name}` ``.
+
+   ```javascript
+   let name = "Alice";
+   let greeting = 'Hello';
+   let message = `Hello, ${name}`;
+   ```
+
+3. **Boolean**
+   - Represents logical values.
+   - Can only be `true` or `false`.
+
+   ```javascript
+   let isAvailable = true;
+   let hasDiscount = false;
+   ```
+
+4. **Undefined**
+   - Represents a variable that has been declared but not assigned a value.
+
+   ```javascript
+   let undefinedVar;
+   ```
+
+5. **Null**
+   - Represents the intentional absence of any object value.
+   - It is used to indicate that a variable should have no value.
+
+   ```javascript
+   let emptyValue = null;
+   ```
+
+6. **Symbol** (introduced in ECMAScript 2015)
+   - Represents a unique identifier.
+   - Useful for creating unique property keys for objects.
+
+   ```javascript
+   let uniqueId = Symbol('id');
+   ```
+
+7. **BigInt** (introduced in ECMAScript 2020)
+   - Represents integers with arbitrary precision.
+   - Useful for working with very large integers.
+
+   ```javascript
+   let bigIntNumber = 1234567890123456789012345678901234567890n;
+   ```
+
+### Object Data Types
+
+1. **Object**
+   - A collection of key-value pairs.
+   - Keys are strings (or Symbols), and values can be any data type.
+   - Objects can represent more complex data structures like arrays, functions, dates, and more.
+
+   ```javascript
+   let person = {
+       name: "Bob",
+       age: 30
+   };
+   ```
+
+### Special Objects and Data Structures
+
+1. **Array**
+   - An ordered list of values.
+   - Arrays are a special type of object, where keys are numeric indices.
+
+   ```javascript
+   let colors = ["red", "green", "blue"];
+   ```
+
+2. **Function**
+   - A callable object that encapsulates a block of code.
+   - Functions can be assigned to variables, passed as arguments, and returned from other functions.
+
+   ```javascript
+   function greet(name) {
+       return `Hello, ${name}`;
+   }
+   ```
+
+3. **Date**
+   - Represents dates and times.
+
+   ```javascript
+   let currentDate = new Date();
+   ```
+
+4. **RegExp**
+   - Represents regular expressions, used for pattern matching in strings.
+
+   ```javascript
+   let pattern = /ab+c/;
+   ```
+
+### Summary
+JavaScript's data types include primitive types (Number, String, Boolean, Undefined, Null, Symbol, BigInt) and object types (Object, with special cases like Array, Function, Date, and RegExp). Understanding these types and their behavior is fundamental to effectively working with JavaScript.
+----------------------------------------------------------------------------------------------------------------------------------------
+Primitives : 
+

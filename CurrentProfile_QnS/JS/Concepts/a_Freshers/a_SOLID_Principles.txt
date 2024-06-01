@@ -1,0 +1,7 @@
+---------SOLID principles---------------
+
+S - Single Responsibility principle (function should only handles one responsibiity)
+O - Open Close principle (function/class should be open to add extra features and closed to modifications of existing features)
+L - Liskov principle
+I - 
+D - Dependency Inversion Principle ()
