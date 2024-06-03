@@ -205,6 +205,220 @@ By applying these principles, JavaScript code can become more modular, maintaina
 ------------------------------------------------------------------------------------------------------------------------
 in the context of Type script:
 
+TypeScript, being a statically typed superset of JavaScript with enhanced features for object-oriented programming, is well-suited for applying SOLID principles. Here’s how each principle can be applied in TypeScript:
+
+### 1. Single Responsibility Principle (SRP)
+**Definition:** A class should have only one reason to change, meaning it should only have one job or responsibility.
+
+**Application in TypeScript:**
+- Ensure each class or module has a single responsibility. 
+- For example, split classes or modules that handle multiple concerns into smaller, focused ones.
+
+```typescript
+// Violating SRP
+class UserService {
+    saveUser(user: User) {
+        // Save user to database
+    }
+
+    validateUser(user: User) {
+        // Validate user data
+    }
+}
+
+// Adhering to SRP
+class UserRepository {
+    saveUser(user: User) {
+        // Save user to database
+    }
+}
+
+class UserValidator {
+    validateUser(user: User) {
+        // Validate user data
+    }
+}
+```
+
+### 2. Open/Closed Principle (OCP)
+**Definition:** Software entities should be open for extension but closed for modification.
+
+**Application in TypeScript:**
+- Use inheritance, interfaces, and abstract classes to allow extensions without modifying existing code.
+- For example, use polymorphism to extend functionality.
+
+```typescript
+// Violating OCP
+class Discount {
+    calculate(price: number, discountType: string): number {
+        if (discountType === 'percentage') {
+            return price * 0.9;
+        } else if (discountType === 'fixed') {
+            return price - 10;
+        }
+        return price;
+    }
+}
+
+// Adhering to OCP
+abstract class Discount {
+    abstract calculate(price: number): number;
+}
+
+class PercentageDiscount extends Discount {
+    calculate(price: number): number {
+        return price * 0.9;
+    }
+}
+
+class FixedDiscount extends Discount {
+    calculate(price: number): number {
+        return price - 10;
+    }
+}
+
+function applyDiscount(price: number, discount: Discount): number {
+    return discount.calculate(price);
+}
+```
+
+### 3. Liskov Substitution Principle (LSP)
+**Definition:** Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
+
+**Application in TypeScript:**
+- Ensure subclasses adhere to the contracts defined by their base classes.
+- For example, subclasses should not override methods in a way that changes their expected behavior.
+
+```typescript
+class Rectangle {
+    constructor(protected width: number, protected height: number) {}
+
+    area(): number {
+        return this.width * this.height;
+    }
+}
+
+class Square extends Rectangle {
+    constructor(side: number) {
+        super(side, side);
+    }
+    // LSP is not violated because a square is a rectangle with equal sides
+}
+```
+
+### 4. Interface Segregation Principle (ISP)
+**Definition:** Clients should not be forced to depend on methods they do not use.
+
+**Application in TypeScript:**
+- Split large interfaces into smaller, more specific ones.
+- For example, use multiple smaller interfaces instead of one large interface.
+
+```typescript
+// Violating ISP
+interface MultiFunctionDevice {
+    print(): void;
+    scan(): void;
+    fax(): void;
+}
+
+class OldPrinter implements MultiFunctionDevice {
+    print() {
+        // implementation
+    }
+    scan() {
+        throw new Error("Not implemented");
+    }
+    fax() {
+        throw new Error("Not implemented");
+    }
+}
+
+// Adhering to ISP
+interface Printer {
+    print(): void;
+}
+
+interface Scanner {
+    scan(): void;
+}
+
+interface Fax {
+    fax(): void;
+}
+
+class SimplePrinter implements Printer {
+    print() {
+        // implementation
+    }
+}
+
+class MultiFunctionMachine implements Printer, Scanner, Fax {
+    print() {
+        // implementation
+    }
+    scan() {
+        // implementation
+    }
+    fax() {
+        // implementation
+    }
+}
+```
+
+### 5. Dependency Inversion Principle (DIP)
+**Definition:** High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+**Application in TypeScript:**
+- Use interfaces or abstract classes to depend on abstractions rather than concrete implementations.
+- For example, inject dependencies through constructors or methods.
+
+```typescript
+// Violating DIP
+class Database {
+    query(sql: string) {
+        // implementation
+    }
+}
+
+class UserService {
+    private database: Database;
+
+    constructor() {
+        this.database = new Database();
+    }
+
+    getUser(id: string) {
+        return this.database.query(`SELECT * FROM users WHERE id = ${id}`);
+    }
+}
+
+// Adhering to DIP
+interface IDatabase {
+    query(sql: string): any;
+}
+
+class Database implements IDatabase {
+    query(sql: string) {
+        // implementation
+    }
+}
+
+class UserService {
+    constructor(private database: IDatabase) {}
+
+    getUser(id: string) {
+        return this.database.query(`SELECT * FROM users WHERE id = ${id}`);
+    }
+}
+
+const db = new Database();
+const userService = new UserService(db);
+```
+
+By applying these principles, TypeScript code can be made more robust, maintainable, and scalable, leveraging the language's type system and object-oriented features to enforce better design practices.
+-----------------------------------------------------------------------------------------------
+
+
 
 
 
