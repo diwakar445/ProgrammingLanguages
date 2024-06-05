@@ -1,1 +1,112 @@
 -----------SRP---------------------
+(Singe Responsibility Principle)
+
+    What it is:
+        - One of the development design guideines/5 SOLID principles of Object Oriented Design and programming - focuses on how to structure a class/function/module
+        - We should have only one reason to change the class/function/module.
+        - class/module/function should have only one responsibility.
+
+    Use Cases:
+        - Reusability : Independent classes/modules/functions can be created and reused.
+        - Maintanabiity: 
+        - Open to Extensions independently:
+        - Testability:
+        - Clarity:
+------------------------------------------------------------------------------------------------------------------------------------
+The Single Responsibility Principle (SRP) is one of the five SOLID principles of object-oriented design and programming. In the context of JavaScript, SRP states that a module, class, or function should have only one reason to change, meaning it should have only one job or responsibility. This principle helps in creating more maintainable, understandable, and testable code by ensuring that each piece of code does one thing and does it well.
+
+### Applying SRP in JavaScript
+
+1. **Functions:**
+   - Each function should perform a single task. If a function is doing more than one task, it should be refactored into multiple functions, each with a single responsibility.
+
+   ```javascript
+   // Violating SRP
+   function manageUser(user) {
+       saveUserToDatabase(user);
+       sendWelcomeEmail(user.email);
+       logUserActivity(user.id, 'User Registered');
+   }
+
+   // Following SRP
+   function saveUserToDatabase(user) {
+       // code to save user
+   }
+
+   function sendWelcomeEmail(email) {
+       // code to send email
+   }
+
+   function logUserActivity(userId, activity) {
+       // code to log user activity
+   }
+
+   function manageUser(user) {
+       saveUserToDatabase(user);
+       sendWelcomeEmail(user.email);
+       logUserActivity(user.id, 'User Registered');
+   }
+   ```
+
+2. **Classes and Modules:**
+   - A class or module should encapsulate one responsibility. If a class or module is handling multiple responsibilities, it should be broken down into smaller, more focused classes or modules.
+
+   ```javascript
+   // Violating SRP
+   class UserManager {
+       createUser(user) {
+           // code to create user
+       }
+
+       deleteUser(userId) {
+           // code to delete user
+       }
+
+       sendWelcomeEmail(email) {
+           // code to send email
+       }
+
+       logUserActivity(userId, activity) {
+           // code to log activity
+       }
+   }
+
+   // Following SRP
+   class UserService {
+       createUser(user) {
+           // code to create user
+       }
+
+       deleteUser(userId) {
+           // code to delete user
+       }
+   }
+
+   class EmailService {
+       sendWelcomeEmail(email) {
+           // code to send email
+       }
+   }
+
+   class ActivityLogger {
+       logUserActivity(userId, activity) {
+           // code to log activity
+       }
+   }
+   ```
+
+### Benefits of SRP
+
+1. **Maintainability:**
+   - Changes to a specific functionality are localized to a single module or function, making the code easier to maintain.
+
+2. **Testability:**
+   - Smaller, single-purpose functions and classes are easier to test, leading to better unit testing and easier debugging.
+
+3. **Reusability:**
+   - Code with a single responsibility is often more reusable in different contexts.
+
+4. **Clarity:**
+   - Code is easier to understand when each part has a clear and distinct responsibility.
+
+By adhering to the Single Responsibility Principle, JavaScript developers can produce cleaner, more organized, and robust code that is easier to work with and less prone to bugs.
