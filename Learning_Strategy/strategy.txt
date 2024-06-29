@@ -1,0 +1,18 @@
+1.Learn Concept/Question (L)
+    a.Identify the Concept/Question to learn.
+    b.Learn/Have Concept/Question Basics to Advance knowledge.
+    c.What,Why,How etc. learnings.
+
+2.Understand Concept/Question (U)
+    a.Understand the Concept/Question in the context of JS,TS,DSA,HLD,LLD,FE,BE,DB.
+    b.implementaions,applications,usecases etc.
+
+3.Practice Concept/Question (P)
+    a.List all the Concept/Question related assessments
+    b.Practice all the assessments & record the solutions for future refference.
+
+4.Revise Concept/Question (R)
+    a.Revice L,U,P.
+
+5.Master Concept/Question (M)
+    a.Follow R.
