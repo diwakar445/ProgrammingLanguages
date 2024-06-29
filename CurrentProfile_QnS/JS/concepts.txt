@@ -86,3 +86,6 @@ JavaScript Interview Questions and Answers (2024) – Advanced Level
 20. How to use external JavaScript file in another JavaScript file? 
 
 
+** SOLID principles **
+
+

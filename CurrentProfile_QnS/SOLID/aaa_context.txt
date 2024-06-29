@@ -1,0 +1,6 @@
+1. Application development & design
+2. JS/TS
+3. DSA
+4. FE & BE & DB
+5. Team Lead
+6. CEO
