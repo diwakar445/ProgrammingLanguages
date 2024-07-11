@@ -1,3 +1,8 @@
+what should come to mind when we hear the technical term "SOLID principle":
+
+Design principles/rules/guidelines/steps/ways/concepts will help s/w developers to create understandable/clear/modular/maintanable/scalable/testable/robust/flexible applications or peice of code in object oriented programming.
+
+
 ---------SOLID principles---------------
 
 S - Single Responsibility principle (function/module/class should have only one reason to change/only one responsibiity)
