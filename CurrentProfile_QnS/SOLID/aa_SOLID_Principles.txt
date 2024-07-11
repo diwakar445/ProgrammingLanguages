@@ -9,6 +9,14 @@ Design principles/rules/guidelines/steps/ways/concepts will help s/w developers 
 4. ISP (Interface Seggregation Principle)
 5. DIP (Dependency Inversion Principle)
 
+While these principles were designed with OOP in mind, some aspects can be applied to functional programming or procedural programming as well. 
+For example, the Single Responsibility Principle can apply to functions in functional programming. 
+The key idea is to write code that's modular, reusable, and adaptable, no matter what programming language or paradigm you're using.
+
+OOP programming languages (java, c++, c#)
+Functional Programming languages (javascript)
+Procedural Programming languages (python)
+
 
 ---------SOLID principles---------------
 
