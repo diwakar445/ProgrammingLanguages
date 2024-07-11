@@ -2,6 +2,13 @@ what should come to mind when we hear the technical term "SOLID principle":
 
 Design principles/rules/guidelines/steps/ways/concepts will help s/w developers to create understandable/clear/modular/maintanable/scalable/testable/robust/flexible applications or peice of code in object oriented programming.
 
+5 principles:
+1. SRP (Single Responsibility Principle)
+2. OCP (Open Close Principle)
+3. LSP (Liskov Substitution Principle)
+4. ISP (Interface Seggregation Principle)
+5. DIP (Dependency Inversion Principle)
+
 
 ---------SOLID principles---------------
 
