@@ -13,9 +13,51 @@ While these principles were designed with OOP in mind, some aspects can be appli
 For example, the Single Responsibility Principle can apply to functions in functional programming. 
 The key idea is to write code that's modular, reusable, and adaptable, no matter what programming language or paradigm you're using.
 
-OOP programming languages (java, c++, c#)
-Functional Programming languages (javascript)
-Procedural Programming languages (python)
+OOP programming languages (java, c++, python, ruby)
+Object-Oriented Programming (OOP) languages are a type of programming language that use objects to design applications and computer programs. These objects can represent real-world things, like a car or a book, or abstract concepts, like numbers or data structures.
+
+In OOP, each object can store data, in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods). This means that an object can have its own little "memory" to keep track of things, and it can also do specific tasks when asked.
+
+Here are some key features of OOP languages:
+
+1. **Encapsulation**: This is like putting a protective bubble around the object's data. It keeps the data safe from outside interference and misuse.
+
+2. **Inheritance**: Objects can inherit characteristics from other objects. Think of it like a child inheriting traits from their parents. This makes creating and maintaining programs easier.
+
+3. **Polymorphism**: This fancy word means that an object can take on many forms. It allows objects to be treated as instances of their parent class rather than their actual class.
+
+4. **Abstraction**: This is about hiding complex reality while exposing only the necessary parts. It's like showing someone how to use a TV remote without needing to explain how the TV works inside.
+
+Some popular OOP languages include:
+
+- **Java**: It’s everywhere - from your web browser to your phone.
+- **C++**: A powerful language for high-performance applications.
+- **Python**: Known for its readability and simplicity.
+- **Ruby**: Focused on simplicity and productivity with an elegant syntax.
+
+Using OOP languages helps programmers create modular and reusable code, which can make developing software faster and less prone to errors. It's like building with Lego blocks – you can use the same pieces to make different things!
+
+Functional Programming languages (haskell, lisp, erlang)
+Functional programming languages are a type of programming language that use functions to process data. In these languages, functions are treated like any other variable and can be passed around just like numbers or strings. This might sound a bit tricky, but it's like having a recipe (the function) that you can give to your friends, and they can use it to make the same dish.
+
+Some popular functional programming languages include Haskell, Lisp, and Erlang. They're different from other programming languages because they avoid changing state and mutable data. Imagine if you had a magic notebook that, once you wrote something in it, the words could never be changed; that's kind of how functional programming treats data.
+
+Here's why some programmers like functional programming:
+
+1. **Easier to understand**: Functions in these languages are pure, which means the same input will always give the same output, no surprises.
+2. **Less buggy**: Since the state doesn't change unexpectedly, programs can be less prone to errors.
+3. **Good for concurrency**: Because data isn't changed by different parts of the program at the same time, it's easier to run programs on multiple processors.
+
+However, functional programming can also be challenging to learn, especially if you're used to languages that don't follow these rules. But once you get the hang of it, it can be a powerful way to write clean and efficient code.
+
+Procedural Programming languages (C, BASIC, FORTAN)
+Procedural programming languages are a type of computer language that use a sequence of well-defined steps and procedures to tell the computer what to do. Think of it like a recipe, where you have a list of instructions to follow one after the other to get your final dish.
+
+In procedural programming, you break down tasks into functions, procedures, or subroutines. Each of these small parts can do a specific job. When you write a program, you call these functions in the order you need them to work together to complete a task.
+
+Some popular procedural programming languages include C, BASIC, and Fortran. These languages are really good for tasks where you need to control the flow of how the program runs, and they've been used to create all sorts of software, from operating systems to games.
+
+One key thing about procedural languages is that they focus on the procedure or the "how" of solving a problem. This is different from object-oriented programming, which focuses more on the "what" — the objects and data involved.
 
 
 ---------SOLID principles---------------
