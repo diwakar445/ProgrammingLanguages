@@ -1,1 +1,54 @@
+** Prototypal inheritance in JS? **
+
+why needed - to acheive OOP features like class, objects, inheritance, polymorphism etc.
+how to acheive it:
+
+As we dont have class keyword before ES6 we use constructor function concept to cteate classes and objects.
+
+Methode1: defining methods inside the constructor will have high precedence than prototype mthods:
+function Animal1(name){
+  this.name = name;
+  this.speak = function(){
+    console.log(this.name);
+  }
+}
+
+Methode2:
+function Animal2(name){
+  this.name = name;
+}
+Animal.prototype.speak = function(){
+  console.log(this.name);
+}
+
+** extending class or constructor function:**
+
+function Dog(n){
+  Animal.call(this,n);
+}
+
+Dog.prototype = Object.create(Animal1.prototype);
+Dog.prototype.constructor = Dog
+
+const dog = new Dog("dog");
+dog.speak() // dog
+
+** Overriding speak method **
+function Dog(n){
+  this.speak = function(){new implementation} // it wont work in case of constructor methods override
+  Animal1.call(this,n);
+  this.speak = function(){new implementation}
+  // both ways work in case of prototypal inheritence methods.
+}
+
+function Dog(n){
+  Animal2.call(this,n);
+}
+Dog.prototype.speak = function(){new implementation}
+
+
+
+
+
+
 
