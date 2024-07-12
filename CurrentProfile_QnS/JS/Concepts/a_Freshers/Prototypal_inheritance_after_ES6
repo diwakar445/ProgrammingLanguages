@@ -1,1 +1,25 @@
+** Prototypal inheritance after ES6: **
+
+class Animal{
+  constructor(name){
+    this.name = name;
+  }
+  speak(){
+    console.log(this.name + "speaks")
+  }
+}
+const a = new Animal("general animal");
+a.speak();
+
+** extending Animal class to Dog class: **
+class Dog extends Animal{
+  constructor(name){
+    super(name); // calling Animal class properties
+  }
+  // overriding Anmial methode
+  speak(){
+    console.log(this.name + " barks");
+    // super.speak();
+  }
+}
 
