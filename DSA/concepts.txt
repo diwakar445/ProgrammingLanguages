@@ -12,7 +12,7 @@ MODULE 2
 Approx. 4 weeks
 
 Introduction to Problem Solving (Intermediate) 1
-Intermediate DSA: Introduction to Problem Solving
+
 Intermediate DSA: Time Complexity-1
 Intermediate DSA: Time Complexity-2
 Intermediate DSA: Introduction to Arrays
