@@ -1,4 +1,6 @@
 ** Time Complexity Analysis **
+
+*************************************************************************************************************************************************************************
 1. What is time complexity in the context of DSA,JS,TS,Anguar,React?
 Time complexity, in the context of Data Structures and Algorithms (DSA), JavaScript (JS), TypeScript (TS), Angular, and React, refers to the computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. Here’s a more detailed explanation of time complexity in these specific contexts:
 
@@ -95,11 +97,17 @@ const ExampleComponent = ({ data }) => {
 
 Understanding and optimizing time complexity across different contexts ensures the development of efficient and performant applications.
 
+*************************************************************************************************************************************************************************
 2. Basics to know about TC?
 
 
+*************************************************************************************************************************************************************************
 3. How to calculate TC for any algorythm or program?
 
 
+*************************************************************************************************************************************************************************
 4. Benifits of TC analysis?
+
+
+*************************************************************************************************************************************************************************
 
