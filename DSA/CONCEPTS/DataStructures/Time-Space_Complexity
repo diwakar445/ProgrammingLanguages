@@ -5,3 +5,33 @@ Time and space complexity.
 Time complexity - will tell us how much time is required to execute the program w.r.t n number of input values.
 Space complexity - will tell us how much space is required to execue the program w.r.t n number of input values.
 
+- These parameters or mesurements are used to identify the efficiancy of the programm written/executed.
+Time complexity and space complexity are two critical concepts in computer science that describe the efficiency of an algorithm.
+
+### Time Complexity
+Time complexity measures the amount of time an algorithm takes to complete as a function of the size of its input (usually denoted as \( n \)). It provides an upper bound on the running time of an algorithm, giving an idea of the worst-case scenario.
+
+Common time complexities, from best to worst, include:
+- \( O(1) \): Constant time – the algorithm's running time does not change with the input size.
+- \( O(\log n) \): Logarithmic time – the running time grows logarithmically with the input size.
+- \( O(n) \): Linear time – the running time grows linearly with the input size.
+- \( O(n \log n) \): Linearithmic time – a combination of linear and logarithmic growth.
+- \( O(n^2) \): Quadratic time – the running time grows proportionally to the square of the input size.
+- \( O(2^n) \): Exponential time – the running time doubles with each additional input element.
+- \( O(n!) \): Factorial time – the running time grows factorially with the input size.
+
+### Space Complexity
+Space complexity measures the amount of memory an algorithm uses as a function of the input size. It considers both the fixed part, which is independent of the input size, and the variable part, which depends on the input size.
+
+Common space complexities include:
+- \( O(1) \): Constant space – the algorithm uses a fixed amount of space regardless of the input size.
+- \( O(n) \): Linear space – the amount of space used grows linearly with the input size.
+- \( O(n^2) \): Quadratic space – the amount of space used grows proportionally to the square of the input size.
+
+### Examples
+1. **Linear Search (Time: \( O(n) \), Space: \( O(1) \))**: Checking each element of an array to find a target element.
+2. **Binary Search (Time: \( O(\log n) \), Space: \( O(1) \))**: Searching a sorted array by repeatedly dividing the search interval in half.
+3. **Merge Sort (Time: \( O(n \log n) \), Space: \( O(n) \))**: A sorting algorithm that divides the array into halves, sorts them, and then merges them back together.
+4. **Fibonacci Sequence using Dynamic Programming (Time: \( O(n) \), Space: \( O(n) \))**: Calculating Fibonacci numbers by storing the results of previous calculations.
+
+Understanding both time and space complexity helps in choosing the most efficient algorithm for a given problem, especially when dealing with large inputs or limited resources.
