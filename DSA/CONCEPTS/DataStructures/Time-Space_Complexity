@@ -2,6 +2,6 @@
 
 Time and space complexity.
 
-Time complexity - will tell us how much time is required to execute the program.
-Space complexity - will tell us how much space is required to execue the program.
+Time complexity - will tell us how much time is required to execute the program w.r.t n number of input values.
+Space complexity - will tell us how much space is required to execue the program w.r.t n number of input values.
 
