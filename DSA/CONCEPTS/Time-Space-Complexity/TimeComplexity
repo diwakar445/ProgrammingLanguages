@@ -304,7 +304,7 @@ def example_function(arr):
 By following these steps, you can calculate the time complexity of most algorithms and programs, enabling you to understand and optimize their performance.
 
 *************************************************************************************************************************************************************************
-4. Benifits of Time Complexity analysis in the context of DSA,HTML,CSS,JS,TS,Anguar,React,Expressjs and build/deployment procesess?
+4. Benefits of Space Complexity analysis in the context of DSA,HTML,CSS,JS,TS,Anguar,React,Expressjs and build/deployment processes?
 Time complexity analysis is crucial across various areas of development, including Data Structures and Algorithms (DSA), HTML, CSS, JavaScript (JS), TypeScript (TS), 
 Angular, React, Express.js, and build/deployment processes. Here are the benefits in each context:
 
