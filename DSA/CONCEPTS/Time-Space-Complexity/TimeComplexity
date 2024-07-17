@@ -2,10 +2,13 @@
 
 *************************************************************************************************************************************************************************
 1. What is time complexity in the context of DSA,JS,TS,Anguar,React?
-Time complexity, in the context of Data Structures and Algorithms (DSA), JavaScript (JS), TypeScript (TS), Angular, and React, refers to the computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. Here’s a more detailed explanation of time complexity in these specific contexts:
+Time complexity, in the context of Data Structures and Algorithms (DSA), JavaScript (JS), TypeScript (TS), Angular, and React, refers to the computational 
+complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. Here’s a more detailed explanation of 
+time complexity in these specific contexts:
 
 ### 1. **Data Structures and Algorithms (DSA)**
-In DSA, time complexity is used to evaluate the efficiency of algorithms. It is expressed using Big O notation, which describes the upper bound of the time required as the input size grows. Common time complexities include \( O(1) \), \( O(n) \), \( O(n \log n) \), \( O(n^2) \), etc.
+In DSA, time complexity is used to evaluate the efficiency of algorithms. It is expressed using Big O notation, which describes the upper bound of the 
+time required as the input size grows. Common time complexities include \( O(1) \), \( O(n) \), \( O(n \log n) \), \( O(n^2) \), etc.
 
 **Example**:
 - **Binary Search**: \( O(\log n) \)
@@ -13,7 +16,8 @@ In DSA, time complexity is used to evaluate the efficiency of algorithms. It is 
 - **Bubble Sort**: \( O(n^2) \)
 
 ### 2. **JavaScript (JS) and TypeScript (TS)**
-In JavaScript and TypeScript, time complexity is considered when writing algorithms to ensure they run efficiently, especially when dealing with large datasets or performance-critical applications.
+In JavaScript and TypeScript, time complexity is considered when writing algorithms to ensure they run efficiently, especially when dealing with large datasets or 
+performance-critical applications.
 
 **Example**:
 - **Array Methods**:
@@ -44,10 +48,12 @@ function binarySearch(arr, target) {
 ```
 
 ### 3. **Angular**
-In Angular, time complexity can affect the performance of your applications, especially in change detection, template rendering, and handling large data sets. Optimizing time complexity ensures smooth and responsive applications.
+In Angular, time complexity can affect the performance of your applications, especially in change detection, template rendering, and handling large data sets. 
+Optimizing time complexity ensures smooth and responsive applications.
 
 **Example**:
-- **Change Detection**: Angular's default change detection strategy runs on \( O(n) \) complexity, where \( n \) is the number of bindings. Using `OnPush` strategy can optimize performance by reducing unnecessary checks.
+- **Change Detection**: Angular's default change detection strategy runs on \( O(n) \) complexity, where \( n \) is the number of bindings. Using `OnPush` strategy 
+can optimize performance by reducing unnecessary checks.
 - **NgFor Directive**: Efficiently handles large lists using trackBy function to minimize DOM manipulations.
 
 **Example Code**:
@@ -64,7 +70,8 @@ export class ExampleComponent {
 ```
 
 ### 4. **React**
-In React, time complexity is relevant when dealing with rendering and updating the component tree. Optimizing the time complexity of rendering and state updates ensures better performance, especially in large and complex applications.
+In React, time complexity is relevant when dealing with rendering and updating the component tree. Optimizing the time complexity of rendering and state updates 
+ensures better performance, especially in large and complex applications.
 
 **Example**:
 - **Virtual DOM**: React uses a virtual DOM to optimize updates with a complexity of \( O(n) \) for diffing.
@@ -98,14 +105,16 @@ const ExampleComponent = ({ data }) => {
 Understanding and optimizing time complexity across different contexts ensures the development of efficient and performant applications.
 
 *************************************************************************************************************************************************************************
-2. Basics to know about TC?
+2. Basics to know about Time Complexity?
 Understanding the basics of time complexity is essential for analyzing and improving the efficiency of algorithms. Here are the key concepts you need to know:
 
 ### 1. **Definition of Time Complexity**
-Time complexity measures the amount of time an algorithm takes to complete as a function of the size of its input (usually denoted as \( n \)). It provides an upper bound on the running time of an algorithm, describing the worst-case scenario.
+Time complexity measures the amount of time an algorithm takes to complete as a function of the size of its input (usually denoted as \( n \)). 
+It provides an upper bound on the running time of an algorithm, describing the worst-case scenario.
 
 ### 2. **Big O Notation**
-Big O notation is used to express time complexity. It describes the upper limit of an algorithm's running time, helping to compare the efficiency of different algorithms. The most common time complexities include:
+Big O notation is used to express time complexity. It describes the upper limit of an algorithm's running time, helping to compare the efficiency of different algorithms. 
+The most common time complexities include:
 
 - \( O(1) \): Constant time – the algorithm's running time does not change with the input size.
 - \( O(\log n) \): Logarithmic time – the running time grows logarithmically with the input size.
@@ -120,7 +129,8 @@ To analyze an algorithm's time complexity, follow these steps:
 
 - **Identify Basic Operations**: Determine the basic operation of the algorithm, such as comparisons, assignments, or arithmetic operations.
 - **Count the Operations**: Count how many times the basic operation is executed as a function of the input size.
-- **Express in Big O Notation**: Express the time complexity using Big O notation, focusing on the dominant term (the term that grows the fastest as \( n \) increases) and ignoring lower-order terms and constants.
+- **Express in Big O Notation**: Express the time complexity using Big O notation, focusing on the dominant term (the term that grows the fastest as \( n \) increases) 
+and ignoring lower-order terms and constants.
 
 ### 4. **Examples of Time Complexity**
 - **Constant Time \( O(1) \)**:
@@ -159,7 +169,8 @@ Time complexity can vary depending on the input:
 - **Average Case**: The expected time an algorithm takes to complete, averaged over all possible inputs.
 
 ### 6. **Amortized Analysis**
-Amortized analysis is used when an algorithm has a sequence of operations, some of which are expensive, but the average cost per operation is low. It provides a more accurate overall time complexity for a sequence of operations.
+Amortized analysis is used when an algorithm has a sequence of operations, some of which are expensive, but the average cost per operation is low.
+It provides a more accurate overall time complexity for a sequence of operations.
 
 ### 7. **Common Algorithm Complexities**
 - **Searching Algorithms**: 
@@ -182,7 +193,8 @@ Understanding these basics will help you analyze and design more efficient algor
 
 *************************************************************************************************************************************************************************
 3. How to calculate Time Complexity for any algorithm or program?
-Calculating the time complexity of an algorithm or program involves understanding how the running time grows with the input size. Here is a step-by-step approach to calculate time complexity:
+Calculating the time complexity of an algorithm or program involves understanding how the running time grows with the input size. 
+Here is a step-by-step approach to calculate time complexity:
 
 ### 1. **Identify the Basic Operations**
 Determine the basic operation of the algorithm. Basic operations can be comparisons, assignments, arithmetic operations, or any other fundamental steps that are executed.
@@ -191,7 +203,8 @@ Determine the basic operation of the algorithm. Basic operations can be comparis
 Analyze the algorithm to count how many times the basic operation is executed as a function of the input size \( n \).
 
 ### 3. **Express the Count Using Big O Notation**
-Express the time complexity using Big O notation, focusing on the dominant term and ignoring lower-order terms and constants. The dominant term is the one that grows the fastest as \( n \) increases.
+Express the time complexity using Big O notation, focusing on the dominant term and ignoring lower-order terms and constants. 
+The dominant term is the one that grows the fastest as \( n \) increases.
 
 ### Step-by-Step Examples
 
@@ -292,7 +305,8 @@ By following these steps, you can calculate the time complexity of most algorith
 
 *************************************************************************************************************************************************************************
 4. Benifits of Time Complexity analysis in the context of DSA,HTML,CSS,JS,TS,Anguar,React,Expressjs and build/deployment procesess?
-Time complexity analysis is crucial across various areas of development, including Data Structures and Algorithms (DSA), HTML, CSS, JavaScript (JS), TypeScript (TS), Angular, React, Express.js, and build/deployment processes. Here are the benefits in each context:
+Time complexity analysis is crucial across various areas of development, including Data Structures and Algorithms (DSA), HTML, CSS, JavaScript (JS), TypeScript (TS), 
+Angular, React, Express.js, and build/deployment processes. Here are the benefits in each context:
 
 ### 1. **Data Structures and Algorithms (DSA)**
 - **Efficiency**: Helps in choosing the most efficient algorithm for a given problem, especially for large datasets.
@@ -301,7 +315,8 @@ Time complexity analysis is crucial across various areas of development, includi
 - **Scalability**: Ensures that the algorithm can handle growing input sizes effectively.
 
 ### 2. **HTML and CSS**
-- **Rendering Performance**: Efficient use of CSS selectors and HTML structures can improve page rendering times. Complex selectors or deeply nested HTML can lead to higher rendering times.
+- **Rendering Performance**: Efficient use of CSS selectors and HTML structures can improve page rendering times. Complex selectors or deeply nested HTML can lead to
+higher rendering times.
 - **Responsiveness**: Ensures that web pages load quickly and respond promptly to user interactions.
 
 ### 3. **JavaScript (JS) and TypeScript (TS)**
