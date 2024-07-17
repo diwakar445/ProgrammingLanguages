@@ -1,3 +1,105 @@
-** Time Complexity **
+** Time Complexity Analysis **
+1. What is time complexity in the context of DSA,JS,TS,Anguar,React?
+Time complexity, in the context of Data Structures and Algorithms (DSA), JavaScript (JS), TypeScript (TS), Angular, and React, refers to the computational complexity that describes the amount of time it takes to run an algorithm as a function of the length of the input. Here’s a more detailed explanation of time complexity in these specific contexts:
 
+### 1. **Data Structures and Algorithms (DSA)**
+In DSA, time complexity is used to evaluate the efficiency of algorithms. It is expressed using Big O notation, which describes the upper bound of the time required as the input size grows. Common time complexities include \( O(1) \), \( O(n) \), \( O(n \log n) \), \( O(n^2) \), etc.
+
+**Example**:
+- **Binary Search**: \( O(\log n) \)
+- **Quick Sort**: \( O(n \log n) \) on average
+- **Bubble Sort**: \( O(n^2) \)
+
+### 2. **JavaScript (JS) and TypeScript (TS)**
+In JavaScript and TypeScript, time complexity is considered when writing algorithms to ensure they run efficiently, especially when dealing with large datasets or performance-critical applications.
+
+**Example**:
+- **Array Methods**:
+  - `Array.prototype.push()`: \( O(1) \)
+  - `Array.prototype.splice()`: \( O(n) \)
+- **Sorting**:
+  - `Array.prototype.sort()`: \( O(n \log n) \)
+
+**Example Code**:
+```javascript
+// Binary search in JavaScript
+function binarySearch(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    if (arr[mid] === target) {
+      return mid;
+    } else if (arr[mid] < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+  return -1;
+}
+```
+
+### 3. **Angular**
+In Angular, time complexity can affect the performance of your applications, especially in change detection, template rendering, and handling large data sets. Optimizing time complexity ensures smooth and responsive applications.
+
+**Example**:
+- **Change Detection**: Angular's default change detection strategy runs on \( O(n) \) complexity, where \( n \) is the number of bindings. Using `OnPush` strategy can optimize performance by reducing unnecessary checks.
+- **NgFor Directive**: Efficiently handles large lists using trackBy function to minimize DOM manipulations.
+
+**Example Code**:
+```typescript
+// Angular component using OnPush strategy
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ExampleComponent {
+  @Input() data: any[];
+}
+```
+
+### 4. **React**
+In React, time complexity is relevant when dealing with rendering and updating the component tree. Optimizing the time complexity of rendering and state updates ensures better performance, especially in large and complex applications.
+
+**Example**:
+- **Virtual DOM**: React uses a virtual DOM to optimize updates with a complexity of \( O(n) \) for diffing.
+- **React Hooks**: Hooks like `useMemo` and `useCallback` help optimize component rendering by memoizing values and functions, reducing unnecessary re-renders.
+
+**Example Code**:
+```javascript
+// React component using useMemo for optimization
+import React, { useMemo } from 'react';
+
+const ExampleComponent = ({ data }) => {
+  const processedData = useMemo(() => {
+    return data.map(item => /* some complex computation */);
+  }, [data]);
+
+  return (
+    <div>
+      {processedData.map(item => (
+        <div key={item.id}>{item.value}</div>
+      ))}
+    </div>
+  );
+};
+```
+
+### General Tips for Optimizing Time Complexity
+- **Avoid Nested Loops**: Where possible, avoid nested loops which can lead to \( O(n^2) \) or worse complexities.
+- **Use Efficient Data Structures**: Choose the right data structures (e.g., sets, maps) for the task to optimize lookups, insertions, and deletions.
+- **Memoization and Caching**: Use memoization to store results of expensive function calls and reuse them when the same inputs occur again.
+
+Understanding and optimizing time complexity across different contexts ensures the development of efficient and performant applications.
+
+2. Basics to know about TC?
+
+
+3. How to calculate TC for any algorythm or program?
+
+
+4. Benifits of TC analysis?
 
