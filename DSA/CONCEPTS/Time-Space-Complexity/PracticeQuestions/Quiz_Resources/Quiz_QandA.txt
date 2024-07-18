@@ -1,4 +1,24 @@
 Resouurse : https://testbook.com/objective-questions/mcq-on-time-complexity--5eea6a0c39140f30f369e0ea
 
+1.Which of the following cases does NOT exist while calculating time complexity?
+Ans: Null case (Average case, Best case, Worst case)
 
+2.The recurrence equation T(n) = T(n/2) + 1 represents the time complexity of which algorithmic paradigm? 
+a.Divide and Conquer (correct)
+b.Greedy Algorithms 
+c.Dynamic Programming 
+d.More than one of the above
+e.None of the above
+
+**Divide and Conquer: This paradigm involves breaking down a problem into smaller sub-problems of the same type. 
+The solution to the original problem is then composed of the solutions to the sub-problems. 
+The recurrence relation T(n) = T(n/2) + 1 is characteristic of Divide and Conquer algorithms, where a problem of size 'n' is divided into two sub-problems of size 'n/2', and the "+ 1" term represents the work done at each level or merging step.
+
+**Greedy Algorithms: Greedy algorithms make locally optimal choices at each stage with the hope of finding a global optimum. 
+They don't necessarily involve recurrence relations like the one mentioned; instead, they typically involve making the best decision at each step without considering the overall impact. 
+
+**Dynamic Programming: Dynamic Programming is an algorithmic paradigm where a problem is broken down into smaller overlapping sub-problems, and the solutions to these sub-problems are memoized or stored to avoid redundant computations. 
+The recurrence relation for dynamic programming often involves combining solutions to sub-problems, and it can be expressed in terms of the solutions to smaller instances of the same problem. 
+
+**Brute Force: Brute Force algorithms exhaustively explore all possible solutions to a problem without using any clever optimization techniques. They do not typically involve recurrence relations in the same systematic way as Divide and Conquer or Dynamic Programming.
 
