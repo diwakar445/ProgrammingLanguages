@@ -25,8 +25,12 @@ The recurrence relation for dynamic programming often involves combining solutio
 3.An unordered list (array) contains n distinct elements. The number of comparisons to find an element in the list that is larger than the second minimum in the list is?
 Ans: O(1)
 
-The intuition behind this approach is that any element larger than the second minimum in A must be larger than at least two elements in A. Therefore, if we select any three elements from A at random, the probability that the largest of those three is larger than the second minimum in A is 1.
+Sol: The intuition behind this approach is that any element larger than the second minimum in A must be larger than at least two elements in A. Therefore, if we select any three elements from A at random, the probability that the largest of those three is larger than the second minimum in A is 1.
 ****************************************************************************************************************************************************************************
+4. T(n) = { 2T(sqrt(n))+1 if n>2 , 2 if 0<n<2.  Then T(n) in terms of Θ notation is?
+Ans: O(logn)
+
+Sol:?
 ****************************************************************************************************************************************************************************
 ****************************************************************************************************************************************************************************
 ****************************************************************************************************************************************************************************
