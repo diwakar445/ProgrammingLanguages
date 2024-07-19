@@ -22,7 +22,10 @@ The recurrence relation for dynamic programming often involves combining solutio
 
 **Brute Force: Brute Force algorithms exhaustively explore all possible solutions to a problem without using any clever optimization techniques. They do not typically involve recurrence relations in the same systematic way as Divide and Conquer or Dynamic Programming.
 ****************************************************************************************************************************************************************************
+3.An unordered list (array) contains n distinct elements. The number of comparisons to find an element in the list that is larger than the second minimum in the list is?
+Ans: O(1)
 
+The intuition behind this approach is that any element larger than the second minimum in A must be larger than at least two elements in A. Therefore, if we select any three elements from A at random, the probability that the largest of those three is larger than the second minimum in A is 1.
 ****************************************************************************************************************************************************************************
 ****************************************************************************************************************************************************************************
 ****************************************************************************************************************************************************************************
