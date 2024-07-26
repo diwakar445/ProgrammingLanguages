@@ -4,7 +4,7 @@ https://www.geeksforgeeks.org/html-interview-questions-answers-set-1/?ref=lbp
 1. What is HTML?
 2. Difference between HTML and XHTML
 3. What are the various markup languages available?
-4. What is the difference between HTML and HTML 5?
+4. What is the difference between HTML and HTML5?
 5. What is the current version of HTML?
 6. What is !DOCTYPE?
 7. What are elements and tags, and what are the differences between them?
