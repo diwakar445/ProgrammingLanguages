@@ -1,6 +1,5 @@
 1. What is CSS?
-
-    - CSS(Cascading Style Sheet Language) is a style sheet document used to add styles/look and feel/behaviour to the static HTML document (wep page).
+- CSS(Cascading Style Sheet Language) is a style sheet document used to add styles/look and feel/behaviour to the static HTML document (wep page).
 -------------------------------------------------------------------------------------------
 CSS, or Cascading Style Sheets, is a style sheet language used for describing the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
