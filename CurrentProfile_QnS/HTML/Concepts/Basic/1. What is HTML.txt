@@ -639,4 +639,73 @@ SVG (Scalable Vector Graphics) is a mix of both tree and graph structures becaus
 
 These data structures reflect the hierarchical, nested, and interrelated nature of markup languages, making them suitable for representing the structure and relationships within these documents.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Basic HTML
+Basic HTML consists of a series of nested elements defined by tags. Here's an example of a simple HTML document:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a paragraph of text on my web page.</p>
+    <a href="https://www.example.com">Visit Example.com</a>
+</body>
+</html>
+```
+
+### Document Object Model (DOM)
+The DOM is a programming interface for web documents. It represents the structure of a document as a tree of objects. Each node in the tree is an object representing a part of the document.
+
+The DOM representation of the above HTML would look like this:
+
+```
+Document
+ ├── <html>
+ |    ├── <head>
+ |    |    └── <title>Simple HTML Page</title>
+ |    └── <body>
+ |         ├── <h1>Welcome to My Website</h1>
+ |         ├── <p>This is a paragraph of text on my web page.</p>
+ |         └── <a href="https://www.example.com">Visit Example.com</a>
+```
+
+### Abstract Syntax Tree (AST)
+An AST is a tree representation of the abstract syntactic structure of source code written in a programming language. For HTML, the AST represents the hierarchical structure of the elements.
+
+While the DOM is a live representation of the document that can be manipulated via JavaScript, the AST is a more abstract representation typically used for parsing and compiling code. Here's a simplified AST for the given HTML:
+
+```
+Document
+ ├── Element: html
+ |    ├── Element: head
+ |    |    └── Element: title
+ |    |         └── Text: "Simple HTML Page"
+ |    └── Element: body
+ |         ├── Element: h1
+ |         |    └── Text: "Welcome to My Website"
+ |         ├── Element: p
+ |         |    └── Text: "This is a paragraph of text on my web page."
+ |         └── Element: a
+ |              ├── Attribute: href = "https://www.example.com"
+ |              └── Text: "Visit Example.com"
+```
+
+### Differences between DOM and AST
+- **DOM**:
+  - Represents the document as a live object that can be manipulated via JavaScript.
+  - Contains additional properties and methods to interact with the document.
+  - Used for rendering and interacting with the document in a web browser.
+
+- **AST**:
+  - Represents the syntactic structure of the code in a hierarchical manner.
+  - Used by parsers and compilers to analyze and transform code.
+  - More abstract than the DOM, focusing on the structure rather than the live state.
+
+In summary, while both the DOM and AST represent the structure of an HTML document, the DOM is used for interacting with the document in a web environment, and the AST is used for analyzing and transforming the document's structure.
+
 
