@@ -1,6 +1,6 @@
 2. Why do we use CSS?
 
- - we used to add styles inside html only through inline styles and html attributes.
+ - before invension of css we used to add styles inside html only through inline styles and html attributes (using style tag).
 Before the invention of CSS, styles were added to web pages directly within HTML through a combination of inline styles and HTML attributes. Here are the primary methods used:
 
 ### 1. **Inline Styles**
@@ -132,7 +132,7 @@ CSS (Cascading Style Sheets) solves several significant problems that were preva
 - **Solution**: CSS reduces file sizes and bandwidth usage by centralizing style definitions, allowing browsers to cache CSS files and apply them across multiple pages.
 
 ### 10. **Cascading and Inheritance**
-- **Problem**: Without a unified system, managing style priorities and inheritance was cumbersome.
+- **Problem**: Without a unified system, managing style priorities and inheritance was cumbersome (complex).
 - **Solution**: CSS's cascading and inheritance mechanisms allow for more manageable and predictable styling, enabling developers to define global styles and override them where necessary with minimal effort.
 
 ### Examples of CSS Solving These Problems:
