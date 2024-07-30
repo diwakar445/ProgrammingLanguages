@@ -50,9 +50,11 @@ Java and JavaScript, despite their similar names, are quite different in terms o
 - **Java**: Runs on the Java Virtual Machine (JVM), which provides a platform-independent execution environment.
 - **JavaScript**: Typically runs in web browsers (like Chrome, Firefox, Safari) or in a server-side environment provided by Node.js.
 
-### 5. **Concurrency**
-- **Java**: Supports multithreading and concurrent processing through built-in libraries and constructs.
+### 5. **Concurrency** & **Multithreading**
+- **Java**: Supports multithreading and concurrent processing through built-in libraries and constructs (multiple thresds/procesess and executing those threads paralelly).
 - **JavaScript**: Uses a single-threaded event loop for asynchronous operations, though it supports web workers and async programming for concurrency.
+- Multithreading in JavaScript is achieved using Web Workers, Service Workers, and Node.js Worker Threads. These allow for parallel processing without blocking the main thread.
+- Concurrent Processing in JS is managed through the event-driven model, allowing non-blocking execution of tasks using mechanisms like the event loop, promises, and async/await.
 
 ### 6. **Development and Deployment**
 - **Java**:
