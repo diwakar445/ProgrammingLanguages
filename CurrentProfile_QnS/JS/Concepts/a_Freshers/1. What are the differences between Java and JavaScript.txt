@@ -5,8 +5,8 @@
         follows oops,
         cannot write functions without class defination,
         strongly typed language,
-        need JVM(Java virtual Machine) to execute java compiled code,
-        we cant run java code directly in html/browser
+        need JVM(Java virtual Machine) to execute compiled java source code,
+        we can't run java code directly in html/browser
     
     - js - interpreted language,
         partially follows oops,
