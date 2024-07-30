@@ -26,17 +26,17 @@ a. DOM, CSS OM, other Object Models as part of web development?
 
 JavaScript Interview Questions for Experienced
 
-31. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
-32. How to get the status of a CheckBox?
-33. How to explain closures in JavaScript and when to use it?
-34. What is the difference between call() and apply() methods ?
-35. How to target a particular frame from a hyperlink in JavaScript ?
-36. Write the errors shown in JavaScript?
-37. What is the difference between JavaScript and Jscript?
-38. What does var myArray = [[]]; statement declares?
-39. How many ways an HTML element can be accessed in JavaScript code? 
-40. What is the difference between innerHTML & innerText? 
-41. What is an event bubbling in JavaScript?
+21. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
+22. How to get the status of a CheckBox?
+23. How to explain closures in JavaScript and when to use it?
+24. What is the difference between call() and apply() methods ?
+25. How to target a particular frame from a hyperlink in JavaScript ?
+26. Write the errors shown in JavaScript?
+27. What is the difference between JavaScript and Jscript?
+28. What does var myArray = [[]]; statement declares?
+29. How many ways an HTML element can be accessed in JavaScript code? 
+30. What is the difference between innerHTML & innerText? 
+31. What is an event bubbling in JavaScript?
 
 
 JavaScript Interview Questions and Answers (2024) – Intermediate Level
