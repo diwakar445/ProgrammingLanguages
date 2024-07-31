@@ -123,5 +123,22 @@ JavaScript has a variety of data types that can be broadly categorized into two 
 ### Summary
 JavaScript's data types include primitive types (Number, String, Boolean, Undefined, Null, Symbol, BigInt) and object types (Object, with special cases like Array, Function, Date, and RegExp). Understanding these types and their behavior is fundamental to effectively working with JavaScript.
 ----------------------------------------------------------------------------------------------------------------------------------------
-Primitives : 
+Primitive data tyoes : 
+    number
+    string
+    boolean
+    null
+    undefined
+    symbol
+    bigint
+Non-primitives/object types/reference data types:
+    array
+    object
+    date
+    function
+    regexp
+Special datatypes:
+    NaN
+    +Infinity , -Infinity
+
 
