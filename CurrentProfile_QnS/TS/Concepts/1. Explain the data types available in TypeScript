@@ -141,3 +141,6 @@ let bool = Boolean(num); // Converts number to boolean
 
 JavaScript's flexibility with types allows you to work with various kinds of data, but it’s important to understand how type coercion works to avoid 
 unexpected behaviors in your code.
+
+
+
