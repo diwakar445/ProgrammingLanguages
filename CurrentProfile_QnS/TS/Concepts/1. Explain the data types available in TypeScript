@@ -142,5 +142,127 @@ let bool = Boolean(num); // Converts number to boolean
 JavaScript's flexibility with types allows you to work with various kinds of data, but it’s important to understand how type coercion works to avoid 
 unexpected behaviors in your code.
 
+TypeScript, a statically typed superset of JavaScript, extends JavaScript's type system with several additional features to help catch errors early and improve code quality. Here’s a detailed overview of the data types available in TypeScript:
 
+### Primitive Types
+
+1. **`number`**
+   - Represents both integer and floating-point numbers.
+   - Example: `let age: number = 30;`
+
+2. **`string`**
+   - Represents a sequence of characters.
+   - Example: `let name: string = 'John Doe';`
+
+3. **`boolean`**
+   - Represents true or false values.
+   - Example: `let isActive: boolean = true;`
+
+4. **`null` and `undefined`**
+   - `null` represents the absence of a value.
+   - `undefined` represents a variable that has been declared but not assigned a value.
+   - Example: `let nothing: null = null;` and `let something: undefined;`
+
+5. **`symbol`**
+   - Represents a unique and immutable value often used as object property keys.
+   - Example: `let sym: symbol = Symbol('description');`
+
+6. **`bigint`**
+   - Represents large integers that are beyond the range of `number`.
+   - Example: `let big: bigint = 9007199254740991n;`
+
+### Object Types
+
+1. **`object`**
+   - Represents any value that is not a primitive type. It can be used as a type for variables that are objects, arrays, or functions.
+   - Example: `let obj: object = { name: 'Alice', age: 25 };`
+
+2. **`Array`**
+   - Represents a collection of values of the same type. You can use either the generic array type or the shorthand syntax.
+   - Example: `let numbers: number[] = [1, 2, 3];` or `let names: Array<string> = ['Alice', 'Bob'];`
+
+3. **`Tuple`**
+   - Represents a fixed-size array where each element can have a different type.
+   - Example: `let person: [string, number] = ['Alice', 30];`
+
+4. **`enum`**
+   - Defines a set of named constants, which can be numeric or string values.
+   - Example: 
+     ```typescript
+     enum Color {
+         Red = 1,
+         Green,
+         Blue
+     }
+     let c: Color = Color.Green;
+     ```
+
+5. **`any`**
+   - Represents any type of value and disables type checking for that variable. It should be used sparingly as it bypasses TypeScript's type safety.
+   - Example: `let anything: any = 42;`
+
+6. **`unknown`**
+   - Represents a value of any type but requires type checking before performing operations. It’s safer than `any`.
+   - Example:
+     ```typescript
+     let value: unknown = 'Hello';
+     if (typeof value === 'string') {
+         console.log(value.toUpperCase());
+     }
+     ```
+
+7. **`void`**
+   - Represents the absence of a value, typically used for functions that do not return anything.
+   - Example: `function log(message: string): void { console.log(message); }`
+
+8. **`never`**
+   - Represents values that never occur, such as functions that always throw an error or infinite loops.
+   - Example: `function error(message: string): never { throw new Error(message); }`
+
+### Advanced Types
+
+1. **`Union Types`**
+   - Represents a value that can be one of several types.
+   - Example: `let value: string | number = 'Hello';`
+
+2. **`Intersection Types`**
+   - Represents a value that combines multiple types.
+   - Example: `type Person = { name: string; } & { age: number; }`
+
+3. **`Type Aliases`**
+   - Allows you to create a new name for a type.
+   - Example: `type ID = string | number;`
+
+4. **`Interfaces`**
+   - Defines the shape of an object or a contract that a class or object must adhere to.
+   - Example:
+     ```typescript
+     interface Person {
+         name: string;
+         age: number;
+     }
+     let person: Person = { name: 'Alice', age: 30 };
+     ```
+
+5. **`Generics`**
+   - Allows you to create components that work with any type while still enforcing type safety.
+   - Example:
+     ```typescript
+     function identity<T>(arg: T): T {
+         return arg;
+     }
+     let output = identity<string>('Hello');
+     ```
+
+6. **`Literal Types`**
+   - Represents specific string or numeric values.
+   - Example: `let direction: 'left' | 'right' = 'left';`
+
+### Summary
+
+- **Primitive Types:** `number`, `string`, `boolean`, `null`, `undefined`, `symbol`, `bigint`
+- **Object Types:** `object`, `Array`, `Tuple`, `enum`, `any`, `unknown`, `void`, `never`
+- **Advanced Types:** `Union Types`, `Intersection Types`, `Type Aliases`, `Interfaces`, `Generics`, `Literal Types`
+
+TypeScript’s type system helps ensure that variables and functions are used correctly throughout the codebase, catching errors early and improving code reliability.
 
