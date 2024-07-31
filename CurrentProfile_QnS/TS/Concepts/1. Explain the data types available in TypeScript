@@ -266,3 +266,28 @@ TypeScript, a statically typed superset of JavaScript, extends JavaScript's type
 
 TypeScript’s type system helps ensure that variables and functions are used correctly throughout the codebase, catching errors early and improving code reliability.
 
+primitive datatypes:
+   number
+   string
+   boolean
+   null
+   undefined
+   symbol
+   bigint
+non primitive/object datatypes
+   object
+   array
+   tuple
+   any
+   unknown
+   void
+   never
+special datatypes
+   union types
+   intersection types
+   interfaces
+   literal types
+   type aliases
+   generics
+   
+
