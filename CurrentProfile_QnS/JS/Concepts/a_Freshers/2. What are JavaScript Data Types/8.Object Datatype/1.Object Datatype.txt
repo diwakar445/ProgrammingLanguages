@@ -1,0 +1,213 @@
+In JavaScript, the `object` data type is fundamental and versatile, used for storing collections of data and more complex entities. Objects can represent real-world entities with properties and methods. Here’s a comprehensive overview of the key facts and methods related to objects in JavaScript, along with code examples:
+
+### **1. Creating Objects**
+
+#### **Object Literals**
+```javascript
+let person = {
+    name: "Alice",
+    age: 30,
+    greet() {
+        console.log("Hello, " + this.name);
+    }
+};
+```
+
+#### **Using the `new Object()` Constructor**
+```javascript
+let person = new Object();
+person.name = "Bob";
+person.age = 25;
+person.greet = function() {
+    console.log("Hello, " + this.name);
+};
+```
+
+### **2. Accessing and Modifying Properties**
+
+#### **Dot Notation**
+```javascript
+console.log(person.name); // "Alice"
+person.age = 31;
+```
+
+#### **Bracket Notation**
+```javascript
+console.log(person["name"]); // "Alice"
+person["age"] = 32;
+```
+
+### **3. Deleting Properties**
+```javascript
+delete person.age;
+console.log(person.age); // undefined
+```
+
+### **4. Checking for Properties**
+
+#### **`hasOwnProperty(property)`**
+Checks if the object has the specified property as its own (not inherited).
+
+```javascript
+console.log(person.hasOwnProperty("name")); // true
+console.log(person.hasOwnProperty("age")); // false
+```
+
+### **5. Iterating Over Properties**
+
+#### **`for...in` Loop**
+Iterates over enumerable properties of the object.
+
+```javascript
+for (let key in person) {
+    if (person.hasOwnProperty(key)) {
+        console.log(key + ": " + person[key]);
+    }
+}
+```
+
+#### **`Object.keys(obj)`**
+Returns an array of the object's own enumerable property names.
+
+```javascript
+console.log(Object.keys(person)); // ["name", "greet"]
+```
+
+#### **`Object.values(obj)`**
+Returns an array of the object's own enumerable property values.
+
+```javascript
+console.log(Object.values(person)); // ["Alice", [Function: greet]]
+```
+
+#### **`Object.entries(obj)`**
+Returns an array of the object's own enumerable string-keyed property `[key, value]` pairs.
+
+```javascript
+console.log(Object.entries(person)); // [["name", "Alice"], ["greet", [Function: greet]]]
+```
+
+### **6. Object Methods**
+
+#### **`Object.assign(target, ...sources)`**
+Copies properties from one or more source objects to a target object.
+
+```javascript
+let target = { name: "Alice" };
+let source = { age: 30 };
+Object.assign(target, source);
+console.log(target); // { name: "Alice", age: 30 }
+```
+
+#### **`Object.create(proto, [propertiesObject])`**
+Creates a new object with the specified prototype object and properties.
+
+```javascript
+let proto = { greet() { console.log("Hello"); } };
+let obj = Object.create(proto);
+obj.greet(); // "Hello"
+```
+
+#### **`Object.freeze(obj)`**
+Freezes an object, preventing new properties from being added, existing properties from being removed, and existing properties from being modified.
+
+```javascript
+let obj = { name: "Alice" };
+Object.freeze(obj);
+obj.name = "Bob"; // No change
+console.log(obj.name); // "Alice"
+```
+
+#### **`Object.seal(obj)`**
+Seals an object, preventing new properties from being added and marking all existing properties as non-configurable.
+
+```javascript
+let obj = { name: "Alice" };
+Object.seal(obj);
+obj.name = "Bob"; // Change allowed
+delete obj.name; // Not allowed
+console.log(obj.name); // "Bob"
+```
+
+#### **`Object.getPrototypeOf(obj)`**
+Returns the prototype of the specified object.
+
+```javascript
+let obj = {};
+console.log(Object.getPrototypeOf(obj)); // [Object: null prototype] {}
+```
+
+#### **`Object.setPrototypeOf(obj, prototype)`**
+Sets the prototype of an object.
+
+```javascript
+let obj = {};
+let proto = { greet() { console.log("Hello"); } };
+Object.setPrototypeOf(obj, proto);
+obj.greet(); // "Hello"
+```
+
+### **7. Property Descriptors**
+
+#### **`Object.defineProperty(obj, prop, descriptor)`**
+Defines a new property or modifies an existing property.
+
+```javascript
+let obj = {};
+Object.defineProperty(obj, "name", {
+    value: "Alice",
+    writable: false,
+    enumerable: true,
+    configurable: true
+});
+console.log(obj.name); // "Alice"
+```
+
+#### **`Object.defineProperties(obj, descriptors)`**
+Defines multiple properties on an object.
+
+```javascript
+let obj = {};
+Object.defineProperties(obj, {
+    name: {
+        value: "Alice",
+        writable: true
+    },
+    age: {
+        value: 30,
+        writable: false
+    }
+});
+console.log(obj.name); // "Alice"
+console.log(obj.age); // 30
+```
+
+### **8. Other Useful Methods**
+
+#### **`Object.fromEntries(entries)`**
+Transforms a list of key-value pairs into an object.
+
+```javascript
+let entries = [['name', 'Alice'], ['age', 30]];
+let obj = Object.fromEntries(entries);
+console.log(obj); // { name: 'Alice', age: 30 }
+```
+
+#### **`Object.is(value1, value2)`**
+Determines whether two values are the same value.
+
+```javascript
+console.log(Object.is(0, -0)); // false
+console.log(Object.is(NaN, NaN)); // true
+```
+
+#### **`Object.getOwnPropertyDescriptor(obj, prop)`**
+Returns a property descriptor for an own property.
+
+```javascript
+let obj = { name: "Alice" };
+let descriptor = Object.getOwnPropertyDescriptor(obj, "name");
+console.log(descriptor); // { value: 'Alice', writable: true, enumerable: true, configurable: true }
+```
+
+These facts and methods provide a comprehensive toolkit for working with objects in JavaScript, covering creation, manipulation, property management, and more advanced operations.

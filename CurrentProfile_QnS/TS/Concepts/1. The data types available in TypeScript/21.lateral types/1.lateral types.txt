@@ -1,0 +1,145 @@
+In TypeScript, the term "literal" typically refers to a specific set of values that a type can take. Literal types are a subset of types that represent specific, concrete values. Here are the key types of literals in TypeScript, along with relevant facts and methods:
+
+### 1. **String Literals**
+
+String literals are specific string values that a variable can hold.
+
+#### Example:
+```typescript
+let color: "red" | "blue" | "green";
+
+color = "red"; // valid
+color = "blue"; // valid
+color = "yellow"; // Error: Type '"yellow"' is not assignable to type '"red" | "blue" | "green"'
+```
+
+### 2. **Numeric Literals**
+
+Numeric literals represent specific numeric values.
+
+#### Example:
+```typescript
+let age: 18 | 21 | 30;
+
+age = 18; // valid
+age = 21; // valid
+age = 25; // Error: Type '25' is not assignable to type '18 | 21 | 30'
+```
+
+### 3. **Boolean Literals**
+
+Boolean literals represent `true` and `false`.
+
+#### Example:
+```typescript
+let isActive: true | false;
+
+isActive = true; // valid
+isActive = false; // valid
+isActive = null; // Error: Type 'null' is not assignable to type 'true | false'
+```
+
+### 4. **Null and Undefined Literals**
+
+These represent the values `null` and `undefined`, respectively.
+
+#### Example:
+```typescript
+let noValue: null = null; // valid
+let undefinedValue: undefined = undefined; // valid
+```
+
+### 5. **Object Literal Types**
+
+Object literal types define the shape of objects with specific properties.
+
+#### Example:
+```typescript
+type Point = {
+    x: 10;
+    y: 20;
+};
+
+let point: Point = { x: 10, y: 20 }; // valid
+let anotherPoint: Point = { x: 10, y: 25 }; // Error: Type '{ x: 10; y: 25; }' is not assignable to type 'Point'
+```
+
+### 6. **Array Literal Types**
+
+Arrays with literal types specify that the array must contain elements of specific literal types.
+
+#### Example:
+```typescript
+let colors: ["red", "green", "blue"];
+
+colors = ["red", "green", "blue"]; // valid
+colors = ["red", "blue", "green"]; // valid, but order matters
+colors = ["red", "yellow", "blue"]; // Error: Type '["red", "yellow", "blue"]' is not assignable to type '["red", "green", "blue"]'
+```
+
+### 7. **Tuple Literal Types**
+
+Tuples with specific literal types represent a fixed-size array with known types for each element.
+
+#### Example:
+```typescript
+let point: [x: 10, y: 20];
+
+point = [10, 20]; // valid
+point = [10, 30]; // Error: Type '[10, 30]' is not assignable to type '[10, 20]'
+```
+
+### 8. **Template Literal Types (Advanced)**
+Template literal types allow you to create new string literal types by combining other string literal types.
+
+#### Example:
+```typescript
+type Event = "click" | "mouseover";
+type EventType = `on${Capitalize<Event>}`;
+
+let eventType: EventType = "onClick"; // valid
+eventType = "onHover"; // Error: Type '"onHover"' is not assignable to type 'EventType'
+```
+
+### 9. **Enum Literals**
+
+Enums represent a set of named constants. Enum members can be assigned literal values.
+
+#### Example:
+```typescript
+enum Color {
+    Red = "red",
+    Green = "green",
+    Blue = "blue"
+}
+
+let color: Color = Color.Red; // valid
+color = Color.Green; // valid
+color = "yellow"; // Error: Type '"yellow"' is not assignable to type 'Color'
+```
+
+### Methods and Operations
+
+In TypeScript, literal types themselves don't have methods, but they are used in conjunction with TypeScript features to ensure type safety. Some methods and operations involve literal types indirectly:
+
+- **Type Narrowing**: TypeScript uses literal types for type narrowing within conditionals.
+
+    ```typescript
+    function handleEvent(event: "click" | "mouseover") {
+        if (event === "click") {
+            // TypeScript knows `event` is "click" here
+        } else if (event === "mouseover") {
+            // TypeScript knows `event` is "mouseover" here
+        }
+    }
+    ```
+
+- **Type Guards**: Literal types can be used in type guards to narrow down types.
+
+    ```typescript
+    function isRed(color: "red" | "blue"): color is "red" {
+        return color === "red";
+    }
+    ```
+
+These literal types and their use cases in TypeScript provide a robust way to define and enforce specific values and shapes in your code, enhancing type safety and readability.

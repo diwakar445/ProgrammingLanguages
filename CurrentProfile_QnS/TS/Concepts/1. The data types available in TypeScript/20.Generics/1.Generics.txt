@@ -1,0 +1,245 @@
+In TypeScript, generics are a powerful feature that allows you to create reusable components and functions that can work with any data type while still providing type safety. Here’s a comprehensive overview of generics in TypeScript, including facts, common patterns, and methods with code examples:
+
+### 1. **Basic Generics**
+
+Generics allow you to define a class, function, or interface with a placeholder type that can be specified when the component is used.
+
+#### Example: Generic Function
+
+```typescript
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+console.log(identity<string>("Hello")); // "Hello"
+console.log(identity<number>(123)); // 123
+```
+
+#### Example: Generic Class
+
+```typescript
+class GenericBox<T> {
+    private content: T;
+
+    constructor(value: T) {
+        this.content = value;
+    }
+
+    getContent(): T {
+        return this.content;
+    }
+}
+
+const numberBox = new GenericBox<number>(123);
+console.log(numberBox.getContent()); // 123
+
+const stringBox = new GenericBox<string>("Hello");
+console.log(stringBox.getContent()); // "Hello"
+```
+
+### 2. **Multiple Generics**
+
+You can use multiple type parameters to create more complex generic types.
+
+#### Example: Generic Function with Multiple Types
+
+```typescript
+function combine<T, U>(a: T, b: U): [T, U] {
+    return [a, b];
+}
+
+console.log(combine<string, number>("Hello", 123)); // ["Hello", 123]
+```
+
+#### Example: Generic Class with Multiple Types
+
+```typescript
+class Pair<T, U> {
+    private first: T;
+    private second: U;
+
+    constructor(first: T, second: U) {
+        this.first = first;
+        this.second = second;
+    }
+
+    getFirst(): T {
+        return this.first;
+    }
+
+    getSecond(): U {
+        return this.second;
+    }
+}
+
+const pair = new Pair<string, number>("age", 30);
+console.log(pair.getFirst()); // "age"
+console.log(pair.getSecond()); // 30
+```
+
+### 3. **Generic Constraints**
+
+You can constrain the types used with generics to ensure they meet certain criteria.
+
+#### Example: Generic Constraint
+
+```typescript
+interface Lengthwise {
+    length: number;
+}
+
+function logLength<T extends Lengthwise>(item: T): void {
+    console.log(item.length);
+}
+
+logLength("Hello"); // 5
+logLength([1, 2, 3]); // 3
+```
+
+### 4. **Default Generics**
+
+You can specify default types for generic parameters.
+
+#### Example: Default Generic Type
+
+```typescript
+function wrap<T = string>(value: T): T {
+    return value;
+}
+
+console.log(wrap("Default")); // "Default"
+console.log(wrap<number>(123)); // 123
+```
+
+### 5. **Generic Interfaces**
+
+Interfaces can also use generics to define flexible and reusable structures.
+
+#### Example: Generic Interface
+
+```typescript
+interface Result<T> {
+    value: T;
+    error: string | null;
+}
+
+function processData<T>(data: T): Result<T> {
+    return {
+        value: data,
+        error: null
+    };
+}
+
+console.log(processData("Hello")); // { value: "Hello", error: null }
+console.log(processData(123)); // { value: 123, error: null }
+```
+
+### 6. **Generic Type Aliases**
+
+Type aliases can be used with generics to create flexible and reusable types.
+
+#### Example: Generic Type Alias
+
+```typescript
+type Callback<T> = (data: T) => void;
+
+const stringCallback: Callback<string> = (data) => {
+    console.log(data);
+};
+
+const numberCallback: Callback<number> = (data) => {
+    console.log(data);
+};
+
+stringCallback("Test"); // "Test"
+numberCallback(123); // 123
+```
+
+### 7. **Conditional Types**
+
+Conditional types can be used to create types based on conditions involving generics.
+
+#### Example: Conditional Types
+
+```typescript
+type IsString<T> = T extends string ? "Yes" : "No";
+
+type Test1 = IsString<string>; // "Yes"
+type Test2 = IsString<number>; // "No"
+```
+
+### 8. **Mapped Types**
+
+Mapped types can create new types based on an existing type, often using generics.
+
+#### Example: Mapped Type
+
+```typescript
+type ReadOnly<T> = {
+    readonly [P in keyof T]: T[P];
+};
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+const person: ReadOnly<Person> = {
+    name: "Alice",
+    age: 30
+};
+
+// person.name = "Bob"; // Error: cannot assign to 'name' because it is a read-only property
+```
+
+### 9. **Using Generics with `extends`**
+
+You can use the `extends` keyword to constrain the types that a generic can accept.
+
+#### Example: Generic Constraint with `extends`
+
+```typescript
+function min<T extends number | string>(a: T, b: T): T {
+    if (typeof a === "number" && typeof b === "number") {
+        return a < b ? a : b;
+    }
+    if (typeof a === "string" && typeof b === "string") {
+        return a < b ? a : b;
+    }
+    throw new Error("Invalid types");
+}
+
+console.log(min(10, 20)); // 10
+console.log(min("apple", "banana")); // "apple"
+```
+
+### 10. **Generic Classes with Inheritance**
+
+Generics can also be used with class inheritance.
+
+#### Example: Generic Class with Inheritance
+
+```typescript
+class BaseEntity<T> {
+    id: T;
+
+    constructor(id: T) {
+        this.id = id;
+    }
+}
+
+class User extends BaseEntity<number> {
+    name: string;
+
+    constructor(id: number, name: string) {
+        super(id);
+        this.name = name;
+    }
+}
+
+const user = new User(1, "John Doe");
+console.log(user.id); // 1
+console.log(user.name); // "John Doe"
+```
+
+Generics are a key feature of TypeScript that provide type safety and flexibility, allowing you to create components and functions that work with a variety of types while maintaining strong typing.

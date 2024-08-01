@@ -1,0 +1,241 @@
+In TypeScript, `enum` is a data type that allows you to define a set of named constants. Enums can be used to represent a collection of related values, typically for categorization or to ensure a variable can only have a specific set of values. Here's a detailed overview of enums in TypeScript, including all possible facts and methods, with code examples:
+
+### 1. **Basic Enum Definition**
+
+Enums can be defined using the `enum` keyword.
+
+#### Example:
+```typescript
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+let move: Direction = Direction.Up;
+console.log(move); // 0
+```
+
+By default, the values of the enum members are numbers starting from 0. 
+
+### 2. **Custom Initial Values**
+
+You can assign custom numeric values to the enum members.
+
+#### Example:
+```typescript
+enum Status {
+    Pending = 1,
+    InProgress = 2,
+    Completed = 3
+}
+
+let taskStatus: Status = Status.Completed;
+console.log(taskStatus); // 3
+```
+
+### 3. **String Enums**
+
+Enums can also have string values instead of numeric values.
+
+#### Example:
+```typescript
+enum FileAccess {
+    Read = "READ",
+    Write = "WRITE",
+    Execute = "EXECUTE"
+}
+
+let access: FileAccess = FileAccess.Write;
+console.log(access); // "WRITE"
+```
+
+### 4. **Heterogeneous Enums**
+
+Enums can mix string and numeric values, but this is generally not recommended.
+
+#### Example:
+```typescript
+enum Mixed {
+    No = 0,
+    Yes = "YES"
+}
+
+let response: Mixed = Mixed.Yes;
+console.log(response); // "YES"
+```
+
+### 5. **Computed and Constant Members**
+
+Enum members can be constant (compile-time constants) or computed (evaluated at runtime).
+
+#### Example:
+```typescript
+enum Calculation {
+    A = 1,
+    B = A * 2, // Computed member
+    C = 4
+}
+
+console.log(Calculation.B); // 2
+```
+
+### 6. **Reverse Mapping**
+
+For numeric enums, TypeScript automatically generates a reverse mapping from numeric values to enum names.
+
+#### Example:
+```typescript
+enum Color {
+    Red = 1,
+    Green,
+    Blue
+}
+
+console.log(Color.Red); // 1
+console.log(Color[1]); // "Red"
+```
+
+### 7. **Enum Member Types**
+
+Enums are treated as objects in TypeScript. You can use the enum name to access its members.
+
+#### Example:
+```typescript
+enum UserRole {
+    Admin,
+    User,
+    Guest
+}
+
+function getRole(role: UserRole): string {
+    switch (role) {
+        case UserRole.Admin:
+            return "Admin";
+        case UserRole.User:
+            return "User";
+        case UserRole.Guest:
+            return "Guest";
+        default:
+            return "Unknown";
+    }
+}
+
+console.log(getRole(UserRole.User)); // "User"
+```
+
+### 8. **String Literal Enums**
+
+You can use enums with string literal types for more specific string values.
+
+#### Example:
+```typescript
+enum EventType {
+    Click = "CLICK",
+    Change = "CHANGE",
+    Submit = "SUBMIT"
+}
+
+function handleEvent(event: EventType) {
+    switch (event) {
+        case EventType.Click:
+            console.log("Clicked");
+            break;
+        case EventType.Change:
+            console.log("Changed");
+            break;
+        case EventType.Submit:
+            console.log("Submitted");
+            break;
+    }
+}
+
+handleEvent(EventType.Change); // "Changed"
+```
+
+### 9. **Ambient Enums**
+
+Ambient enums are used to describe enums that are present in external libraries or global scope.
+
+#### Example:
+```typescript
+declare enum ExternalEnum {
+    A = 1,
+    B = 2
+}
+
+let value: ExternalEnum = ExternalEnum.A;
+console.log(value); // 1
+```
+
+### 10. **Const Enums**
+
+Const enums are a compile-time feature that allows the TypeScript compiler to inline enum values, which can help in reducing the runtime overhead.
+
+#### Example:
+```typescript
+const enum StatusCode {
+    Success = 200,
+    NotFound = 404
+}
+
+let response = StatusCode.Success;
+console.log(response); // 200
+```
+
+**Note**: Const enums are not included in the output JavaScript. They are fully inlined during compilation.
+
+### 11. **Enum Iteration**
+
+You can iterate over the members of a numeric enum, but string enums cannot be directly iterated because they lack reverse mappings.
+
+#### Example:
+```typescript
+enum Size {
+    Small = 1,
+    Medium,
+    Large
+}
+
+for (let size in Size) {
+    if (isNaN(Number(size))) {
+        console.log(size); // Small, Medium, Large
+    }
+}
+```
+
+### 12. **Using Enums with Generics**
+
+Enums can be used with generics to provide type safety in functions and classes.
+
+#### Example:
+```typescript
+enum Status {
+    Active,
+    Inactive
+}
+
+function updateStatus<T extends Status>(status: T): void {
+    console.log("Status updated to", Status[status]);
+}
+
+updateStatus(Status.Active); // "Status updated to Active"
+```
+
+### Summary
+
+- **Basic Enum**: Define enums with default numeric values.
+- **Custom Initial Values**: Assign custom numeric values.
+- **String Enums**: Use string values for enum members.
+- **Heterogeneous Enums**: Mix string and numeric values.
+- **Computed and Constant Members**: Use compile-time and runtime calculations.
+- **Reverse Mapping**: Automatically generated for numeric enums.
+- **Enum Member Types**: Access and use enum members in functions.
+- **String Literal Enums**: Use string literal types for specific values.
+- **Ambient Enums**: Describe enums in external libraries.
+- **Const Enums**: Inline enum values to reduce runtime overhead.
+- **Enum Iteration**: Iterate over enum members (numeric enums).
+- **Using Enums with Generics**: Enums with generic functions or classes.
+
+Enums in TypeScript are versatile and can be used in various ways to handle and categorize sets of related values efficiently.
