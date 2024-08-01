@@ -1,0 +1,139 @@
+In JavaScript, `NaN` stands for "Not-a-Number" and represents a value that is not a legal number. It's a special numeric value and is part of the global `Number` object. Here are some key facts and methods related to `NaN`, along with code examples:
+
+### 1. **Basic Facts About `NaN`**
+
+- **`NaN` is a special value**: It is a property of the global `Number` object and is used to indicate that a value is not a valid number.
+- **`NaN` is of type `number`**: Despite representing an invalid number, `typeof NaN` returns `"number"`.
+
+```javascript
+console.log(typeof NaN); // "number"
+```
+
+- **`NaN` is not equal to itself**: This is a unique characteristic of `NaN`. The expression `NaN === NaN` evaluates to `false`.
+
+```javascript
+console.log(NaN === NaN); // false
+```
+
+### 2. **Checking for `NaN`**
+
+#### A. **Using `Number.isNaN(value)`**
+
+`Number.isNaN()` determines whether a value is actually `NaN` (not just a value that is not a number).
+
+```javascript
+console.log(Number.isNaN(NaN)); // true
+console.log(Number.isNaN(123)); // false
+console.log(Number.isNaN("hello")); // false
+```
+
+#### B. **Using `isNaN(value)`**
+
+The global `isNaN()` function converts the value to a number and then checks if it is `NaN`.
+
+```javascript
+console.log(isNaN(NaN)); // true
+console.log(isNaN(123)); // false
+console.log(isNaN("hello")); // true (because "hello" is converted to NaN)
+```
+
+### 3. **Common Operations Involving `NaN`**
+
+#### A. **Arithmetic Operations**
+
+Arithmetic operations involving `NaN` will result in `NaN`.
+
+```javascript
+let result = NaN + 5;
+console.log(result); // NaN
+
+result = NaN * 10;
+console.log(result); // NaN
+```
+
+#### B. **`NaN` in Comparisons**
+
+Comparing `NaN` with other values, including itself, will always result in `false`.
+
+```javascript
+console.log(NaN < 1); // false
+console.log(NaN > 1); // false
+console.log(NaN === 1); // false
+console.log(NaN !== 1); // true
+```
+
+### 4. **Creating `NaN`**
+
+#### A. **Using Arithmetic Operations**
+
+Dividing zero by zero or other undefined arithmetic operations result in `NaN`.
+
+```javascript
+let result = 0 / 0;
+console.log(result); // NaN
+
+result = Math.sqrt(-1); // Square root of a negative number
+console.log(result); // NaN
+```
+
+#### B. **Using `Number` Constructor**
+
+Creating a `NaN` value directly using the `Number` constructor.
+
+```javascript
+let nanValue = Number("string");
+console.log(nanValue); // NaN
+```
+
+### 5. **Handling `NaN` in Code**
+
+#### A. **Using Default Values with `||` Operator**
+
+Using the logical OR operator to provide a default value if `NaN` is encountered.
+
+```javascript
+let value = NaN;
+let result = value || 10; // 10 is used because NaN is falsy
+console.log(result); // 10
+```
+
+#### B. **Using `isNaN()` to Validate**
+
+Checking if a value is `NaN` and handling it appropriately.
+
+```javascript
+function processValue(value) {
+    if (Number.isNaN(value)) {
+        console.log("Value is NaN");
+    } else {
+        console.log("Value is:", value);
+    }
+}
+
+processValue(NaN); // "Value is NaN"
+processValue(42); // "Value is: 42"
+```
+
+### 6. **Converting Values to `NaN`**
+
+#### A. **Parsing Functions**
+
+Using `parseInt()` and `parseFloat()` with invalid inputs will return `NaN`.
+
+```javascript
+let num = parseInt("hello");
+console.log(num); // NaN
+
+num = parseFloat("hello");
+console.log(num); // NaN
+```
+
+### Summary
+
+- **`NaN`**: Represents an invalid number, part of the `Number` object.
+- **`Number.isNaN(value)`**: Reliable way to check if a value is `NaN`.
+- **`isNaN(value)`**: Global function that converts the value to a number before checking.
+- **`NaN` Operations**: Any operation with `NaN` results in `NaN`.
+- **`NaN` Comparisons**: `NaN` is not equal to anything, including itself.
+
+Understanding and properly handling `NaN` is important for robust error checking and validation in JavaScript applications.

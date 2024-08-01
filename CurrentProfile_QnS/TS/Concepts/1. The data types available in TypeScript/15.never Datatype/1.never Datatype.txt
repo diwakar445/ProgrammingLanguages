@@ -1,0 +1,127 @@
+In TypeScript, the `never` type represents values that never occur. This type is used for functions that never return a value or for variables that are intended to be unreachable.
+
+Here are key facts and usage scenarios for the `never` type, along with code examples:
+
+### 1. **Purpose of `never` Type**
+
+- **Unreachable Code**: Used to signal that a block of code is unreachable, often in `switch` or `if` statements.
+- **Function That Never Returns**: Used for functions that throw errors or enter infinite loops.
+
+### 2. **Functions that Never Return**
+
+A function that always throws an exception or never terminates should have a return type of `never`.
+
+#### Example:
+```typescript
+function throwError(message: string): never {
+    throw new Error(message);
+}
+
+function infiniteLoop(): never {
+    while (true) {
+        // This loop never terminates
+    }
+}
+```
+
+### 3. **Used in Type Guards**
+
+When used in type guards, `never` helps ensure that all possible cases are covered.
+
+#### Example:
+```typescript
+type Animal = { type: 'dog'; breed: string } | { type: 'cat'; color: string };
+
+function handleAnimal(animal: Animal) {
+    switch (animal.type) {
+        case 'dog':
+            console.log(`Dog breed: ${animal.breed}`);
+            break;
+        case 'cat':
+            console.log(`Cat color: ${animal.color}`);
+            break;
+        default:
+            // TypeScript will ensure that all cases are covered
+            const exhaustiveCheck: never = animal;
+            throw new Error(`Unhandled case: ${exhaustiveCheck}`);
+    }
+}
+```
+
+### 4. **Type Inference with `never`**
+
+When TypeScript infers a `never` type, it means that something is logically impossible or unreachable.
+
+#### Example:
+```typescript
+let impossible: never;
+
+function assertNever(x: never): never {
+    throw new Error("Unexpected value: " + x);
+}
+
+function process(value: string | number) {
+    if (typeof value === "string") {
+        console.log("String value");
+    } else if (typeof value === "number") {
+        console.log("Number value");
+    } else {
+        assertNever(value); // TypeScript will throw an error if this line is reached
+    }
+}
+```
+
+### 5. **`never` as a Return Type**
+
+Functions that are designed to throw exceptions or handle cases that should not be reached use `never` as their return type.
+
+#### Example:
+```typescript
+function assertIsString(value: any): asserts value is string {
+    if (typeof value !== 'string') {
+        throw new Error('Value is not a string');
+    }
+}
+```
+
+In this example, the `asserts` keyword indicates that the function will throw an error if the condition is not met, and TypeScript will infer that the value is of type `string` after the function call.
+
+### 6. **Using `never` in Type Declarations**
+
+The `never` type is useful in type declarations where a function or expression should not return or complete.
+
+#### Example:
+```typescript
+type Result = string | never;
+
+function processResult(result: Result) {
+    if (typeof result === "string") {
+        console.log("Processing string result");
+    } else {
+        // Result must be `never` if it's not a string
+        const unreachable: never = result;
+        throw new Error("Unexpected result: " + unreachable);
+    }
+}
+```
+
+### 7. **`never` in Conditional Types**
+
+`never` can be used in conditional types to handle cases where a type should be excluded or is logically impossible.
+
+#### Example:
+```typescript
+type ExcludeNever<T> = T extends never ? never : T;
+
+type A = ExcludeNever<string | never>; // string
+type B = ExcludeNever<never>; // never
+```
+
+### Summary
+
+- **`never`**: Represents values that never occur, used in functions that don't return, unreachable code, or impossible states.
+- **Functions**: Use `never` for functions that throw errors or have infinite loops.
+- **Type Guards**: Use `never` to ensure all cases are handled in type guards.
+- **Type Inference**: TypeScript infers `never` to indicate unreachable or logically impossible code.
+
+Understanding and using `never` effectively helps in writing robust TypeScript code by ensuring that all possible scenarios are accounted for and handling cases that should logically never occur.

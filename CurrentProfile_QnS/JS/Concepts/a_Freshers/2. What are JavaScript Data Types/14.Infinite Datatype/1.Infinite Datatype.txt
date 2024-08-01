@@ -1,0 +1,135 @@
+In JavaScript, `Infinity` represents a numerical value that is positive or negative infinity. It is a global property of the `Number` object. Here are some key facts and methods related to `Infinity`, along with code examples:
+
+### 1. **Understanding `Infinity`**
+
+- **Positive Infinity**: `Infinity` represents a value that exceeds the largest representable number in JavaScript.
+- **Negative Infinity**: `-Infinity` represents a value that is smaller than the smallest representable number in JavaScript.
+- **NaN (Not-a-Number)**: `Infinity` is a different concept from `NaN`, which indicates a value that is not a number.
+
+### 2. **Basic Properties**
+
+#### Positive Infinity
+```javascript
+console.log(Infinity); // Infinity
+```
+
+#### Negative Infinity
+```javascript
+console.log(-Infinity); // -Infinity
+```
+
+### 3. **Comparison with Infinity**
+
+#### Greater Than Infinity
+```javascript
+console.log(1 / 0 > Infinity); // false
+console.log(1 / 0 === Infinity); // true
+```
+
+#### Less Than Infinity
+```javascript
+console.log(-1 / 0 < -Infinity); // true
+console.log(-1 / 0 === -Infinity); // true
+```
+
+### 4. **Mathematical Operations with Infinity**
+
+#### Addition and Subtraction
+```javascript
+console.log(Infinity + 1); // Infinity
+console.log(Infinity - 1); // Infinity
+console.log(-Infinity + 1); // -Infinity
+console.log(-Infinity - 1); // -Infinity
+```
+
+#### Multiplication and Division
+```javascript
+console.log(Infinity * 2); // Infinity
+console.log(Infinity * -2); // -Infinity
+console.log(Infinity / 2); // Infinity
+console.log(Infinity / Infinity); // NaN
+console.log(-Infinity * 2); // -Infinity
+console.log(-Infinity / -Infinity); // NaN
+```
+
+#### Modulus
+```javascript
+console.log(Infinity % 2); // NaN
+console.log(-Infinity % 2); // NaN
+```
+
+### 5. **Type Checking**
+
+#### Checking Type
+```javascript
+console.log(typeof Infinity); // "number"
+console.log(typeof -Infinity); // "number"
+```
+
+### 6. **Using Infinity in Comparisons**
+
+#### Greater Than and Less Than Comparisons
+```javascript
+console.log(Infinity > 1e308); // true
+console.log(-Infinity < -1e308); // true
+```
+
+### 7. **Infinity in Functions**
+
+#### Checking Infinity with `isFinite()`
+`isFinite()` returns `false` if the value is `Infinity` or `-Infinity`.
+
+```javascript
+console.log(isFinite(Infinity)); // false
+console.log(isFinite(-Infinity)); // false
+console.log(isFinite(100)); // true
+```
+
+#### Checking Infinity with `Number.isFinite()`
+`Number.isFinite()` provides similar functionality but is more strict about the type of the input.
+
+```javascript
+console.log(Number.isFinite(Infinity)); // false
+console.log(Number.isFinite(-Infinity)); // false
+console.log(Number.isFinite(100)); // true
+console.log(Number.isFinite("100")); // false
+```
+
+### 8. **Parsing Infinity**
+
+#### Using `parseInt` and `parseFloat`
+`parseInt` and `parseFloat` can produce `Infinity` if the input is a number too large to be represented.
+
+```javascript
+console.log(parseInt("123456789012345678901234567890")); // 123456789012345678901234567890
+console.log(parseInt("1234567890123456789012345678901234567890")); // Infinity
+```
+
+### 9. **Infinity in Mathematical Functions**
+
+#### `Math.max()` and `Math.min()`
+`Math.max()` and `Math.min()` can accept `Infinity` as arguments.
+
+```javascript
+console.log(Math.max(1, 2, Infinity)); // Infinity
+console.log(Math.min(-Infinity, 1, 2)); // -Infinity
+```
+
+#### `Math.log()` and `Math.exp()`
+Mathematical functions with `Infinity`.
+
+```javascript
+console.log(Math.log(Infinity)); // Infinity
+console.log(Math.exp(Infinity)); // Infinity
+console.log(Math.log(0)); // -Infinity
+```
+
+### Summary
+
+- **`Infinity`** and **`-Infinity`** represent positive and negative infinity, respectively.
+- **`Infinity`** is of type `number`.
+- Mathematical operations with `Infinity` often result in `Infinity`, `-Infinity`, or `NaN`.
+- Use `isFinite()` or `Number.isFinite()` to check if a value is finite.
+- Parsing very large numbers with `parseInt` or `parseFloat` can yield `Infinity`.
+
+Understanding how `Infinity` interacts with other values and operations is crucial for handling cases where numerical results exceed the typical range of representable numbers in JavaScript.

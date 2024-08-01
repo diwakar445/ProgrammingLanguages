@@ -1,0 +1,308 @@
+Regular expressions (regex) in JavaScript are used for pattern matching within strings. They are represented by the `RegExp` object. Here’s a comprehensive overview of the `RegExp` data type, including its properties and methods, with code examples:
+
+### **1. Creating Regular Expressions**
+
+#### **1.1. Using Literal Notation**
+```javascript
+let regex = /abc/;
+```
+
+#### **1.2. Using the `RegExp` Constructor**
+```javascript
+let regex = new RegExp('abc');
+```
+
+### **2. Properties of `RegExp` Objects**
+
+#### **2.1. `source`**
+Returns the text of the regex pattern.
+
+```javascript
+let regex = /abc/i;
+console.log(regex.source); // "abc"
+```
+
+#### **2.2. `flags`**
+Returns the flags of the regex.
+
+```javascript
+let regex = /abc/gmi;
+console.log(regex.flags); // "gmi"
+```
+
+#### **2.3. `global`**
+Returns `true` if the `g` flag is set.
+
+```javascript
+let regex = /abc/g;
+console.log(regex.global); // true
+```
+
+#### **2.4. `ignoreCase`**
+Returns `true` if the `i` flag is set.
+
+```javascript
+let regex = /abc/i;
+console.log(regex.ignoreCase); // true
+```
+
+#### **2.5. `multiline`**
+Returns `true` if the `m` flag is set.
+
+```javascript
+let regex = /abc/m;
+console.log(regex.multiline); // true
+```
+
+#### **2.6. `sticky`**
+Returns `true` if the `y` flag is set.
+
+```javascript
+let regex = /abc/y;
+console.log(regex.sticky); // true
+```
+
+#### **2.7. `dotAll`**
+Returns `true` if the `s` flag is set (for allowing `.` to match newline characters).
+
+```javascript
+let regex = /abc/s;
+console.log(regex.dotAll); // true
+```
+
+### **3. Methods of `RegExp` Objects**
+
+#### **3.1. `exec(string)`**
+Executes a search for a match in a specified string.
+
+```javascript
+let regex = /(\d+)/;
+let result = regex.exec('There are 123 apples');
+console.log(result); // ["123", "123", index: 12, input: "There are 123 apples", groups: undefined]
+```
+
+#### **3.2. `test(string)`**
+Tests whether a match exists in a specified string.
+
+```javascript
+let regex = /abc/;
+console.log(regex.test('abcdef')); // true
+console.log(regex.test('def')); // false
+```
+
+### **4. Methods of `String` Objects**
+
+#### **4.1. `match(regex)`**
+Returns an array of matches or `null` if no match is found.
+
+```javascript
+let str = 'The quick brown fox';
+let regex = /quick/;
+console.log(str.match(regex)); // ["quick"]
+```
+
+#### **4.2. `replace(regex, replacement)`**
+Replaces matches in a string with a replacement.
+
+```javascript
+let str = 'The quick brown fox';
+let regex = /quick/;
+let newStr = str.replace(regex, 'slow');
+console.log(newStr); // "The slow brown fox"
+```
+
+#### **4.3. `search(regex)`**
+Searches for a match and returns the index of the first match or `-1` if no match is found.
+
+```javascript
+let str = 'The quick brown fox';
+let regex = /quick/;
+console.log(str.search(regex)); // 4
+```
+
+#### **4.4. `split(regex, limit)`**
+Splits a string into an array of substrings based on the regex pattern.
+
+```javascript
+let str = 'The quick brown fox';
+let regex = / /;
+let parts = str.split(regex);
+console.log(parts); // ["The", "quick", "brown", "fox"]
+```
+
+### **5. Special Characters in Regex Patterns**
+
+#### **5.1. `.` (Dot)**
+Matches any character except newlines.
+
+```javascript
+let regex = /a.b/;
+console.log(regex.test('aab')); // true
+console.log(regex.test('acb')); // true
+console.log(regex.test('ab\nb')); // false
+```
+
+#### **5.2. `\d`**
+Matches any digit (equivalent to `[0-9]`).
+
+```javascript
+let regex = /\d/;
+console.log(regex.test('123')); // true
+console.log(regex.test('abc')); // false
+```
+
+#### **5.3. `\D`**
+Matches any non-digit character.
+
+```javascript
+let regex = /\D/;
+console.log(regex.test('123abc')); // true
+console.log(regex.test('123')); // false
+```
+
+#### **5.4. `\w`**
+Matches any word character (alphanumeric + `_`).
+
+```javascript
+let regex = /\w/;
+console.log(regex.test('abc123')); // true
+console.log(regex.test('!@#')); // false
+```
+
+#### **5.5. `\W`**
+Matches any non-word character.
+
+```javascript
+let regex = /\W/;
+console.log(regex.test('abc123')); // false
+console.log(regex.test('abc!')); // true
+```
+
+#### **5.6. `\s`**
+Matches any whitespace character.
+
+```javascript
+let regex = /\s/;
+console.log(regex.test('hello world')); // true
+console.log(regex.test('helloworld')); // false
+```
+
+#### **5.7. `\S`**
+Matches any non-whitespace character.
+
+```javascript
+let regex = /\S/;
+console.log(regex.test('hello world')); // true
+console.log(regex.test('    ')); // false
+```
+
+#### **5.8. `^` (Caret)**
+Matches the start of a string.
+
+```javascript
+let regex = /^hello/;
+console.log(regex.test('hello world')); // true
+console.log(regex.test('world hello')); // false
+```
+
+#### **5.9. `$` (Dollar)**
+Matches the end of a string.
+
+```javascript
+let regex = /world$/;
+console.log(regex.test('hello world')); // true
+console.log(regex.test('world hello')); // false
+```
+
+#### **5.10. `[]` (Character Set)**
+Matches any one of the characters inside the brackets.
+
+```javascript
+let regex = /[abc]/;
+console.log(regex.test('apple')); // true
+console.log(regex.test('orange')); // false
+```
+
+#### **5.11. `|` (Pipe)**
+Matches either the pattern before or after the pipe.
+
+```javascript
+let regex = /cat|dog/;
+console.log(regex.test('I have a cat')); // true
+console.log(regex.test('I have a dog')); // true
+```
+
+#### **5.12. `()` (Grouping)**
+Groups patterns together.
+
+```javascript
+let regex = /(cat|dog)s?/;
+console.log(regex.test('cats')); // true
+console.log(regex.test('dog')); // true
+```
+
+#### **5.13. `*` (Asterisk)**
+Matches 0 or more occurrences of the preceding pattern.
+
+```javascript
+let regex = /a*/;
+console.log(regex.test('aaa')); // true
+console.log(regex.test('b')); // true (0 occurrences of `a`)
+```
+
+#### **5.14. `+` (Plus)**
+Matches 1 or more occurrences of the preceding pattern.
+
+```javascript
+let regex = /a+/;
+console.log(regex.test('aaa')); // true
+console.log(regex.test('b')); // false
+```
+
+#### **5.15. `?` (Question Mark)**
+Makes the preceding pattern optional (0 or 1 occurrence).
+
+```javascript
+let regex = /a?/;
+console.log(regex.test('a')); // true
+console.log(regex.test('')); // true (0 occurrences of `a`)
+console.log(regex.test('b')); // false
+```
+
+#### **5.16. `{n}`**
+Matches exactly `n` occurrences of the preceding pattern.
+
+```javascript
+let regex = /a{3}/;
+console.log(regex.test('aaa')); // true
+console.log(regex.test('aa')); // false
+```
+
+#### **5.17. `{n,}`**
+Matches `n` or more occurrences of the preceding pattern.
+
+```javascript
+let regex = /a{2,}/;
+console.log(regex.test('aaa')); // true
+console.log(regex.test('a')); // false
+```
+
+#### **5.18. `{n,m}`**
+Matches between `n` and `m` occurrences of the preceding pattern.
+
+```javascript
+let regex = /a{2,4}/;
+console.log(regex.test('aaa')); // true
+console.log(regex.test('aaaa')); // true
+console.log(regex.test('a')); // false
+console.log(regex.test('aaaaa')); // false
+```
+
+### **Summary**
+
+- **Creating Regex**: Use literals or `RegExp` constructor.
+- **Properties**: `source`, `flags`, `global`, `ignoreCase`, `multiline`, `sticky`, `dotAll`.
+- **Methods**: `exec`, `test`, `match`, `replace`, `search`, `split`.
+- **Special Characters**: `.`, `\d`, `\D`, `\w`, `\W`, `\s`, `\S`, `^`, `$`, `[]`, `|`, `()`, `*`, `+`, `?`, `{n}`, `{n,}`, `{n,m}`.
+
+These features

@@ -1,0 +1,219 @@
+In JavaScript, the `Date` object is used to work with dates and times. It provides various methods and properties to create, manipulate, and format dates. Here’s a comprehensive overview of the `Date` object, including key facts and methods:
+
+### 1. **Creating Date Objects**
+
+#### Current Date and Time
+```javascript
+let now = new Date();
+console.log(now); // Current date and time
+```
+
+#### Specific Date
+```javascript
+let specificDate = new Date('2024-08-01');
+console.log(specificDate); // Thu Aug 01 2024 00:00:00 GMT+0000 (Coordinated Universal Time)
+```
+
+#### Date with Year, Month, Day
+```javascript
+let date = new Date(2024, 7, 1); // August is month 7 (0-based index)
+console.log(date); // Thu Aug 01 2024 00:00:00 GMT+0000 (Coordinated Universal Time)
+```
+
+#### Date with Time
+```javascript
+let dateTime = new Date(2024, 7, 1, 14, 30, 0); // August 1, 2024 at 14:30:00
+console.log(dateTime); // Thu Aug 01 2024 14:30:00 GMT+0000 (Coordinated Universal Time)
+```
+
+### 2. **Date Properties**
+
+#### `Date.now()`
+Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+
+```javascript
+console.log(Date.now()); // Current timestamp in milliseconds
+```
+
+#### `Date.prototype.getFullYear()`
+Returns the year of the date.
+
+```javascript
+let date = new Date();
+console.log(date.getFullYear()); // 2024 (or current year)
+```
+
+#### `Date.prototype.getMonth()`
+Returns the month (0-11) of the date.
+
+```javascript
+let date = new Date();
+console.log(date.getMonth()); // 7 (for August)
+```
+
+#### `Date.prototype.getDate()`
+Returns the day of the month.
+
+```javascript
+let date = new Date();
+console.log(date.getDate()); // 1 (or current day of the month)
+```
+
+#### `Date.prototype.getDay()`
+Returns the day of the week (0-6).
+
+```javascript
+let date = new Date();
+console.log(date.getDay()); // 4 (for Thursday)
+```
+
+#### `Date.prototype.getHours()`
+Returns the hour (0-23) of the date.
+
+```javascript
+let date = new Date();
+console.log(date.getHours()); // 14 (or current hour)
+```
+
+#### `Date.prototype.getMinutes()`
+Returns the minutes (0-59) of the date.
+
+```javascript
+let date = new Date();
+console.log(date.getMinutes()); // 30 (or current minutes)
+```
+
+#### `Date.prototype.getSeconds()`
+Returns the seconds (0-59) of the date.
+
+```javascript
+let date = new Date();
+console.log(date.getSeconds()); // 0 (or current seconds)
+```
+
+#### `Date.prototype.getMilliseconds()`
+Returns the milliseconds (0-999) of the date.
+
+```javascript
+let date = new Date();
+console.log(date.getMilliseconds()); // 123 (or current milliseconds)
+```
+
+#### `Date.prototype.getTimezoneOffset()`
+Returns the time-zone offset in minutes.
+
+```javascript
+let date = new Date();
+console.log(date.getTimezoneOffset()); // Offset in minutes from UTC
+```
+
+### 3. **Date Methods for Setting Values**
+
+#### `Date.prototype.setFullYear(year, month, day)`
+Sets the year (and optionally month and day) of the date.
+
+```javascript
+let date = new Date();
+date.setFullYear(2025);
+console.log(date); // Date with year set to 2025
+```
+
+#### `Date.prototype.setMonth(month, day)`
+Sets the month (and optionally day) of the date.
+
+```javascript
+let date = new Date();
+date.setMonth(11); // December
+console.log(date); // Date with month set to December
+```
+
+#### `Date.prototype.setDate(day)`
+Sets the day of the month.
+
+```javascript
+let date = new Date();
+date.setDate(15);
+console.log(date); // Date with day set to 15
+```
+
+#### `Date.prototype.setHours(hours, minutes, seconds, milliseconds)`
+Sets the hour (and optionally minutes, seconds, milliseconds) of the date.
+
+```javascript
+let date = new Date();
+date.setHours(18, 30, 0);
+console.log(date); // Date with time set to 18:30:00
+```
+
+### 4. **Formatting and Parsing**
+
+#### `Date.prototype.toString()`
+Returns a string representing the date in human-readable form.
+
+```javascript
+let date = new Date();
+console.log(date.toString()); // "Thu Aug 01 2024 00:00:00 GMT+0000 (Coordinated Universal Time)"
+```
+
+#### `Date.prototype.toISOString()`
+Returns a string representing the date in ISO 8601 format.
+
+```javascript
+let date = new Date();
+console.log(date.toISOString()); // "2024-08-01T00:00:00.000Z"
+```
+
+#### `Date.prototype.toLocaleDateString([locales, options])`
+Returns a string representing the date in a format based on locale and options.
+
+```javascript
+let date = new Date();
+console.log(date.toLocaleDateString('en-US')); // "8/1/2024"
+console.log(date.toLocaleDateString('en-GB')); // "01/08/2024"
+```
+
+#### `Date.prototype.toLocaleTimeString([locales, options])`
+Returns a string representing the time portion of the date based on locale and options.
+
+```javascript
+let date = new Date();
+console.log(date.toLocaleTimeString('en-US')); // "12:00:00 AM"
+console.log(date.toLocaleTimeString('en-GB')); // "00:00:00"
+```
+
+#### `Date.prototype.toLocaleString([locales, options])`
+Returns a string representing the date and time based on locale and options.
+
+```javascript
+let date = new Date();
+console.log(date.toLocaleString('en-US')); // "8/1/2024, 12:00:00 AM"
+console.log(date.toLocaleString('en-GB')); // "01/08/2024, 00:00:00"
+```
+
+#### `Date.parse(dateString)`
+Parses a date string and returns the number of milliseconds since January 1, 1970.
+
+```javascript
+let timestamp = Date.parse('2024-08-01T00:00:00Z');
+console.log(timestamp); // 1690848000000
+```
+
+### 5. **Static Methods**
+
+#### `Date.UTC(year, month, day, hours, minutes, seconds, milliseconds)`
+Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC for the specified date and time.
+
+```javascript
+let utcTimestamp = Date.UTC(2024, 7, 1, 14, 30);
+console.log(utcTimestamp); // 1690891800000
+```
+
+### Summary
+
+- **Creating Dates**: `new Date()`, `new Date(year, month, day, hour, minute, second, millisecond)`, `Date.parse()`
+- **Getting Date Components**: `getFullYear()`, `getMonth()`, `getDate()`, `getDay()`, etc.
+- **Setting Date Components**: `setFullYear()`, `setMonth()`, `setDate()`, etc.
+- **Formatting Dates**: `toString()`, `toISOString()`, `toLocaleDateString()`, `toLocaleTimeString()`, `toLocaleString()`
+- **Static Methods**: `Date.UTC()`
+
+These methods and properties enable comprehensive date and time manipulation in JavaScript.

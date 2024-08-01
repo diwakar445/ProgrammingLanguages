@@ -1,0 +1,195 @@
+In TypeScript, **type aliases** provide a way to create a new name for a type. They are used to simplify complex type definitions, create more readable code, and handle various type scenarios. Type aliases are different from interfaces and can be used with any valid type, including primitive types, object types, union types, intersection types, and more.
+
+### 1. **Basic Type Alias**
+
+You can create a simple type alias for a primitive type.
+
+#### Example:
+```typescript
+type ID = string;
+
+let userId: ID = "user123";
+```
+
+### 2. **Object Type Alias**
+
+Type aliases can represent object types.
+
+#### Example:
+```typescript
+type Person = {
+    name: string;
+    age: number;
+};
+
+let person: Person = {
+    name: "Alice",
+    age: 30
+};
+```
+
+### 3. **Union Types**
+
+Type aliases can define union types, which represent a value that can be one of several types.
+
+#### Example:
+```typescript
+type Status = "success" | "error" | "pending";
+
+let currentStatus: Status = "success";
+```
+
+### 4. **Intersection Types**
+
+Type aliases can combine multiple types using intersection types, where a value must satisfy all included types.
+
+#### Example:
+```typescript
+type ContactInfo = {
+    email: string;
+    phone: string;
+};
+
+type PersonWithContact = Person & ContactInfo;
+
+let contactPerson: PersonWithContact = {
+    name: "Bob",
+    age: 25,
+    email: "bob@example.com",
+    phone: "123-456-7890"
+};
+```
+
+### 5. **Function Types**
+
+Type aliases can define the shape of functions.
+
+#### Example:
+```typescript
+type Operation = (x: number, y: number) => number;
+
+const add: Operation = (x, y) => x + y;
+```
+
+### 6. **Array Types**
+
+Type aliases can be used to define array types.
+
+#### Example:
+```typescript
+type StringArray = string[];
+
+let names: StringArray = ["Alice", "Bob", "Charlie"];
+```
+
+### 7. **Tuple Types**
+
+Type aliases can define tuple types, which are arrays with fixed sizes and types for each element.
+
+#### Example:
+```typescript
+type Point = [number, number];
+
+let point: Point = [10, 20];
+```
+
+### 8. **Mapped Types**
+
+Type aliases can use mapped types to create new types by transforming properties of an existing type.
+
+#### Example:
+```typescript
+type ReadonlyPerson = {
+    readonly [P in keyof Person]: Person[P];
+};
+
+let readonlyPerson: ReadonlyPerson = {
+    name: "Diana",
+    age: 28
+};
+
+// readonlyPerson.name = "Daniel"; // Error: Index signature in type 'ReadonlyPerson' only permits reading property 'name'
+```
+
+### 9. **Conditional Types**
+
+Type aliases can use conditional types to create types based on conditions.
+
+#### Example:
+```typescript
+type IsString<T> = T extends string ? "Yes" : "No";
+
+type Result1 = IsString<string>; // "Yes"
+type Result2 = IsString<number>; // "No"
+```
+
+### 10. **Infer Keyword**
+
+The `infer` keyword within a conditional type can be used to infer a type.
+
+#### Example:
+```typescript
+type ReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
+
+type Func = (a: number) => string;
+
+type Result = ReturnType<Func>; // string
+```
+
+### 11. **Utility Types**
+
+TypeScript provides several utility types, and type aliases can be used to create similar types or to work with these utilities.
+
+#### Example:
+```typescript
+type PartialPerson = Partial<Person>;
+
+let partialPerson: PartialPerson = {
+    name: "Eve" // 'age' is optional
+};
+
+type RequiredPerson = Required<Person>;
+
+let requiredPerson: RequiredPerson = {
+    name: "Frank",
+    age: 35
+}; // Both properties are required
+```
+
+### 12. **Indexed Access Types**
+
+Type aliases can use indexed access types to refer to a specific property type of an object.
+
+#### Example:
+```typescript
+type NameType = Person["name"]; // string
+```
+
+### 13. **Recursive Type Aliases**
+
+Type aliases can be recursive, allowing for complex type structures like trees.
+
+#### Example:
+```typescript
+type Tree<T> = {
+    value: T;
+    left?: Tree<T>;
+    right?: Tree<T>;
+};
+
+let numberTree: Tree<number> = {
+    value: 10,
+    left: { value: 5 },
+    right: { value: 15 }
+};
+```
+
+### Summary
+
+- **Basic Aliases**: Simplify types, e.g., `type ID = string;`.
+- **Object Types**: Define object shapes, e.g., `type Person = { name: string; age: number; };`.
+- **Union and Intersection Types**: Combine or constrain types, e.g., `type Status = "success" | "error";` and `type PersonWithContact = Person & ContactInfo;`.
+- **Function, Array, and Tuple Types**: Define the shape of functions, arrays, and tuples, e.g., `type Operation = (x: number) => number;`.
+- **Advanced Types**: Mapped types, conditional types, and recursive types for more complex scenarios.
+
+Type aliases are a powerful feature in TypeScript, offering flexibility and readability for type definitions.

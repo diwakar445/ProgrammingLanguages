@@ -1,0 +1,117 @@
+In TypeScript, the `void` type represents the absence of a value. It's typically used for functions that do not return a value or for variables that are not meant to hold any value. Here are key facts and uses of the `void` type, along with code examples:
+
+### 1. **Function Return Type**
+
+The `void` type is commonly used as the return type for functions that do not return a value. This signifies that the function performs some operation but does not produce a value that can be used.
+
+#### Example:
+```typescript
+function logMessage(message: string): void {
+    console.log(message);
+}
+
+logMessage("Hello, TypeScript!"); // This function has no return value
+```
+
+### 2. **Void vs `undefined`**
+
+In TypeScript, `void` and `undefined` are not the same, although they are closely related. While `void` indicates the absence of a return value, `undefined` is a type and value that can be assigned to variables.
+
+#### Example:
+```typescript
+function doNothing(): void {
+    // No return statement
+}
+
+let value: undefined = undefined; // Valid
+```
+
+### 3. **Using `void` in Functions**
+
+When a function has no explicit return statement or returns `undefined`, it implicitly has a return type of `void`.
+
+#### Example:
+```typescript
+function noReturn(): void {
+    // This function does nothing and has no return statement
+}
+
+function returnsUndefined(): void {
+    return; // Implicitly returns undefined
+}
+```
+
+### 4. **`void` in Generic Functions**
+
+`void` can be used in generic functions to specify that a particular function does not return a value.
+
+#### Example:
+```typescript
+function executeAction<T>(action: () => T): void {
+    action(); // We are not interested in the result
+}
+
+executeAction(() => {
+    console.log("Action executed");
+});
+```
+
+### 5. **`void` in Promises**
+
+When dealing with asynchronous functions that return promises, `void` is used to indicate that the promise does not resolve to any meaningful value.
+
+#### Example:
+```typescript
+async function fetchData(): Promise<void> {
+    // Simulate an asynchronous operation
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    console.log("Data fetched");
+}
+```
+
+### 6. **Function Type Signatures with `void`**
+
+In TypeScript, you can use `void` in function type signatures to specify that the function does not return any value.
+
+#### Example:
+```typescript
+let myFunction: () => void = () => {
+    console.log("This function returns nothing");
+};
+
+myFunction(); // Outputs: "This function returns nothing"
+```
+
+### 7. **Using `void` for Event Handlers**
+
+In event handling scenarios, `void` is often used to indicate that the event handler does not return a value.
+
+#### Example:
+```typescript
+document.addEventListener('click', (event: MouseEvent): void => {
+    console.log("Clicked at", event.clientX, event.clientY);
+});
+```
+
+### 8. **`void` in Type Assertions**
+
+You can use `void` in type assertions when you need to explicitly assert that a value is `void`.
+
+#### Example:
+```typescript
+function assertVoid(value: void): void {
+    // Function implementation
+}
+
+assertVoid(undefined); // Valid
+```
+
+### Summary of `void` Type Usage in TypeScript:
+
+- **Function Return Type**: Used for functions that do not return a value.
+- **Generic Functions**: Indicates that the function does not produce a return value.
+- **Promises**: Shows that a promise does not resolve to any meaningful value.
+- **Type Signatures**: Used to specify functions that do not return a value.
+- **Event Handlers**: Commonly used in event handling to denote that handlers do not return values.
+
+The `void` type is integral in TypeScript for conveying the absence of a value and ensuring type safety in functions and operations where no result is expected.

@@ -1,0 +1,182 @@
+In TypeScript, a "union" type allows you to specify a variable that can hold one of several types. This feature is crucial for providing flexibility and making your code more expressive. Here’s a comprehensive overview of union types, including facts, usage, and examples:
+
+### 1. **Basic Union Types**
+
+A union type is created using the pipe (`|`) operator. It allows a value to be one of several types.
+
+#### Example:
+```typescript
+let value: string | number;
+
+value = "Hello"; // Valid
+value = 123;     // Valid
+// value = true; // Error: Type 'boolean' is not assignable to type 'string | number'.
+```
+
+### 2. **Union Types with Functions**
+
+Union types can be used to define functions that accept multiple types of arguments or return different types.
+
+#### Example:
+```typescript
+function formatValue(value: string | number): string {
+    if (typeof value === "string") {
+        return value.toUpperCase();
+    } else {
+        return value.toFixed(2);
+    }
+}
+
+console.log(formatValue("hello")); // "HELLO"
+console.log(formatValue(123.456)); // "123.46"
+```
+
+### 3. **Union Types with Arrays**
+
+You can use union types within arrays to allow multiple types of elements.
+
+#### Example:
+```typescript
+let list: (string | number)[] = [1, "two", 3, "four"];
+
+list.push(5);    // Valid
+list.push("six"); // Valid
+// list.push(true); // Error: Type 'boolean' is not assignable to type 'string | number'.
+```
+
+### 4. **Union Types with Objects**
+
+Union types can be used in object properties to define flexible object structures.
+
+#### Example:
+```typescript
+interface User {
+    name: string;
+    age: number | string; // Age can be a number or a string
+}
+
+const user1: User = { name: "Alice", age: 30 };
+const user2: User = { name: "Bob", age: "unknown" };
+```
+
+### 5. **Type Guards with Union Types**
+
+Type guards are used to narrow down the type within a union.
+
+#### Example:
+```typescript
+function printId(id: string | number) {
+    if (typeof id === "string") {
+        console.log(`String ID: ${id}`);
+    } else {
+        console.log(`Number ID: ${id}`);
+    }
+}
+
+printId("abc"); // "String ID: abc"
+printId(123);   // "Number ID: 123"
+```
+
+### 6. **Discriminated Unions**
+
+Discriminated unions combine union types with a common property to differentiate between types.
+
+#### Example:
+```typescript
+interface Dog {
+    type: "dog";
+    bark: () => void;
+}
+
+interface Cat {
+    type: "cat";
+    meow: () => void;
+}
+
+type Animal = Dog | Cat;
+
+function makeSound(animal: Animal) {
+    if (animal.type === "dog") {
+        animal.bark();
+    } else {
+        animal.meow();
+    }
+}
+
+const dog: Dog = { type: "dog", bark: () => console.log("Woof!") };
+const cat: Cat = { type: "cat", meow: () => console.log("Meow!") };
+
+makeSound(dog); // "Woof!"
+makeSound(cat); // "Meow!"
+```
+
+### 7. **Union Types with `null` and `undefined`**
+
+Union types can include `null` and `undefined` to indicate optional or nullable values.
+
+#### Example:
+```typescript
+let value: string | null = "Hello";
+value = null; // Valid
+// value = 123; // Error: Type 'number' is not assignable to type 'string | null'.
+
+let optionalValue: string | undefined = "Hello";
+optionalValue = undefined; // Valid
+// optionalValue = 123; // Error: Type 'number' is not assignable to type 'string | undefined'.
+```
+
+### 8. **Union Types with `never`**
+
+The `never` type can be used in unions to represent values that should never occur.
+
+#### Example:
+```typescript
+function handleValue(value: string | number | never) {
+    if (typeof value === "string") {
+        console.log(`String value: ${value}`);
+    } else if (typeof value === "number") {
+        console.log(`Number value: ${value}`);
+    } else {
+        // The `never` type is not expected here, so it acts as a safety net.
+        console.log("Unexpected value");
+    }
+}
+
+handleValue("hello"); // "String value: hello"
+handleValue(123);     // "Number value: 123"
+// handleValue(true); // Error: Argument of type 'boolean' is not assignable to parameter of type 'string | number | never'.
+```
+
+### 9. **Combining Union Types with Intersection Types**
+
+Union types can be combined with intersection types for more complex type definitions.
+
+#### Example:
+```typescript
+interface A {
+    a: string;
+}
+
+interface B {
+    b: number;
+}
+
+type C = A & B; // Intersection type
+
+const example: C = { a: "Hello", b: 123 }; // Valid
+// const invalid: C = { a: "Hello" }; // Error: Property 'b' is missing in type '{ a: string; }' but required in type 'C'.
+```
+
+### Summary
+
+- **Basic Union Types**: Specify multiple possible types for a variable.
+- **Union Types with Functions**: Accept or return multiple types.
+- **Union Types with Arrays**: Allow multiple types within an array.
+- **Union Types with Objects**: Define flexible object structures.
+- **Type Guards**: Narrow down types using conditional checks.
+- **Discriminated Unions**: Use a common property to distinguish between types.
+- **Union Types with `null` and `undefined`**: Include optional or nullable values.
+- **Union Types with `never`**: Represent values that should never occur.
+- **Combining Union Types with Intersection Types**: Create complex type definitions.
+
+Union types provide a powerful way to model data with multiple possible types, improving type safety and flexibility in TypeScript.
