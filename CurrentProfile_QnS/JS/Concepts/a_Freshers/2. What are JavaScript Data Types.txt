@@ -140,5 +140,15 @@ Non-primitives/object types/reference data types (5):
 Special datatypes (2):
     NaN
     +Infinity , -Infinity
+-----------------------------------------------------------------------------------------------
+In JavaScript - Practical - Examples:
+
+** 1. Number **
+
+var num1 = 1;
+let num2 = 0.2;
+const num3 = Infinity;
+
+
 
 
