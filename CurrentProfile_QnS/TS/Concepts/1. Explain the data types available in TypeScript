@@ -291,3 +291,52 @@ special datatypes (6):
    5.generics
    6.literal types
 
+   -----------------------------------------------------------------------------------------------------
+   In Typescript - Practical - Examples:
+
+   ** Number datatypes **
+   
+   ** 1.Interger Numbers **
+   let age: number = 20;
+   let year:number = 2024
+
+   ** 2.Foating Numbers **
+   let price: number = 20.34;
+   let pi: number = 3.14;
+
+   ** 3.Exponential Notation **
+   let bigNumber: number = 1.23e5;
+   let smallNumber: number = 1.23e-5;
+
+   ** 4.Binary, Octal, Hexadecimal **
+   let binary: number = 0b1010;
+   let octal: number = 0o12;
+   let hexadecimal: number = 0xA;
+
+   ** 5.Infinity, NaN **
+   let infinity: number = Infinity;
+   let notANumber: number = NaN;
+
+   ** 6.Number Object **
+   let numberObject: Number = new number(123);
+   console.log(numberObject.valueOf()); // 123
+
+   ** 7.Math Object **
+   let sqrt: number = Math.sqrt(4);
+   let rounded: number = Math.round(1.27);
+
+   ** 8.ParseInt, ParseFoat **
+   let intFromString: number = parseInt("123");
+   let floatFromString: number = parseFloat("123.45");
+
+   ** 9.BigInt (valid in ES2020+) **
+   let bigInt: bigint = 123456789012345678901234567890n;
+
+   ** Type Annotations, Type Assertions **
+   Type Annotaions - Explicitly adding types to the variable in typescript
+   Type Assertions - Are used to tell typescript to have specific types (can override the infered types)
+   Infered types - types assigned dynamicall y by typescript type system.
+
+   ex: let id: number = 5;
+   let stringId: string = id as string; // typescript just consider it as string in the runtime but actual value wont be chnaged
+   let stringId: string = <string>id; // in JSX environment
