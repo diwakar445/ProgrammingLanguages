@@ -1,0 +1,413 @@
+** 2.String datatype in JS**
+
+** 1.Creating Strings **
+let singleQuotes = 'Hello, World!';
+let doubleQuotes = "Hello, World!";
+let templateLiteral = `Hello, World!`;
+let stringObject = String(123);
+
+** 2.String Concatination **
+let message = "Hello" + ", " + "Sameer";
+let c = concate(str1, str2, str3);
+
+** 3.String Interpolation **
+let age = 20;
+let message = `I am ${age} years old.` 
+
+** 4.String Methods **
+   -  .length: Returns the length of the string.
+   In JavaScript (JS) and TypeScript (TS), string methods are built-in functions that operate on strings and allow you to manipulate them. Since TypeScript is a superset of JavaScript, it includes all the methods available in JavaScript, plus additional type-checking features.
+
+Here's a list of common string methods available in JavaScript and TypeScript:
+
+### 1. **String Creation**
+- `String()`: Converts a value to a string.
+
+### 2. **String Properties**
+- `.length`: Returns the length of the string.
+
+### 3. **String Methods**
+- `charAt(index)`: Returns the character at the specified index.
+- `charCodeAt(index)`: Returns the Unicode of the character at the specified index.
+- `codePointAt(index)`: Returns the Unicode code point value of a character.
+- `concat(string1, string2, ...)`: Joins two or more strings and returns a new string.
+- `includes(substring, position)`: Checks if the string contains a specified substring.
+- `endsWith(substring, length)`: Checks if the string ends with the specified substring.
+- `indexOf(substring, fromIndex)`: Returns the index of the first occurrence of a specified value.
+- `lastIndexOf(substring, fromIndex)`: Returns the index of the last occurrence of a specified value.
+- `localeCompare(compareString)`: Compares two strings in the current locale.
+- `match(regex)`: Searches a string for a match against a regular expression.
+- `matchAll(regex)`: Returns an iterator of all results matching a string against a regular expression.
+- `normalize(form)`: Returns the Unicode Normalization Form of the string.
+- `padEnd(targetLength, padString)`: Pads the current string from the end with another string.
+- `padStart(targetLength, padString)`: Pads the current string from the start with another string.
+- `repeat(count)`: Returns a new string with a specified number of copies of an existing string.
+- `replace(searchValue, newValue)`: Replaces a substring or pattern with a new string.
+- `replaceAll(searchValue, newValue)`: Replaces all occurrences of a substring or pattern with a new string.
+- `search(regex)`: Searches for a match between a regular expression and this string.
+- `slice(startIndex, endIndex)`: Extracts a section of a string and returns it as a new string.
+- `split(separator, limit)`: Splits a string into an array of substrings.
+- `startsWith(searchString, position)`: Checks if the string starts with the specified substring.
+- `substring(start, end)`: Returns a substring between the specified indices.
+- `toLowerCase()`: Converts the string to lowercase.
+- `toLocaleLowerCase()`: Converts the string to lowercase, respecting the locale's rules.
+- `toUpperCase()`: Converts the string to uppercase.
+- `toLocaleUpperCase()`: Converts the string to uppercase, respecting the locale's rules.
+- `trim()`: Removes whitespace from both ends of the string.
+- `trimStart()`: Removes whitespace from the start of the string.
+- `trimEnd()`: Removes whitespace from the end of the string.
+- `valueOf()`: Returns the primitive value of a String object.
+
+These methods are the core string manipulation tools in JavaScript and TypeScript.
+Certainly! Below are examples of each string method in both JavaScript (JS) and TypeScript (TS). The functionality is the same, but TypeScript includes type annotations for better type safety.
+
+### 1. **String Creation**
+**JavaScript:**
+```javascript
+let str = String(123); // "123"
+```
+**TypeScript:**
+```typescript
+let str: string = String(123); // "123"
+```
+
+### 2. **String Properties**
+- **.length**
+
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.length); // 13
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.length); // 13
+```
+
+### 3. **String Methods**
+
+#### charAt(index)
+**JavaScript:**
+```javascript
+let str = "Hello";
+console.log(str.charAt(0)); // "H"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello";
+console.log(str.charAt(0)); // "H"
+```
+
+#### charCodeAt(index)
+**JavaScript:**
+```javascript
+let str = "Hello";
+console.log(str.charCodeAt(0)); // 72
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello";
+console.log(str.charCodeAt(0)); // 72
+```
+
+#### codePointAt(index)
+**JavaScript:**
+```javascript
+let str = "Hello";
+console.log(str.codePointAt(0)); // 72
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello";
+console.log(str.codePointAt(0)); // 72
+```
+
+#### concat(string1, string2, ...)
+**JavaScript:**
+```javascript
+let str1 = "Hello";
+let str2 = "World";
+console.log(str1.concat(", ", str2)); // "Hello, World"
+```
+**TypeScript:**
+```typescript
+let str1: string = "Hello";
+let str2: string = "World";
+console.log(str1.concat(", ", str2)); // "Hello, World"
+```
+
+#### includes(substring, position)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.includes("world")); // true
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.includes("world")); // true
+```
+
+#### endsWith(substring, length)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.endsWith("world!")); // true
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.endsWith("world!")); // true
+```
+
+#### indexOf(substring, fromIndex)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.indexOf("world")); // 7
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.indexOf("world")); // 7
+```
+
+#### lastIndexOf(substring, fromIndex)
+**JavaScript:**
+```javascript
+let str = "Hello, world! Hello!";
+console.log(str.lastIndexOf("Hello")); // 13
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world! Hello!";
+console.log(str.lastIndexOf("Hello")); // 13
+```
+
+#### localeCompare(compareString)
+**JavaScript:**
+```javascript
+let str1 = "a";
+let str2 = "b";
+console.log(str1.localeCompare(str2)); // -1 (or other negative value)
+```
+**TypeScript:**
+```typescript
+let str1: string = "a";
+let str2: string = "b";
+console.log(str1.localeCompare(str2)); // -1 (or other negative value)
+```
+
+#### match(regex)
+**JavaScript:**
+```javascript
+let str = "The rain in Spain";
+let result = str.match(/ain/g);
+console.log(result); // ["ain", "ain"]
+```
+**TypeScript:**
+```typescript
+let str: string = "The rain in Spain";
+let result: RegExpMatchArray | null = str.match(/ain/g);
+console.log(result); // ["ain", "ain"]
+```
+
+#### matchAll(regex)
+**JavaScript:**
+```javascript
+let str = "test1 test2";
+let regex = /t(e)(st(\d?))/g;
+let matches = str.matchAll(regex);
+for (let match of matches) {
+  console.log(match);
+}
+```
+**TypeScript:**
+```typescript
+let str: string = "test1 test2";
+let regex: RegExp = /t(e)(st(\d?))/g;
+let matches: IterableIterator<RegExpMatchArray> = str.matchAll(regex);
+for (let match of matches) {
+  console.log(match);
+}
+```
+
+#### normalize(form)
+**JavaScript:**
+```javascript
+let str = "á";
+console.log(str.normalize("NFD")); // "á"
+```
+**TypeScript:**
+```typescript
+let str: string = "á";
+console.log(str.normalize("NFD")); // "á"
+```
+
+#### padEnd(targetLength, padString)
+**JavaScript:**
+```javascript
+let str = "5";
+console.log(str.padEnd(3, "0")); // "500"
+```
+**TypeScript:**
+```typescript
+let str: string = "5";
+console.log(str.padEnd(3, "0")); // "500"
+```
+
+#### padStart(targetLength, padString)
+**JavaScript:**
+```javascript
+let str = "5";
+console.log(str.padStart(3, "0")); // "005"
+```
+**TypeScript:**
+```typescript
+let str: string = "5";
+console.log(str.padStart(3, "0")); // "005"
+```
+
+#### repeat(count)
+**JavaScript:**
+```javascript
+let str = "Hello";
+console.log(str.repeat(3)); // "HelloHelloHello"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello";
+console.log(str.repeat(3)); // "HelloHelloHello"
+```
+
+#### replace(searchValue, newValue)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.replace("world", "everyone")); // "Hello, everyone!"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.replace("world", "everyone")); // "Hello, everyone!"
+```
+
+#### replaceAll(searchValue, newValue)
+**JavaScript:**
+```javascript
+let str = "Hello, world! Hello, everyone!";
+console.log(str.replaceAll("Hello", "Hi")); // "Hi, world! Hi, everyone!"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world! Hello, everyone!";
+console.log(str.replaceAll("Hello", "Hi")); // "Hi, world! Hi, everyone!"
+```
+
+#### search(regex)
+**JavaScript:**
+```javascript
+let str = "The rain in Spain";
+console.log(str.search("Spain")); // 12
+```
+**TypeScript:**
+```typescript
+let str: string = "The rain in Spain";
+console.log(str.search("Spain")); // 12
+```
+
+#### slice(startIndex, endIndex)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.slice(0, 5)); // "Hello"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.slice(0, 5)); // "Hello"
+```
+
+#### split(separator, limit)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.split(", ")); // ["Hello", "world!"]
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.split(", ")); // ["Hello", "world!"]
+```
+
+#### startsWith(searchString, position)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.startsWith("Hello")); // true
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.startsWith("Hello")); // true
+```
+
+#### substring(start, end)
+**JavaScript:**
+```javascript
+let str = "Hello, world!";
+console.log(str.substring(0, 5)); // "Hello"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, world!";
+console.log(str.substring(0, 5)); // "Hello"
+```
+
+#### toLowerCase()
+**JavaScript:**
+```javascript
+let str = "Hello, World!";
+console.log(str.toLowerCase()); // "hello, world!"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, World!";
+console.log(str.toLowerCase()); // "hello, world!"
+```
+
+#### toLocaleLowerCase()
+**JavaScript:**
+```javascript
+let str = "Hello, World!";
+console.log(str.toLocaleLowerCase()); // "hello, world!"
+```
+**TypeScript:**
+```typescript
+let str: string = "Hello, World!";
+console.log(str.toLocaleLowerCase()); // "hello, world!"
+```
+
+#### toUpperCase()
+**JavaScript:**
+```javascript
+let str = "Hello, World!";
+console.log(str.toUpperCase()); // "HELLO, WORLD!"
+```
+**TypeScript:**
+```typescript
+let str: string
+   
+
+** 5.String Splitting & Joining **
+
+**6.String Searching *
+
+**7.Multiline Strings **
+
+**8.String Trimming **
+
+**9.Stirng Template with Expressions **
+
+**10.Raw String Literals **
