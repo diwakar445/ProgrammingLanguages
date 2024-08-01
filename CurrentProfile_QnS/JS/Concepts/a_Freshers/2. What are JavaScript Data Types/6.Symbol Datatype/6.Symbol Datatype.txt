@@ -1,0 +1,210 @@
+In JavaScript, the `Symbol` data type is a primitive data type introduced in ECMAScript 2015 (ES6). Symbols are unique and immutable, making them useful for creating unique property keys in objects. Here are the key facts and methods related to the `Symbol` data type, along with code examples:
+
+### Key Facts About Symbols
+
+1. **Uniqueness**
+   Each `Symbol` is guaranteed to be unique. Even if two symbols are created with the same description, they are not equal.
+
+   ```javascript
+   const sym1 = Symbol('description');
+   const sym2 = Symbol('description');
+   console.log(sym1 === sym2); // false
+   ```
+
+2. **Immutability**
+   Symbols are immutable. Once created, their value cannot be changed.
+
+   ```javascript
+   const sym = Symbol('immutable');
+   // sym.description = 'new description'; // This will not change the symbol
+   console.log(sym.description); // "immutable"
+   ```
+
+3. **Symbol as Object Property Keys**
+   Symbols can be used as property keys in objects, allowing for unique property identifiers that won’t conflict with other keys.
+
+   ```javascript
+   const sym = Symbol('uniqueKey');
+   const obj = {
+       [sym]: 'value'
+   };
+   console.log(obj[sym]); // "value"
+   ```
+
+4. **Global Symbol Registry**
+   Symbols can be registered globally using `Symbol.for()` and retrieved with `Symbol.keyFor()`.
+
+   ```javascript
+   const globalSym = Symbol.for('globalSymbol');
+   const retrievedSym = Symbol.for('globalSymbol');
+   console.log(globalSym === retrievedSym); // true
+
+   console.log(Symbol.keyFor(globalSym)); // "globalSymbol"
+   ```
+
+5. **Symbols Are Not Iterated Over**
+   Symbols do not show up in standard object iterations such as `for...in` or `Object.keys()`.
+
+   ```javascript
+   const sym = Symbol('hidden');
+   const obj = {
+       [sym]: 'hiddenValue',
+       visible: 'visibleValue'
+   };
+
+   console.log(Object.keys(obj)); // ["visible"]
+   ```
+
+### Methods Associated with Symbols
+
+1. **`Symbol(description)`**
+   Creates a new unique symbol.
+
+   ```javascript
+   const sym = Symbol('description');
+   console.log(sym); // Symbol(description)
+   ```
+
+2. **`Symbol.for(key)`**
+   Searches for and returns a symbol from the global symbol registry. If not found, creates a new symbol and registers it.
+
+   ```javascript
+   const sym1 = Symbol.for('app');
+   const sym2 = Symbol.for('app');
+   console.log(sym1 === sym2); // true
+   ```
+
+3. **`Symbol.keyFor(symbol)`**
+   Returns the key for a symbol from the global symbol registry.
+
+   ```javascript
+   const sym = Symbol.for('app');
+   console.log(Symbol.keyFor(sym)); // "app"
+   ```
+
+4. **`Symbol.iterator`**
+   A built-in symbol that specifies the default iterator for an object. It is used in iteration protocols.
+
+   ```javascript
+   const iterable = {
+       *[Symbol.iterator]() {
+           yield 1;
+           yield 2;
+           yield 3;
+       }
+   };
+
+   for (const value of iterable) {
+       console.log(value); // 1, 2, 3
+   }
+   ```
+
+5. **`Symbol.asyncIterator`**
+   A built-in symbol for asynchronous iteration.
+
+   ```javascript
+   const asyncIterable = {
+       async *[Symbol.asyncIterator]() {
+           yield 1;
+           yield 2;
+           yield 3;
+       }
+   };
+
+   (async () => {
+       for await (const value of asyncIterable) {
+           console.log(value); // 1, 2, 3
+       }
+   })();
+   ```
+
+6. **`Symbol.toPrimitive`**
+   Defines a method that converts an object to a primitive value.
+
+   ```javascript
+   const obj = {
+       [Symbol.toPrimitive](hint) {
+           if (hint === 'string') return 'string value';
+           if (hint === 'number') return 42;
+           return 'default value';
+       }
+   };
+
+   console.log(String(obj)); // "string value"
+   console.log(Number(obj)); // 42
+   ```
+
+7. **`Symbol.toStringTag`**
+   Specifies the default string description of an object, used by `Object.prototype.toString()`.
+
+   ```javascript
+   const obj = {
+       [Symbol.toStringTag]: 'CustomObject'
+   };
+
+   console.log(Object.prototype.toString.call(obj)); // "[object CustomObject]"
+   ```
+
+8. **`Symbol.hasInstance`**
+   Determines if an object is an instance of a constructor.
+
+   ```javascript
+   class MyClass {
+       static [Symbol.hasInstance](instance) {
+           return instance instanceof Array;
+       }
+   }
+
+   console.log([] instanceof MyClass); // true
+   console.log({} instanceof MyClass); // false
+   ```
+
+9. **`Symbol.match`**
+   Defines the method that returns an array of matches when a string is matched against a regular expression.
+
+   ```javascript
+   const regex = /foo/;
+   regex[Symbol.match] = function (string) {
+       return string === 'foo' ? ['foo'] : null;
+   };
+
+   console.log('foo'.match(regex)); // ["foo"]
+   ```
+
+10. **`Symbol.replace`**
+    Defines the method that returns a new string with some replaced substring.
+
+    ```javascript
+    const regex = /foo/;
+    regex[Symbol.replace] = function (string, replacement) {
+        return string === 'foo' ? replacement : string;
+    };
+
+    console.log('foo'.replace(regex, 'bar')); // "bar"
+    ```
+
+11. **`Symbol.search`**
+    Defines the method that returns the index of the first match of a regular expression.
+
+    ```javascript
+    const regex = /foo/;
+    regex[Symbol.search] = function (string) {
+        return string === 'foo' ? 0 : -1;
+    };
+
+    console.log('foo'.search(regex)); // 0
+    ```
+
+12. **`Symbol.split`**
+    Defines the method that splits a string into an array of substrings.
+
+    ```javascript
+    const regex = /,/;
+    regex[Symbol.split] = function (string) {
+        return string === 'a,b' ? ['a', 'b'] : [string];
+    };
+
+    console.log('a,b'.split(regex)); // ["a", "b"]
+    ```
+
+Symbols offer a powerful way to create unique identifiers and manage object properties in a way that avoids conflicts and unintended side effects. They are especially useful in scenarios involving libraries or complex object interactions where you need guaranteed uniqueness and encapsulation.

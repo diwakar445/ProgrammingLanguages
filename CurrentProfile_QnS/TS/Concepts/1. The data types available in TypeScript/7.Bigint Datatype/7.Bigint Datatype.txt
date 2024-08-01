@@ -1,0 +1,174 @@
+The `bigint` data type in TypeScript (and JavaScript) is used to represent integers with arbitrary precision. Unlike the `number` type, which has a limited range, `bigint` can handle very large integers. Here’s a comprehensive guide to `bigint` in TypeScript, including its properties, methods, and usage with code examples.
+
+### 1. **Creating `bigint` Values**
+
+#### Literal Notation
+You can create a `bigint` using the `n` suffix.
+
+```typescript
+let big1: bigint = 123456789012345678901234567890n;
+let big2: bigint = 0x1fffffffffffffn; // hexadecimal notation
+```
+
+#### Using `BigInt()` Constructor
+You can also create a `bigint` using the `BigInt()` function.
+
+```typescript
+let big1: bigint = BigInt("123456789012345678901234567890");
+let big2: bigint = BigInt(1234567890);
+```
+
+### 2. **Operations with `bigint`**
+
+#### Addition
+```typescript
+let a: bigint = 1000n;
+let b: bigint = 2000n;
+let sum: bigint = a + b;
+console.log(sum); // 3000n
+```
+
+#### Subtraction
+```typescript
+let difference: bigint = a - b;
+console.log(difference); // -1000n
+```
+
+#### Multiplication
+```typescript
+let product: bigint = a * b;
+console.log(product); // 2000000n
+```
+
+#### Division
+```typescript
+let quotient: bigint = b / a;
+console.log(quotient); // 2n
+```
+
+#### Modulus
+```typescript
+let remainder: bigint = b % a;
+console.log(remainder); // 0n
+```
+
+#### Exponentiation
+```typescript
+let power: bigint = a ** 3n;
+console.log(power); // 1000000000n
+```
+
+### 3. **Comparison Operations**
+
+#### Equality
+```typescript
+let big1: bigint = 10n;
+let big2: bigint = 10n;
+console.log(big1 === big2); // true
+```
+
+#### Inequality
+```typescript
+let big3: bigint = 20n;
+console.log(big1 !== big3); // true
+```
+
+#### Greater Than / Less Than
+```typescript
+console.log(big1 > big3); // false
+console.log(big1 < big3); // true
+```
+
+### 4. **String Conversion**
+
+#### To String
+```typescript
+let big: bigint = 123456789n;
+console.log(big.toString()); // "123456789"
+```
+
+#### To Number
+You can convert a `bigint` to a `number`, but be cautious of potential precision loss with very large values.
+
+```typescript
+let big: bigint = 123456789n;
+let num: number = Number(big);
+console.log(num); // 123456789
+```
+
+### 5. **Type Checking**
+
+#### Checking Type
+You can use `typeof` to check if a value is a `bigint`.
+
+```typescript
+let big: bigint = 123n;
+console.log(typeof big); // "bigint"
+```
+
+### 6. **BigInt Methods**
+
+#### `BigInt.asIntN(width, bigint)`
+Converts a `bigint` to a signed integer of a specific width (in bits).
+
+```typescript
+let big: bigint = 1234567890123456789n;
+console.log(BigInt.asIntN(64, big)); // 1234567890123456789n
+```
+
+#### `BigInt.asUintN(width, bigint)`
+Converts a `bigint` to an unsigned integer of a specific width (in bits).
+
+```typescript
+let big: bigint = 1234567890123456789n;
+console.log(BigInt.asUintN(64, big)); // 1234567890123456789n
+```
+
+### 7. **Arithmetic Functions**
+
+#### Bitwise Operations
+You can use bitwise operations with `bigint` values.
+
+```typescript
+let a: bigint = 0b1010n; // binary literal
+let b: bigint = 0b1100n;
+
+console.log(a & b); // 8n (bitwise AND)
+console.log(a | b); // 14n (bitwise OR)
+console.log(a ^ b); // 6n (bitwise XOR)
+console.log(~a); // -11n (bitwise NOT)
+```
+
+### 8. **Comparison with `number`**
+
+You cannot mix `bigint` with `number` directly in operations or comparisons, as it will result in a TypeError.
+
+```typescript
+let big: bigint = 10n;
+let num: number = 10;
+console.log(big + BigInt(num)); // 20n
+```
+
+### 9. **`bigint` and JSON**
+
+`bigint` is not directly supported by JSON methods. You need to convert it to a string before serializing.
+
+```typescript
+let big: bigint = 123456789n;
+let jsonString = JSON.stringify({ value: big.toString() });
+console.log(jsonString); // '{"value":"123456789"}'
+
+let parsed = JSON.parse(jsonString);
+let bigValue = BigInt(parsed.value);
+console.log(bigValue); // 123456789n
+```
+
+### Summary
+
+- **Creating `bigint`**: Use literal notation with `n` suffix or `BigInt()` constructor.
+- **Operations**: Support arithmetic, comparison, and bitwise operations.
+- **Conversion**: Convert to and from strings, and handle potential precision issues when converting to numbers.
+- **Methods**: `BigInt.asIntN(width, bigint)` and `BigInt.asUintN(width, bigint)` for specific-width integer conversions.
+- **Compatibility**: `bigint` cannot be mixed directly with `number` and has limited support in JSON.
+
+`bigint` is a powerful type for handling large integers beyond the range of the `number` type and provides a range of operations and methods for precision arithmetic.

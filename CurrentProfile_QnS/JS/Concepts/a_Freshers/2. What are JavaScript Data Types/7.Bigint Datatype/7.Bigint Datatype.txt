@@ -1,0 +1,210 @@
+The `BigInt` data type in JavaScript is used for representing integers with arbitrary precision, which means it can handle numbers larger than those representable by the `Number` type. Here’s a comprehensive overview of `BigInt` with relevant facts and methods:
+
+### 1. **Creating BigInt Values**
+
+#### a. **Using the `BigInt` Constructor**
+
+```javascript
+let bigIntValue = BigInt(123456789012345678901234567890);
+console.log(bigIntValue); // 123456789012345678901234567890n
+```
+
+#### b. **Using the `n` Suffix**
+
+```javascript
+let bigIntLiteral = 123456789012345678901234567890n;
+console.log(bigIntLiteral); // 123456789012345678901234567890n
+```
+
+### 2. **Arithmetic Operations**
+
+#### a. **Addition**
+
+```javascript
+let a = 100n;
+let b = 200n;
+let sum = a + b;
+console.log(sum); // 300n
+```
+
+#### b. **Subtraction**
+
+```javascript
+let a = 500n;
+let b = 300n;
+let difference = a - b;
+console.log(difference); // 200n
+```
+
+#### c. **Multiplication**
+
+```javascript
+let a = 100n;
+let b = 50n;
+let product = a * b;
+console.log(product); // 5000n
+```
+
+#### d. **Division**
+
+```javascript
+let a = 1000n;
+let b = 30n;
+let quotient = a / b;
+console.log(quotient); // 33n
+```
+
+#### e. **Modulo**
+
+```javascript
+let a = 100n;
+let b = 30n;
+let remainder = a % b;
+console.log(remainder); // 10n
+```
+
+#### f. **Exponentiation**
+
+```javascript
+let base = 2n;
+let exponent = 10n;
+let power = base ** exponent;
+console.log(power); // 1024n
+```
+
+### 3. **Comparison Operations**
+
+#### a. **Equality**
+
+```javascript
+let a = 123n;
+let b = 123n;
+console.log(a === b); // true
+```
+
+#### b. **Inequality**
+
+```javascript
+let a = 123n;
+let b = 124n;
+console.log(a !== b); // true
+```
+
+#### c. **Greater Than / Less Than**
+
+```javascript
+let a = 200n;
+let b = 100n;
+console.log(a > b); // true
+console.log(a < b); // false
+```
+
+### 4. **Conversion**
+
+#### a. **To Number**
+
+```javascript
+let bigIntValue = 123n;
+let numberValue = Number(bigIntValue);
+console.log(numberValue); // 123
+```
+
+*Note: Conversion to `Number` may lead to loss of precision if the `BigInt` value is too large.*
+
+#### b. **To String**
+
+```javascript
+let bigIntValue = 123n;
+let stringValue = bigIntValue.toString();
+console.log(stringValue); // "123"
+```
+
+### 5. **Bitwise Operations**
+
+#### a. **AND**
+
+```javascript
+let a = 5n; // 0b0101
+let b = 3n; // 0b0011
+let result = a & b;
+console.log(result); // 1n (0b0001)
+```
+
+#### b. **OR**
+
+```javascript
+let a = 5n; // 0b0101
+let b = 3n; // 0b0011
+let result = a | b;
+console.log(result); // 7n (0b0111)
+```
+
+#### c. **XOR**
+
+```javascript
+let a = 5n; // 0b0101
+let b = 3n; // 0b0011
+let result = a ^ b;
+console.log(result); // 6n (0b0110)
+```
+
+#### d. **NOT**
+
+```javascript
+let a = 5n; // 0b0101
+let result = ~a;
+console.log(result); // -6n (inverted bits)
+```
+
+#### e. **Left Shift**
+
+```javascript
+let a = 5n; // 0b0101
+let result = a << 2;
+console.log(result); // 20n (0b10100)
+```
+
+#### f. **Right Shift**
+
+```javascript
+let a = 20n; // 0b10100
+let result = a >> 2;
+console.log(result); // 5n (0b0101)
+```
+
+### 6. **Methods**
+
+#### a. **`BigInt.asUintN(bits, bigint)`**
+Converts a `BigInt` to an unsigned integer of `bits` bits.
+
+```javascript
+let bigIntValue = 123456789012345678901234567890n;
+let uintValue = BigInt.asUintN(64, bigIntValue);
+console.log(uintValue); // 78838383723722867441301822126n
+```
+
+#### b. **`BigInt.asIntN(bits, bigint)`**
+Converts a `BigInt` to a signed integer of `bits` bits.
+
+```javascript
+let bigIntValue = -123456789012345678901234567890n;
+let intValue = BigInt.asIntN(64, bigIntValue);
+console.log(intValue); // -123456789012345678901234567890n
+```
+
+### 7. **Limits and Considerations**
+
+- `BigInt` is used for integers beyond the safe range of `Number` (i.e., beyond ±2^53 - 1).
+- `BigInt` cannot be mixed directly with `Number` values in operations; explicit conversion is required.
+- `BigInt` literals end with `n`, and literals without the `n` suffix are interpreted as `Number`.
+
+### Summary
+
+- **Creation**: Use `BigInt` constructor or `n` suffix.
+- **Arithmetic**: Supports basic operations (+, -, *, /, %, **).
+- **Comparison**: Supports equality and relational operators.
+- **Conversion**: Convert to `Number` or `String`.
+- **Bitwise Operations**: Supports standard bitwise operations.
+- **Methods**: `BigInt.asUintN` and `BigInt.asIntN` for bitwise conversions.
+
+`BigInt` provides a powerful way to handle large integers with precision, making it suitable for applications requiring exact arithmetic on large numbers.
