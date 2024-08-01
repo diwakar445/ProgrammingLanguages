@@ -294,7 +294,7 @@ special datatypes (6):
    -----------------------------------------------------------------------------------------------------
    In Typescript - Practical - Examples:
 
-   ** 1.Number datatype **
+   ** 1.Number datatype in TS**
    
    ** 1.Interger Numbers **
    let age: number = 20;
@@ -342,4 +342,4 @@ special datatypes (6):
    let stringId: string = <string>id; // in JSX environment
 
 -----------------------------------------------------------------------------------------------------
-   ** 2.String datatype **
+   ** 2.String datatype in TS**
