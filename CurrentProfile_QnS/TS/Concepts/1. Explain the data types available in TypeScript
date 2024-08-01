@@ -343,3 +343,23 @@ special datatypes (6):
 
 -----------------------------------------------------------------------------------------------------
    ** 2.String datatype in TS**
+
+** 1.Creating Strings **
+
+** 2.String Concatination **
+
+** 3.String Interpolation **
+
+** 4.String Splitting & Joining **
+
+** 5.String Methods **
+
+** 6.String Searching **
+
+** 7.String Trimming **
+
+** 8.String multilines **
+
+** 9.Stirng Template Expressions **
+
+** 10.Raw String Literals **
