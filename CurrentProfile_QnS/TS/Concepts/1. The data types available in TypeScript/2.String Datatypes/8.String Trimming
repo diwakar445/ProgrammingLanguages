@@ -1,0 +1,102 @@
+In TypeScript, string trimming is similar to JavaScript, as TypeScript compiles down to JavaScript. The main methods for trimming strings involve removing whitespace from the beginning and/or end of a string. Here are all the possible ways to trim strings in TypeScript with code examples:
+
+### 1. **`trim()` Method**
+Removes whitespace from both the beginning and end of a string.
+
+```typescript
+let str: string = "   Hello World   ";
+console.log(str.trim()); // "Hello World"
+```
+
+### 2. **`trimStart()` or `trimLeft()` Method**
+Removes whitespace from the beginning of a string.
+
+```typescript
+let str: string = "   Hello World";
+console.log(str.trimStart()); // "Hello World"
+```
+
+*Note: `trimLeft()` is an alias for `trimStart()`.*
+
+```typescript
+let str: string = "   Hello World";
+console.log(str.trimLeft()); // "Hello World"
+```
+
+### 3. **`trimEnd()` or `trimRight()` Method**
+Removes whitespace from the end of a string.
+
+```typescript
+let str: string = "Hello World   ";
+console.log(str.trimEnd()); // "Hello World"
+```
+
+*Note: `trimRight()` is an alias for `trimEnd()`.*
+ 
+```typescript
+let str: string = "Hello World   ";
+console.log(str.trimRight()); // "Hello World"
+```
+
+### 4. **Manual Trimming with Regular Expressions**
+You can use regular expressions to manually trim specific characters or patterns.
+
+#### **A. Trimming Whitespace Using Regex**
+
+```typescript
+let str: string = "   Hello World   ";
+let trimmed: string = str.replace(/^\s+|\s+$/g, '');
+console.log(trimmed); // "Hello World"
+```
+
+#### **B. Trimming Specific Characters**
+
+```typescript
+let str: string = "###Hello World###";
+let trimmed: string = str.replace(/^#+|#+$/g, '');
+console.log(trimmed); // "Hello World"
+```
+
+### 5. **Using `slice()` for Trimming Specific Ranges**
+Although not specifically designed for trimming, `slice()` can be used to remove characters from the start and end.
+
+```typescript
+let str: string = "   Hello World   ";
+let trimmed: string = str.slice(3, -3);
+console.log(trimmed); // "Hello World"
+```
+
+### 6. **Using `substring()` for Trimming**
+Similar to `slice()`, you can use `substring()` to remove characters from specific positions.
+
+```typescript
+let str: string = "   Hello World   ";
+let start = str.indexOf("H");
+let end = str.lastIndexOf("d") + 1;
+let trimmed: string = str.substring(start, end);
+console.log(trimmed); // "Hello World"
+```
+
+### 7. **Using `split()` and `join()`**
+You can split the string by whitespace and join it back together to trim leading and trailing whitespace.
+
+```typescript
+let str: string = "   Hello World   ";
+let trimmed: string = str.split(/\s+/).filter(Boolean).join(' ');
+console.log(trimmed); // "Hello World"
+```
+
+### 8. **Trimming Specific Characters with Custom Functions**
+If you need more control, you can write custom trimming functions.
+
+```typescript
+function customTrim(str: string, charToTrim: string): string {
+    let regex = new RegExp(`^${charToTrim}+|${charToTrim}+$`, 'g');
+    return str.replace(regex, '');
+}
+
+let str: string = "###Hello World###";
+console.log(customTrim(str, '#')); // "Hello World"
+```
+
+These methods cover a range of options for trimming strings in TypeScript, from built-in methods to more custom approaches.

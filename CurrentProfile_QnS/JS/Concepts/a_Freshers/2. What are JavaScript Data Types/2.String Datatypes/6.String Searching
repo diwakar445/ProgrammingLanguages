@@ -1,0 +1,138 @@
+In JavaScript, there are several methods for searching within strings. These methods can be used to find substrings or patterns and can vary in their functionality. Here’s a comprehensive list of string searching methods with code examples:
+
+### 1. **`indexOf(searchValue, fromIndex)`**
+Returns the first index at which a given substring can be found. Returns `-1` if not found.
+
+```javascript
+let str = "Hello World";
+console.log(str.indexOf("World")); // 6
+console.log(str.indexOf("world")); // -1 (case-sensitive)
+console.log(str.indexOf("o", 5)); // 7 (starts searching from index 5)
+```
+
+### 2. **`lastIndexOf(searchValue, fromIndex)`**
+Returns the last index at which a given substring can be found. Returns `-1` if not found.
+
+```javascript
+let str = "Hello World, World";
+console.log(str.lastIndexOf("World")); // 13
+console.log(str.lastIndexOf("world")); // -1 (case-sensitive)
+console.log(str.lastIndexOf("o", 5)); // 4 (searches up to index 5)
+```
+
+### 3. **`includes(searchString, position)`**
+Determines if the string contains the specified substring.
+
+```javascript
+let str = "Hello World";
+console.log(str.includes("World")); // true
+console.log(str.includes("world")); // false (case-sensitive)
+console.log(str.includes("Hello", 1)); // false (searches from index 1)
+```
+
+### 4. **`startsWith(searchString, position)`**
+Checks if the string starts with the specified substring.
+
+```javascript
+let str = "Hello World";
+console.log(str.startsWith("Hello")); // true
+console.log(str.startsWith("World")); // false
+console.log(str.startsWith("World", 6)); // true (starts searching from index 6)
+```
+
+### 5. **`endsWith(searchString, length)`**
+Checks if the string ends with the specified substring.
+
+```javascript
+let str = "Hello World";
+console.log(str.endsWith("World")); // true
+console.log(str.endsWith("Hello")); // false
+console.log(str.endsWith("World", 11)); // true (searches up to index 11)
+```
+
+### 6. **`search(regexp)`**
+Searches for a match between a regular expression and the string. Returns the index of the match or `-1` if no match is found.
+
+```javascript
+let str = "The rain in Spain";
+console.log(str.search(/Spain/)); // 12
+console.log(str.search(/rain/)); // 4
+console.log(str.search(/xyz/)); // -1
+```
+
+### 7. **`match(regexp)`**
+Executes a search for a match between a regular expression and the string. Returns an array of matches or `null` if no match is found.
+
+```javascript
+let str = "The rain in Spain";
+console.log(str.match(/rain/)); // ["rain"]
+console.log(str.match(/Spain/)); // ["Spain"]
+console.log(str.match(/xyz/)); // null
+```
+
+### 8. **`matchAll(regexp)`**
+Returns an iterator of all matches, including capturing groups, with the regular expression.
+
+```javascript
+let str = "The rain in Spain";
+let matches = str.matchAll(/\b\w{4}\b/g);
+for (const match of matches) {
+    console.log(match[0]); // rain, Spain
+}
+```
+
+### 9. **`replace(searchValue, replaceValue)`**
+Replaces the first occurrence of a substring or regular expression match with the replacement string.
+
+```javascript
+let str = "Hello World";
+console.log(str.replace("World", "JavaScript")); // "Hello JavaScript"
+console.log(str.replace(/o/, "0")); // "Hell0 World" (replaces the first 'o')
+```
+
+### 10. **`replaceAll(searchValue, replaceValue)`**
+Replaces all occurrences of a substring or regular expression match with the replacement string.
+
+```javascript
+let str = "Hello World, World";
+console.log(str.replaceAll("World", "JavaScript")); // "Hello JavaScript, JavaScript"
+console.log(str.replaceAll(/o/g, "0")); // "Hell0 W0rld, W0rld"
+```
+
+### 11. **`split(separator, limit)`**
+Splits the string into an array of substrings based on the separator.
+
+```javascript
+let str = "Hello World, World";
+console.log(str.split(" ")); // ["Hello", "World,", "World"]
+console.log(str.split(",", 2)); // ["Hello World", " World"]
+```
+
+### 12. **`slice(start, end)`**
+Extracts a section of a string and returns it as a new string.
+
+```javascript
+let str = "Hello World";
+console.log(str.slice(0, 5)); // "Hello"
+console.log(str.slice(-5)); // "World"
+```
+
+### 13. **`substring(start, end)`**
+Returns a substring from the start index to the end index.
+
+```javascript
+let str = "Hello World";
+console.log(str.substring(0, 5)); // "Hello"
+console.log(str.substring(6)); // "World"
+```
+
+### 14. **`substr(start, length)`**
+Returns a substring starting from the start index and extending for a given length.
+
+```javascript
+let str = "Hello World";
+console.log(str.substr(0, 5)); // "Hello"
+console.log(str.substr(6, 5)); // "World"
+```
+
+These methods provide various ways to search and manipulate strings in JavaScript, allowing for flexible and powerful string handling.

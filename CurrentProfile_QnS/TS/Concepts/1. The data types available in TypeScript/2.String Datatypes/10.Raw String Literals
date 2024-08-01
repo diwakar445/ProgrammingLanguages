@@ -1,0 +1,73 @@
+Raw string literals are a concept in JavaScript and TypeScript where you can create strings with special characters and escape sequences preserved as-is. This is useful for creating strings that include backslashes or other special characters without triggering escape sequences.
+
+In JavaScript (and TypeScript), raw string literals are primarily created using `String.raw`, a tag function for template literals. This feature helps in creating strings that retain literal backslashes and other escape characters.
+
+### 1. **Using `String.raw` Tag with Template Literals**
+
+The `String.raw` tag function allows you to create raw string literals by escaping special characters like backslashes and newlines.
+
+#### Example:
+```typescript
+const rawString = String.raw`This is a raw string with a newline \n and a backslash \`.`;
+console.log(rawString); // "This is a raw string with a newline \n and a backslash \`."
+```
+
+In this example, `String.raw` processes the template literal without interpreting the escape sequences, so `\n` and `\` are included in the string literally.
+
+### 2. **Using `String.raw` with Variables**
+
+You can use `String.raw` with variables for more dynamic raw string creation.
+
+#### Example:
+```typescript
+const name = "John";
+const age = 30;
+const rawString = String.raw`Name: ${name}\nAge: ${age}`;
+console.log(rawString); // "Name: John\nAge: 30"
+```
+
+Here, `String.raw` preserves the `\n` newline character, making it appear as-is in the output string.
+
+### 3. **Using `String.raw` with Expressions**
+
+You can also use `String.raw` to include expressions and perform more complex raw string operations.
+
+#### Example:
+```typescript
+const escapedString = String.raw`This is a raw string with an escaped dollar sign: \$${"variable"}`;
+console.log(escapedString); // "This is a raw string with an escaped dollar sign: \$variable"
+```
+
+In this example, the dollar sign (`$`) is preserved as a literal character rather than being interpreted as part of a template literal expression.
+
+### 4. **Combining `String.raw` with Other String Methods**
+
+You can use `String.raw` in combination with other string methods for advanced use cases.
+
+#### Example:
+```typescript
+const path = String.raw`C:\Program Files\${"App"}`;
+const escapedPath = path.replace(/\\/g, '\\\\'); // Double backslashes for proper escaping
+console.log(escapedPath); // "C:\\Program Files\\App"
+```
+
+In this example, `String.raw` helps in creating a path with literal backslashes, and `replace` is used to ensure backslashes are properly escaped in the output.
+
+### 5. **Using Template Literals Directly**
+
+While `String.raw` is the most straightforward way to work with raw string literals, you can also achieve similar effects using template literals directly, though it may require careful handling of escape sequences.
+
+#### Example:
+```typescript
+const normalString = `This is a string with escaped characters: \n\t\\`;
+console.log(normalString); // "This is a string with escaped characters: \n\t\"
+```
+
+In this example, the backslashes and newline characters are interpreted according to escape rules, so special handling is required if you want to preserve them literally.
+
+### Summary
+
+- **`String.raw`**: The primary and recommended way to create raw string literals, preserving escape characters.
+- **Direct Template Literals**: Allows for standard string creation but with escape sequences interpreted.
+
+`String.raw` is particularly useful when dealing with strings that require literal backslashes or when working with regex patterns, file paths, or other scenarios where escape sequences should not be processed.

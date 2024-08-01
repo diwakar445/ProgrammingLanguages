@@ -1,0 +1,116 @@
+In TypeScript, string splitting and joining are common tasks for manipulating and transforming string data. Here are various ways to split and join strings, along with code examples:
+
+### 1. **Using `split()` Method**
+
+The `split()` method splits a string into an array of substrings based on a specified separator.
+
+#### Example: Basic Split
+```typescript
+let str: string = "Hello World";
+let words: string[] = str.split(" ");
+console.log(words); // ["Hello", "World"]
+```
+
+#### Example: Split with Limit
+```typescript
+let str: string = "apple,banana,orange,grape";
+let fruits: string[] = str.split(",", 2);
+console.log(fruits); // ["apple", "banana"]
+```
+
+#### Example: Split with Regular Expression
+```typescript
+let str: string = "one1two2three3four";
+let parts: string[] = str.split(/\d/); // Split by digits
+console.log(parts); // ["one", "two", "three", "four"]
+```
+
+### 2. **Using `join()` Method**
+
+The `join()` method joins all elements of an array into a single string, using a specified separator.
+
+#### Example: Basic Join
+```typescript
+let words: string[] = ["Hello", "World"];
+let str: string = words.join(" ");
+console.log(str); // "Hello World"
+```
+
+#### Example: Join with Custom Separator
+```typescript
+let fruits: string[] = ["apple", "banana", "orange"];
+let fruitList: string = fruits.join(" | ");
+console.log(fruitList); // "apple | banana | orange"
+```
+
+#### Example: Join without Separator
+```typescript
+let chars: string[] = ["a", "b", "c"];
+let result: string = chars.join();
+console.log(result); // "a,b,c"
+```
+
+### 3. **Combining `split()` and `join()`**
+
+You can combine `split()` and `join()` to perform complex transformations on strings.
+
+#### Example: Replacing Delimiters
+```typescript
+let csv: string = "apple,banana,orange";
+let csvToArray: string[] = csv.split(",");
+let arrayToCsv: string = csvToArray.join(" | ");
+console.log(arrayToCsv); // "apple | banana | orange"
+```
+
+#### Example: Normalizing Whitespace
+```typescript
+let text: string = "  Hello   World   ";
+let normalized: string = text.split(/\s+/).join(" ").trim();
+console.log(normalized); // "Hello World"
+```
+
+### 4. **Using `Array.map()` with `split()` and `join()`**
+
+You can use `Array.map()` in combination with `split()` and `join()` to process strings in arrays.
+
+#### Example: Processing Each Element
+```typescript
+let lines: string[] = ["line1:value1", "line2:value2"];
+let processed: string[] = lines.map(line => line.split(":")[1]);
+console.log(processed); // ["value1", "value2"]
+```
+
+### 5. **Using `Array.reduce()` with `split()` and `join()`**
+
+You can also use `Array.reduce()` to perform complex transformations.
+
+#### Example: Rebuilding a String
+```typescript
+let text: string = "a,b,c,d";
+let result: string = text.split(",").reduce((acc, curr) => acc + curr.toUpperCase(), "");
+console.log(result); // "ABCD"
+```
+
+### 6. **Using `String.prototype.match()` with `split()`**
+
+Combine `match()` and `split()` to extract and process parts of a string.
+
+#### Example: Extracting Parts
+```typescript
+let str: string = "The quick brown fox";
+let words: string[] = str.match(/\b\w+\b/g) || [];
+console.log(words); // ["The", "quick", "brown", "fox"]
+```
+
+### 7. **Using `String.prototype.replace()` with `split()` and `join()`**
+
+You can replace delimiters and then use `split()` and `join()`.
+
+#### Example: Replacing Characters
+```typescript
+let str: string = "apple;banana;orange";
+let modified: string = str.replace(/;/g, ",").split(",").join(" | ");
+console.log(modified); // "apple | banana | orange"
+```
+
+These methods provide various ways to manipulate and transform strings using splitting and joining techniques in TypeScript.

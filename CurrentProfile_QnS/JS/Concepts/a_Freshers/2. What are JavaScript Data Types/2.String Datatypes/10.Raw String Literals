@@ -1,0 +1,90 @@
+In JavaScript, "raw string literals" typically refer to the `String.raw` tag function, which is used to create raw string literals. Raw string literals allow you to handle strings in their literal form, including escaping sequences without processing escape characters. This can be particularly useful when working with regular expressions or when you need to ensure that a string is treated exactly as it is, including backslashes.
+
+### `String.raw` Method
+
+The `String.raw` method is a built-in function that returns a string where escape sequences are not processed. It is used as a tag function with template literals.
+
+#### Basic Usage
+
+```javascript
+let rawString = String.raw`This is a raw string with a newline character \n and a tab \t.`;
+console.log(rawString); // "This is a raw string with a newline character \n and a tab \t."
+```
+
+In this example, `\n` and `\t` are not interpreted as newline and tab characters but are treated as literal backslash-n and backslash-t sequences.
+
+#### Using `String.raw` with Template Literals
+
+```javascript
+let name = "Alice";
+let message = String.raw`Hello ${name}\nWelcome to the site!`;
+console.log(message); // "Hello Alice\nWelcome to the site!"
+```
+
+Here, `${name}` is interpolated normally, but `\n` remains as a literal backslash-n in the final string.
+
+#### Working with Multiline Strings
+
+```javascript
+let multiline = String.raw`
+    Line 1
+    Line 2
+    Line 3
+`;
+console.log(multiline);
+// Outputs:
+// 
+//     Line 1
+//     Line 2
+//     Line 3
+```
+
+The template literal preserves the newline characters, including leading whitespace, because `String.raw` treats everything inside the template literal as raw text.
+
+### Other Ways to Create Strings Similar to Raw Strings
+
+While `String.raw` is the primary method for creating raw string literals in JavaScript, other approaches can simulate raw string behavior:
+
+#### 1. **Manual Escaping**
+
+You can manually escape characters if you don’t want to use `String.raw`.
+
+```javascript
+let escapedString = "This is a string with a newline character \\n and a tab \\t.";
+console.log(escapedString); // "This is a string with a newline character \n and a tab \t."
+```
+
+In this case, `\\n` and `\\t` are interpreted as literal `\n` and `\t` respectively.
+
+#### 2. **Using Regular Expressions**
+
+When working with regular expressions, escaping is often necessary to handle raw string patterns.
+
+```javascript
+let pattern = /\\n/; // Represents the raw string "\n" in a regular expression
+let testString = "Hello\\nWorld";
+console.log(pattern.test(testString)); // true
+```
+
+Here, `\\n` is used to represent the newline character in the regex pattern.
+
+#### 3. **Using `JSON.stringify`**
+
+For debugging or displaying raw string values, you can use `JSON.stringify` to get the raw representation of a string.
+
+```javascript
+let rawString = "Hello\nWorld";
+let jsonString = JSON.stringify(rawString);
+console.log(jsonString); // "\"Hello\\nWorld\""
+```
+
+`JSON.stringify` escapes special characters and shows how the string is represented in JSON format.
+
+### Summary
+
+- **`String.raw`**: The primary way to create raw string literals, avoiding processing of escape sequences.
+- **Manual Escaping**: Manually escape characters in strings.
+- **Regular Expressions**: Use escape sequences in regex patterns.
+- **`JSON.stringify`**: Provides a way to see the raw representation of a string for debugging.
+
+These methods help manage strings where you need to maintain literal characters without unwanted escape processing.

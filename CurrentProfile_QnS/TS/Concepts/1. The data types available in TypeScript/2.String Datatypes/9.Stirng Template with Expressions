@@ -1,0 +1,117 @@
+In TypeScript, creating string templates with expressions is primarily done using **template literals**. Template literals are a feature of ES6 that allows for embedded expressions and multiline strings. Below are various ways to create string templates with expressions in TypeScript, along with code examples:
+
+### 1. **Basic Template Literals**
+
+Template literals are enclosed in backticks (\``) and allow for simple interpolation using `${}`.
+
+```typescript
+let name: string = "Alice";
+let age: number = 30;
+let greeting: string = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(greeting); // "Hello, my name is Alice and I am 30 years old."
+```
+
+### 2. **Expressions in Template Literals**
+
+You can include any valid expression within `${}` inside a template literal.
+
+```typescript
+let a: number = 5;
+let b: number = 10;
+let result: string = `The sum of ${a} and ${b} is ${a + b}.`;
+console.log(result); // "The sum of 5 and 10 is 15."
+```
+
+### 3. **Multiline Strings**
+
+Template literals can span multiple lines without the need for newline characters.
+
+```typescript
+let message: string = `This is a message
+that spans multiple
+lines.`;
+console.log(message); // "This is a message\nthat spans multiple\nlines."
+```
+
+### 4. **Embedded Expressions**
+
+You can use functions and more complex expressions within template literals.
+
+```typescript
+function formatName(first: string, last: string): string {
+    return `${first} ${last}`;
+}
+
+let firstName: string = "John";
+let lastName: string = "Doe";
+let introduction: string = `Hello, ${formatName(firstName, lastName)}!`;
+console.log(introduction); // "Hello, John Doe!"
+```
+
+### 5. **Nested Template Literals**
+
+Template literals can be nested within other template literals.
+
+```typescript
+let item: string = "apple";
+let quantity: number = 5;
+let message: string = `You have ${quantity} ${item}s in your cart.`;
+console.log(message); // "You have 5 apples in your cart."
+```
+
+### 6. **Tagged Template Literals**
+
+Tagged template literals allow you to parse template literals with a custom function.
+
+```typescript
+function highlight(strings: TemplateStringsArray, ...values: any[]): string {
+    return strings.reduce((acc, str, i) => acc + str + (values[i] ? `<strong>${values[i]}</strong>` : ''), '');
+}
+
+let name: string = "Jane";
+let age: number = 25;
+let output: string = highlight`Name: ${name}, Age: ${age}`;
+console.log(output); // "Name: <strong>Jane</strong>, Age: <strong>25</strong>"
+```
+
+### 7. **Dynamic Expressions**
+
+Expressions can include dynamic content, such as user input or results from API calls.
+
+```typescript
+let userInput: string = "TypeScript";
+let message: string = `You entered: ${userInput}`;
+console.log(message); // "You entered: TypeScript"
+```
+
+### 8. **String Manipulations Inside Template Literals**
+
+You can perform string manipulations and computations directly inside template literals.
+
+```typescript
+let text: string = "Hello";
+let repeatedText: string = `${text.repeat(3)} World!`;
+console.log(repeatedText); // "HelloHelloHello World!"
+```
+
+### 9. **Using Expressions to Format Dates**
+
+Template literals can be used to format dates and times.
+
+```typescript
+let now: Date = new Date();
+let formattedDate: string = `Today is ${now.toLocaleDateString()} and the time is ${now.toLocaleTimeString()}.`;
+console.log(formattedDate); // "Today is 8/1/2024 and the time is 10:00:00 AM." (output depends on locale)
+```
+
+### 10. **Conditional Expressions**
+
+You can use conditional (ternary) operators within template literals.
+
+```typescript
+let score: number = 85;
+let result: string = `Your score is ${score}. You ${score >= 60 ? 'passed' : 'failed'}.`;
+console.log(result); // "Your score is 85. You passed."
+```
+
+These methods showcase the flexibility of template literals in TypeScript, allowing for dynamic, readable, and maintainable string creation and manipulation.

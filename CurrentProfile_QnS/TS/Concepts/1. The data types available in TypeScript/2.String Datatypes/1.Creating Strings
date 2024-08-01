@@ -1,0 +1,97 @@
+In TypeScript, there are multiple ways to create and manipulate strings. Here are all the possible ways to create strings along with code examples:
+
+### 1. **String Literals**
+String literals are the most straightforward way to create strings.
+
+#### Single Quotes
+```typescript
+let singleQuoteString: string = 'Hello, World!';
+```
+
+#### Double Quotes
+```typescript
+let doubleQuoteString: string = "Hello, World!";
+```
+
+#### Backticks (Template Literals)
+Template literals allow for multiline strings and string interpolation.
+
+```typescript
+let templateLiteralString: string = `Hello, World!`;
+let name: string = "Alice";
+let greeting: string = `Hello, ${name}!`; // Interpolation
+```
+
+### 2. **String Object**
+Using the `String` object constructor creates an object wrapper around a string primitive.
+
+```typescript
+let stringObject: String = new String('Hello, World!');
+```
+
+### 3. **Template Literals with Expressions**
+Template literals can include expressions, which are evaluated and included in the resulting string.
+
+```typescript
+let age: number = 30;
+let info: string = `I am ${age} years old.`;
+```
+
+### 4. **Multiline Strings**
+Template literals support multiline strings directly without special syntax.
+
+```typescript
+let multilineString: string = `This is a
+multiline
+string.`;
+```
+
+### 5. **Raw String Literals**
+Using `String.raw` to create raw strings, where escape sequences are not processed.
+
+```typescript
+let rawString: string = String.raw`This is a raw string, newlines \n and tabs \t are not escaped.`;
+```
+
+### 6. **Type Assertion**
+You can use type assertion when working with string types.
+
+```typescript
+let someValue: any = "This is a string";
+let strLength: number = (someValue as string).length;
+```
+
+### 7. **String.fromCharCode() and String.fromCodePoint()**
+These static methods create a string from Unicode code points.
+
+#### `String.fromCharCode()`
+Returns a string created by using the specified sequence of Unicode values.
+
+```typescript
+let charFromCode: string = String.fromCharCode(72, 101, 108, 108, 111); // "Hello"
+```
+
+#### `String.fromCodePoint()`
+Returns a string created using the specified sequence of code points.
+
+```typescript
+let charFromCodePoint: string = String.fromCodePoint(128512); // "😀"
+```
+
+### 8. **String Concatenation**
+Concatenating strings using the `+` operator.
+
+```typescript
+let hello: string = "Hello, ";
+let world: string = "World!";
+let concatenatedString: string = hello + world; // "Hello, World!"
+```
+
+### 9. **String Constructor with Type Assertion**
+Creating a string using the `String` constructor and type assertion.
+
+```typescript
+let strConstructor: string = String('This is a string');
+```
+
+These are the various ways to create and work with strings in TypeScript. The most commonly used methods are string literals and template literals, but other methods like `String.fromCharCode()` and `String.raw()` also have specific use cases.

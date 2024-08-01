@@ -1,0 +1,204 @@
+JavaScript provides a rich set of string methods for manipulating and working with strings. Here’s a comprehensive list of string methods with code examples:
+
+### 1. **`charAt(index)`**
+Returns the character at the specified index.
+
+```javascript
+let str = "Hello";
+console.log(str.charAt(1)); // "e"
+```
+
+### 2. **`charCodeAt(index)`**
+Returns the Unicode value of the character at the specified index.
+
+```javascript
+let str = "Hello";
+console.log(str.charCodeAt(1)); // 101
+```
+
+### 3. **`concat(...strings)`**
+Concatenates the given strings to the original string.
+
+```javascript
+let str1 = "Hello";
+let str2 = "World";
+console.log(str1.concat(" ", str2)); // "Hello World"
+```
+
+### 4. **`includes(searchString, position)`**
+Checks if the string contains the specified substring.
+
+```javascript
+let str = "Hello World";
+console.log(str.includes("World")); // true
+console.log(str.includes("world")); // false
+```
+
+### 5. **`endsWith(searchString, length)`**
+Checks if the string ends with the specified substring.
+
+```javascript
+let str = "Hello World";
+console.log(str.endsWith("World")); // true
+console.log(str.endsWith("Hello", 5)); // true
+```
+
+### 6. **`indexOf(searchString, fromIndex)`**
+Returns the first index at which a given substring can be found.
+
+```javascript
+let str = "Hello World";
+console.log(str.indexOf("World")); // 6
+console.log(str.indexOf("world")); // -1
+```
+
+### 7. **`lastIndexOf(searchString, fromIndex)`**
+Returns the last index at which a given substring can be found.
+
+```javascript
+let str = "Hello World, World";
+console.log(str.lastIndexOf("World")); // 13
+```
+
+### 8. **`localeCompare(compareString, locales, options)`**
+Compares two strings in the current locale.
+
+```javascript
+let str1 = "apple";
+let str2 = "banana";
+console.log(str1.localeCompare(str2)); // -1
+```
+
+### 9. **`match(regexp)`**
+Executes a search for a match between a regular expression and the string.
+
+```javascript
+let str = "The rain in SPAIN stays mainly in the plain";
+console.log(str.match(/ain/g)); // ["ain", "ain", "ain"]
+```
+
+### 10. **`replace(searchValue, replaceValue)`**
+Replaces the first occurrence of a specified value or regular expression.
+
+```javascript
+let str = "Hello World";
+console.log(str.replace("World", "JavaScript")); // "Hello JavaScript"
+```
+
+### 11. **`replaceAll(searchValue, replaceValue)`**
+Replaces all occurrences of a specified value or regular expression.
+
+```javascript
+let str = "Hello World, World";
+console.log(str.replaceAll("World", "JavaScript")); // "Hello JavaScript, JavaScript"
+```
+
+### 12. **`search(regexp)`**
+Searches for a match between a regular expression and the string.
+
+```javascript
+let str = "The rain in Spain";
+console.log(str.search(/Spain/)); // 12
+```
+
+### 13. **`slice(start, end)`**
+Extracts a section of a string and returns it as a new string.
+
+```javascript
+let str = "Hello World";
+console.log(str.slice(0, 5)); // "Hello"
+console.log(str.slice(-5)); // "World"
+```
+
+### 14. **`split(separator, limit)`**
+Splits the string into an array of substrings based on the separator.
+
+```javascript
+let str = "Hello World";
+console.log(str.split(" ")); // ["Hello", "World"]
+console.log(str.split(" ", 1)); // ["Hello"]
+```
+
+### 15. **`startsWith(searchString, position)`**
+Checks if the string starts with the specified substring.
+
+```javascript
+let str = "Hello World";
+console.log(str.startsWith("Hello")); // true
+console.log(str.startsWith("World", 6)); // true
+```
+
+### 16. **`substring(indexStart, indexEnd)`**
+Returns a substring from the start index to the end index.
+
+```javascript
+let str = "Hello World";
+console.log(str.substring(0, 5)); // "Hello"
+console.log(str.substring(6)); // "World"
+```
+
+### 17. **`toLowerCase()`**
+Returns the string with all characters converted to lowercase.
+
+```javascript
+let str = "Hello World";
+console.log(str.toLowerCase()); // "hello world"
+```
+
+### 18. **`toUpperCase()`**
+Returns the string with all characters converted to uppercase.
+
+```javascript
+let str = "Hello World";
+console.log(str.toUpperCase()); // "HELLO WORLD"
+```
+
+### 19. **`trim()`**
+Removes whitespace from both ends of the string.
+
+```javascript
+let str = "   Hello World   ";
+console.log(str.trim()); // "Hello World"
+```
+
+### 20. **`trimStart()` or `trimLeft()`**
+Removes whitespace from the beginning of the string.
+
+```javascript
+let str = "   Hello World";
+console.log(str.trimStart()); // "Hello World"
+```
+
+### 21. **`trimEnd()` or `trimRight()`**
+Removes whitespace from the end of the string.
+
+```javascript
+let str = "Hello World   ";
+console.log(str.trimEnd()); // "Hello World"
+```
+
+### 22. **`valueOf()`**
+Returns the primitive value of a string object.
+
+```javascript
+let str = new String("Hello");
+console.log(str.valueOf()); // "Hello"
+```
+
+### 23. **`toLocaleLowerCase([locale])`**
+Returns the string with all characters converted to lowercase according to the locale.
+
+```javascript
+let str = "Iñtërnâtiônàlizætiøn";
+console.log(str.toLocaleLowerCase('tr-TR')); // "i̇nṫernâtiônàlizætiøn"
+```
+
+### 24. **`toLocaleUpperCase([locale])`**
+Returns the string with all characters converted to uppercase according to the locale.
+
+```javascript
+let str = "Iñtërnâtiônàlizætiøn";
+console.log(str.toLocaleUpperCase('tr-TR')); // "İÑTÊRNÂTIÔNÂLİZÆTIØN"
+```
+
+These methods cover a wide range of string operations, from basic concatenation and extraction to more advanced manipulations and locale-based formatting.
