@@ -1,0 +1,164 @@
+In JavaScript, the `boolean` data type represents logical values that can be either `true` or `false`. This type is fundamental for conditional statements and logical operations. Here are key facts and methods related to the `boolean` data type, along with code examples:
+
+### 1. **Boolean Values**
+
+- **`true`**: Represents the logical value "true".
+- **`false`**: Represents the logical value "false".
+
+```javascript
+let isTrue = true;
+let isFalse = false;
+console.log(isTrue); // true
+console.log(isFalse); // false
+```
+
+### 2. **Boolean Object**
+
+JavaScript has a `Boolean` object wrapper that can be used to create boolean objects. However, using the primitive boolean type (`true` or `false`) is generally preferred.
+
+```javascript
+let boolObject = new Boolean(true);
+console.log(boolObject.valueOf()); // true
+```
+
+### 3. **Conversion to Boolean**
+
+JavaScript provides several ways to convert values to boolean:
+
+#### A. **Using `Boolean()` Constructor**
+
+```javascript
+console.log(Boolean(1)); // true
+console.log(Boolean(0)); // false
+console.log(Boolean("Hello")); // true
+console.log(Boolean("")); // false
+```
+
+#### B. **Using Double Negation (`!!`)**
+
+```javascript
+console.log(!!"Non-empty string"); // true
+console.log(!!0); // false
+```
+
+### 4. **Logical Operators**
+
+Boolean values are commonly used with logical operators:
+
+#### A. **Logical AND (`&&`)**
+
+```javascript
+let a = true;
+let b = false;
+console.log(a && b); // false
+console.log(a && true); // true
+```
+
+#### B. **Logical OR (`||`)**
+
+```javascript
+let a = true;
+let b = false;
+console.log(a || b); // true
+console.log(b || false); // false
+```
+
+#### C. **Logical NOT (`!`)**
+
+```javascript
+let a = true;
+let b = false;
+console.log(!a); // false
+console.log(!b); // true
+```
+
+### 5. **Boolean Methods**
+
+The Boolean object has a few methods, although their use is rare compared to primitive boolean values.
+
+#### A. **`valueOf()` Method**
+
+Returns the primitive value of the Boolean object.
+
+```javascript
+let boolObject = new Boolean(true);
+console.log(boolObject.valueOf()); // true
+```
+
+### 6. **Coercion to Boolean**
+
+JavaScript automatically converts values to boolean in conditional statements. This is known as type coercion.
+
+```javascript
+if ("string") {
+    console.log("This will print because a non-empty string is truthy.");
+}
+
+if (0) {
+    console.log("This will not print because 0 is falsy.");
+}
+```
+
+### 7. **Falsy Values**
+
+In JavaScript, values that are considered "falsy" (i.e., they coerce to `false` in a boolean context) include:
+
+- `false`
+- `0`
+- `-0`
+- `0n` (BigInt zero)
+- `""` (empty string)
+- `null`
+- `undefined`
+- `NaN`
+
+```javascript
+console.log(!false); // true
+console.log(!0); // true
+console.log(!""); // true
+console.log(!null); // true
+console.log(!undefined); // true
+console.log(!NaN); // true
+```
+
+### 8. **Truthy Values**
+
+Values that are considered "truthy" (i.e., they coerce to `true` in a boolean context) include all values that are not falsy.
+
+```javascript
+console.log(!!"text"); // true
+console.log(!!123); // true
+console.log(!!{}); // true
+console.log(!![]); // true
+console.log(!!function() {}); // true
+```
+
+### 9. **Boolean as Default Parameters**
+
+You can use boolean values as default parameters in functions.
+
+```javascript
+function greet(name, isFormal = false) {
+    if (isFormal) {
+        console.log(`Good evening, ${name}.`);
+    } else {
+        console.log(`Hi ${name}!`);
+    }
+}
+
+greet("Alice"); // "Hi Alice!"
+greet("Bob", true); // "Good evening, Bob."
+```
+
+### 10. **Comparisons with Boolean**
+
+Booleans can be used in comparisons with other values.
+
+```javascript
+console.log(true == 1); // true
+console.log(false == 0); // true
+console.log(true === 1); // false (strict equality)
+console.log(false === 0); // false (strict equality)
+```
+
+These facts and methods cover the basic and advanced usage of booleans in JavaScript, providing a comprehensive understanding of how boolean values are used and manipulated in the language.

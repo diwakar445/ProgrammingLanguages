@@ -1,0 +1,125 @@
+In TypeScript (TS), the `boolean` data type represents a logical entity that can have one of two values: `true` or `false`. Here’s an overview of boolean facts, methods, and usage examples in TypeScript:
+
+### 1. **Basic Boolean Values**
+
+Boolean values are simple and fundamental:
+
+```typescript
+let isTrue: boolean = true;
+let isFalse: boolean = false;
+
+console.log(isTrue);  // true
+console.log(isFalse); // false
+```
+
+### 2. **Boolean Conversion**
+
+You can convert other types to boolean values using JavaScript's type coercion rules or using the `Boolean` constructor.
+
+#### Conversion with Type Coercion:
+- Values like `0`, `null`, `undefined`, `NaN`, and empty strings (`""`) are coerced to `false`.
+- All other values are coerced to `true`.
+
+```typescript
+console.log(Boolean(0));          // false
+console.log(Boolean(1));          // true
+console.log(Boolean("hello"));    // true
+console.log(Boolean(""));         // false
+console.log(Boolean(null));       // false
+console.log(Boolean(undefined));  // false
+```
+
+#### Conversion with `Boolean` Constructor:
+```typescript
+let value: any = 123;
+let isBoolean: boolean = Boolean(value);
+console.log(isBoolean); // true
+```
+
+### 3. **Boolean Methods**
+
+While `boolean` is a primitive type and doesn't have methods of its own, you can perform operations involving booleans using global functions and logical operators.
+
+#### Logical Operators
+
+- **AND (`&&`)**: Returns `true` if both operands are true.
+
+```typescript
+let a: boolean = true;
+let b: boolean = false;
+console.log(a && b); // false
+console.log(a && true); // true
+```
+
+- **OR (`||`)**: Returns `true` if at least one of the operands is true.
+
+```typescript
+console.log(a || b); // true
+console.log(b || false); // false
+```
+
+- **NOT (`!`)**: Inverts the boolean value.
+
+```typescript
+console.log(!a); // false
+console.log(!b); // true
+```
+
+#### Conditional (Ternary) Operator
+
+The ternary operator (`? :`) is used to evaluate a boolean expression and return one of two values based on the result.
+
+```typescript
+let age: number = 20;
+let canVote: boolean = age >= 18 ? true : false;
+console.log(canVote); // true
+```
+
+### 4. **Boolean Type Guards**
+
+TypeScript uses type guards to narrow down types based on boolean expressions.
+
+```typescript
+function check(value: string | number): boolean {
+    if (typeof value === "string") {
+        return true; // Value is a string, so this is true
+    } else {
+        return false; // Value is not a string, so this is false
+    }
+}
+
+console.log(check("hello")); // true
+console.log(check(123));     // false
+```
+
+### 5. **Boolean Type Assertions**
+
+In TypeScript, you can assert types using `as` to treat a value as a boolean.
+
+```typescript
+let value: any = 1;
+let isBoolean: boolean = value as boolean; // Treating number 1 as boolean (not recommended)
+console.log(isBoolean); // true
+```
+
+### 6. **Boolean Object**
+
+Although not common, you can use the `Boolean` object as a wrapper around boolean values. This is usually avoided in favor of primitive booleans.
+
+```typescript
+let boolObj: Boolean = new Boolean(true);
+console.log(boolObj.valueOf()); // true
+console.log(typeof boolObj);    // object
+```
+
+### Summary
+
+- **Basic Values**: `true` and `false`.
+- **Conversion**: Use `Boolean()` constructor or type coercion.
+- **Logical Operators**: `&&`, `||`, `!`.
+- **Conditional Operator**: `? :` for conditional expressions.
+- **Type Guards**: Using `typeof` and conditional checks.
+- **Type Assertions**: `as boolean` for type assertion (less common).
+- **Boolean Object**: `new Boolean()` (generally avoided in favor of primitives).
+
+Understanding these aspects of booleans helps in managing conditional logic, type narrowing, and type assertions effectively in TypeScript.

@@ -1,0 +1,137 @@
+The `Symbol` data type in JavaScript (and TypeScript) is a unique and immutable primitive value used primarily as object property keys. Symbols provide a way to create unique identifiers for object properties that do not collide with other property names, including those that are used internally by JavaScript.
+
+### Key Facts About Symbols
+
+1. **Uniqueness**: Each symbol is unique and immutable. Even if two symbols have the same description, they are not equal.
+
+2. **Symbol Creation**: Symbols are created using the `Symbol()` function.
+
+3. **Symbol Description**: Each symbol can optionally have a description, which is mainly for debugging purposes.
+
+4. **Non-enumerable**: Symbols are not enumerable, so they do not show up in `for...in` loops or `Object.keys()`.
+
+5. **Symbol Properties**: Symbols can be used as property keys for object properties.
+
+### Methods and Properties Related to Symbols
+
+#### 1. **`Symbol(description)`**
+Creates a new unique symbol.
+
+```typescript
+const sym1 = Symbol('description');
+const sym2 = Symbol('description');
+console.log(sym1 === sym2); // false, symbols are unique
+```
+
+#### 2. **`Symbol.for(key)`**
+Finds or creates a global symbol based on a given key. Symbols created with `Symbol.for()` are shared globally.
+
+```typescript
+const globalSym1 = Symbol.for('shared');
+const globalSym2 = Symbol.for('shared');
+console.log(globalSym1 === globalSym2); // true, same global symbol
+```
+
+#### 3. **`Symbol.keyFor(sym)`**
+Returns the key associated with a global symbol. Only works with symbols created using `Symbol.for()`.
+
+```typescript
+const sym = Symbol.for('shared');
+console.log(Symbol.keyFor(sym)); // "shared"
+```
+
+#### 4. **`Symbol.hasInstance`**
+Symbol used to define the behavior of the `instanceof` operator.
+
+```typescript
+class MyClass {
+    static [Symbol.hasInstance](instance: any) {
+        return instance instanceof Array;
+    }
+}
+
+console.log([] instanceof MyClass); // true
+console.log({} instanceof MyClass); // false
+```
+
+#### 5. **`Symbol.isConcatSpreadable`**
+Symbol used to indicate if an object should be flattened to its elements when using `Array.prototype.concat`.
+
+```typescript
+let arr = [1, 2, 3];
+arr[Symbol.isConcatSpreadable] = false;
+console.log([].concat(arr)); // [Array(3)]
+```
+
+#### 6. **`Symbol.iterator`**
+Symbol used to define the default iterator for an object. This is used in for...of loops and spread syntax.
+
+```typescript
+class IterableClass {
+    [Symbol.iterator]() {
+        let i = 0;
+        return {
+            next() {
+                return { value: i++, done: i > 3 };
+            }
+        };
+    }
+}
+
+const iterable = new IterableClass();
+for (const value of iterable) {
+    console.log(value); // 0, 1, 2, 3
+}
+```
+
+#### 7. **`Symbol.toPrimitive`**
+Symbol used to define the default primitive value conversion for an object.
+
+```typescript
+class MyClass {
+    [Symbol.toPrimitive](hint: string) {
+        if (hint === 'string') return 'MyClass';
+        if (hint === 'number') return 42;
+        return null;
+    }
+}
+
+const obj = new MyClass();
+console.log(String(obj)); // "MyClass"
+console.log(Number(obj)); // 42
+```
+
+#### 8. **`Symbol.toStringTag`**
+Symbol used to customize the string representation of an object when `Object.prototype.toString()` is called.
+
+```typescript
+class MyClass {
+    [Symbol.toStringTag] = 'MyClassTag';
+}
+
+console.log(Object.prototype.toString.call(new MyClass())); // "[object MyClassTag]"
+```
+
+#### 9. **`Symbol.unscopables`**
+Symbol used to define properties that should be excluded from `with` statements.
+
+```typescript
+const obj = {
+    [Symbol.unscopables]: {
+        prop1: true
+    },
+    prop1: 'value'
+};
+
+with (obj) {
+    console.log(prop1); // ReferenceError: prop1 is not defined
+}
+```
+
+### Summary
+
+- **Creation**: `Symbol()` and `Symbol.for()`.
+- **Global Symbols**: `Symbol.for()` and `Symbol.keyFor()`.
+- **Special Symbols**: `Symbol.hasInstance`, `Symbol.isConcatSpreadable`, `Symbol.iterator`, `Symbol.toPrimitive`, `Symbol.toStringTag`, `Symbol.unscopables`.
+
+Symbols are a powerful feature in JavaScript and TypeScript for creating unique property keys and customizing object behavior in ways that are not possible with strings.
