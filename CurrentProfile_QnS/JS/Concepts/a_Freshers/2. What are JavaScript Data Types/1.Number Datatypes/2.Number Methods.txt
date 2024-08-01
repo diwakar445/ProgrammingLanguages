@@ -1,0 +1,140 @@
+In JavaScript, the `Number` object provides a set of methods for working with numbers. These methods include conversion, rounding, parsing, and more. Below is a list of all possible `Number` methods along with code examples for each.
+
+### 1. **`Number.prototype.toExponential()`**
+Returns a string representing the number in exponential notation.
+```javascript
+let num = 12345.6789;
+console.log(num.toExponential(2)); // "1.23e+4"
+console.log(num.toExponential(4)); // "1.2346e+4"
+```
+
+### 2. **`Number.prototype.toFixed()`**
+Returns a string representing the number in fixed-point notation.
+```javascript
+let num = 12345.6789;
+console.log(num.toFixed(2)); // "12345.68"
+console.log(num.toFixed(0)); // "12346"
+```
+
+### 3. **`Number.prototype.toLocaleString()`**
+Returns a string with a language-sensitive representation of the number.
+```javascript
+let num = 1234567.89;
+console.log(num.toLocaleString('en-US')); // "1,234,567.89"
+console.log(num.toLocaleString('de-DE')); // "1.234.567,89"
+```
+
+### 4. **`Number.prototype.toPrecision()`**
+Returns a string representing the number to a specified precision.
+```javascript
+let num = 12345.6789;
+console.log(num.toPrecision(5)); // "12346"
+console.log(num.toPrecision(8)); // "12345.679"
+```
+
+### 5. **`Number.prototype.toString()`**
+Returns a string representing the specified Number object.
+```javascript
+let num = 255;
+console.log(num.toString()); // "255"
+console.log(num.toString(2)); // "11111111" (binary)
+console.log(num.toString(16)); // "ff" (hexadecimal)
+```
+
+### 6. **`Number.prototype.valueOf()`**
+Returns the primitive value of a `Number` object.
+```javascript
+let num = new Number(123);
+console.log(num.valueOf()); // 123
+```
+
+### 7. **`Number.isNaN()`**
+Determines whether the passed value is NaN and its type is Number.
+```javascript
+console.log(Number.isNaN(NaN)); // true
+console.log(Number.isNaN(123)); // false
+console.log(Number.isNaN('abc')); // false
+```
+
+### 8. **`Number.isFinite()`**
+Determines whether the passed value is a finite number.
+```javascript
+console.log(Number.isFinite(123)); // true
+console.log(Number.isFinite(Infinity)); // false
+console.log(Number.isFinite(NaN)); // false
+```
+
+### 9. **`Number.isInteger()`**
+Determines whether the passed value is an integer.
+```javascript
+console.log(Number.isInteger(123)); // true
+console.log(Number.isInteger(123.45)); // false
+console.log(Number.isInteger('123')); // false
+```
+
+### 10. **`Number.isSafeInteger()`**
+Determines whether the provided value is a safe integer (a number between `-(2^53 - 1)` and `2^53 - 1`).
+```javascript
+console.log(Number.isSafeInteger(123)); // true
+console.log(Number.isSafeInteger(Math.pow(2, 53))); // false
+console.log(Number.isSafeInteger(123.45)); // false
+```
+
+### 11. **`Number.parseFloat()`**
+Parses a string argument and returns a floating-point number.
+```javascript
+console.log(Number.parseFloat('123.45')); // 123.45
+console.log(Number.parseFloat('abc123')); // NaN
+```
+
+### 12. **`Number.parseInt()`**
+Parses a string argument and returns an integer of the specified radix.
+```javascript
+console.log(Number.parseInt('123')); // 123
+console.log(Number.parseInt('123abc')); // 123
+console.log(Number.parseInt('ff', 16)); // 255 (hexadecimal to decimal)
+```
+
+### 13. **`Number.MAX_VALUE`**
+Represents the largest positive finite number.
+```javascript
+console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+```
+
+### 14. **`Number.MIN_VALUE`**
+Represents the smallest positive finite number.
+```javascript
+console.log(Number.MIN_VALUE); // 5e-324
+```
+
+### 15. **`Number.MAX_SAFE_INTEGER`**
+Represents the maximum safe integer in JavaScript (`2^53 - 1`).
+```javascript
+console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+```
+
+### 16. **`Number.MIN_SAFE_INTEGER`**
+Represents the minimum safe integer in JavaScript (`-(2^53 - 1)`).
+```javascript
+console.log(Number.MIN_SAFE_INTEGER); // -9007199254740991
+```
+
+### 17. **`Number.POSITIVE_INFINITY`**
+Represents positive infinity.
+```javascript
+console.log(Number.POSITIVE_INFINITY); // Infinity
+```
+
+### 18. **`Number.NEGATIVE_INFINITY`**
+Represents negative infinity.
+```javascript
+console.log(Number.NEGATIVE_INFINITY); // -Infinity
+```
+
+### 19. **`Number.NaN`**
+Represents Not-a-Number.
+```javascript
+console.log(Number.NaN); // NaN
+```
+
+These methods cover the various ways to handle and manipulate numbers in JavaScript.

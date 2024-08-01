@@ -1,0 +1,89 @@
+In JavaScript, string trimming involves removing whitespace from the beginning and/or end of a string. Here are all possible ways to trim strings, along with code examples:
+
+### 1. **`trim()`**
+Removes whitespace from both the beginning and end of a string.
+
+```javascript
+let str = "   Hello World   ";
+console.log(str.trim()); // "Hello World"
+```
+
+### 2. **`trimStart()` or `trimLeft()`**
+Removes whitespace from the beginning (left side) of a string.
+
+```javascript
+let str = "   Hello World";
+console.log(str.trimStart()); // "Hello World"
+console.log(str.trimLeft()); // "Hello World"
+```
+
+### 3. **`trimEnd()` or `trimRight()`**
+Removes whitespace from the end (right side) of a string.
+
+```javascript
+let str = "Hello World   ";
+console.log(str.trimEnd()); // "Hello World"
+console.log(str.trimRight()); // "Hello World"
+```
+
+### 4. **Manual Trimming with `substring()` or `slice()`**
+Manually trim whitespace by identifying and extracting the non-whitespace parts of the string.
+
+```javascript
+let str = "   Hello World   ";
+let trimmedStr = str.substring(str.search(/\S/), str.search(/\S\s*$/) + 1);
+console.log(trimmedStr); // "Hello World"
+
+// Using slice()
+let trimmedStr2 = str.slice(str.search(/\S/), str.search(/\S\s*$/) + 1);
+console.log(trimmedStr2); // "Hello World"
+```
+
+### 5. **Using Regular Expressions**
+Manually trim whitespace using regular expressions.
+
+```javascript
+let str = "   Hello World   ";
+let trimmedStr = str.replace(/^\s+|\s+$/g, "");
+console.log(trimmedStr); // "Hello World"
+
+// Trim only leading whitespace
+let trimmedStart = str.replace(/^\s+/, "");
+console.log(trimmedStart); // "Hello World   "
+
+// Trim only trailing whitespace
+let trimmedEnd = str.replace(/\s+$/, "");
+console.log(trimmedEnd); // "   Hello World"
+```
+
+### 6. **Custom Trimming Functions**
+Create custom functions to trim based on specific needs.
+
+```javascript
+function customTrim(str) {
+    return str.replace(/^\s+|\s+$/g, "");
+}
+
+let str = "   Hello World   ";
+console.log(customTrim(str)); // "Hello World"
+```
+
+### 7. **Using `Array.join()` for Trimming**
+Trimming whitespace from the start and end by splitting and joining strings.
+
+```javascript
+let str = "   Hello World   ";
+let trimmedStr = str.split(/\s+/).filter(Boolean).join(" ");
+console.log(trimmedStr); // "Hello World"
+```
+
+### 8. **Using `Array.map()` and `Array.join()` for Trimming**
+For more complex trimming scenarios, map and join methods can be used.
+
+```javascript
+let str = "   Hello World   ";
+let trimmedStr = str.split("").map(c => c.trim()).join("");
+console.log(trimmedStr); // "Hello World"
+```
+
+These methods cover a range of options for trimming strings in JavaScript, from the built-in methods to more advanced or custom approaches.

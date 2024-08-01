@@ -1,0 +1,124 @@
+In TypeScript, you can create multiline strings using several approaches. Here are all possible ways to handle multiline strings, along with code examples:
+
+### 1. **Template Literals (ES6)**
+Template literals are the most common and versatile way to create multiline strings. They use backticks (\``) and allow for multiline content and embedded expressions.
+
+```typescript
+let multilineString = `This is a multiline
+string that spans multiple
+lines in the code.`;
+
+console.log(multilineString);
+// Output:
+// This is a multiline
+// string that spans multiple
+// lines in the code.
+```
+
+### 2. **Concatenation with `+` Operator**
+You can concatenate strings using the `+` operator, breaking them into separate lines in the code.
+
+```typescript
+let multilineString = "This is a multiline " +
+  "string that spans multiple " +
+  "lines in the code.";
+
+console.log(multilineString);
+// Output: "This is a multiline string that spans multiple lines in the code."
+```
+
+### 3. **Using `concat()` Method**
+The `concat()` method can be used to combine strings, although it’s less common for multiline strings.
+
+```typescript
+let multilineString = "This is a multiline ".concat(
+  "string that spans multiple ",
+  "lines in the code."
+);
+
+console.log(multilineString);
+// Output: "This is a multiline string that spans multiple lines in the code."
+```
+
+### 4. **Array `join()` Method**
+Combine multiple strings stored in an array using the `join()` method with a newline separator.
+
+```typescript
+let lines = [
+  "This is a multiline",
+  "string that spans multiple",
+  "lines in the code."
+];
+let multilineString = lines.join("\n");
+
+console.log(multilineString);
+// Output:
+// This is a multiline
+// string that spans multiple
+// lines in the code.
+```
+
+### 5. **String Literal Concatenation**
+Use string literals with implicit concatenation in expressions.
+
+```typescript
+let multilineString = `This is a multiline \
+string that spans multiple \
+lines in the code.`;
+
+console.log(multilineString);
+// Output: "This is a multiline string that spans multiple lines in the code."
+```
+
+### 6. **Using String Constructor (Less Common)**
+Though not commonly used for multiline strings, you can use the `String` constructor.
+
+```typescript
+let multilineString = String(
+  "This is a multiline\n" +
+  "string that spans multiple\n" +
+  "lines in the code."
+);
+
+console.log(multilineString);
+// Output:
+// This is a multiline
+// string that spans multiple
+// lines in the code.
+```
+
+### 7. **Concatenation with Line Breaks (Not Standard)**
+This is more of a workaround and not a standard approach, but you can use escaped newline characters.
+
+```typescript
+let multilineString = "This is a multiline\n\
+string that spans multiple\n\
+lines in the code.";
+
+console.log(multilineString);
+// Output:
+// This is a multiline
+// string that spans multiple
+// lines in the code.
+```
+
+### 8. **Using Tagged Template Literals**
+For more advanced cases, tagged template literals can be used to process multiline strings.
+
+```typescript
+function tag(strings: TemplateStringsArray, ...values: any[]) {
+  return strings.reduce((acc, str, i) => acc + str + (values[i] || ""), "");
+}
+
+let multilineString = tag`This is a multiline
+string that spans multiple
+lines in the code.`;
+
+console.log(multilineString);
+// Output:
+// This is a multiline
+// string that spans multiple
+// lines in the code.
+```
+
+These methods cover a range of techniques for handling multiline strings in TypeScript, from modern approaches like template literals to more traditional concatenation methods.
