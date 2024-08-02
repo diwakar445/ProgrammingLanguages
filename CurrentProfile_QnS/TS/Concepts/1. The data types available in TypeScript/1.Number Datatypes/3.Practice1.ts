@@ -14,7 +14,7 @@ let int2: number = parseInt(str2,16);
 let binary0: number = 0b1010; // binary in number notation
 let octal: number = 0o12; // octal in number notation
 let hexadeciaml: number = 0xA; // hexadeciaml in number notation
-let num1: string = binary.toString(); // string 10 let num1: string = binary.toString(10); 
+let num1: string = binary0.toString(); // string 10 let num1: string = binary.toString(10); 
 let num2: string = octal.toString(10); // string 10
 let num3: string = hexadeciaml.toString(10); // string 10
 //console.log(num1, typeof(num1) + ' base 10');
