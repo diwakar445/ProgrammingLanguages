@@ -1,4 +1,10 @@
 In JavaScript, the `Number` object provides a set of methods for working with numbers. These methods include conversion, rounding, parsing, and more. Below is a list of all possible `Number` methods along with code examples for each.
+### 1. **Number Properties**
+- **`Number.MAX_VALUE`**: The maximum numeric value representable in JavaScript.
+- **`Number.MIN_VALUE`**: The smallest positive numeric value representable in JavaScript.
+- **`Number.POSITIVE_INFINITY`**: Represents positive infinity.
+- **`Number.NEGATIVE_INFINITY`**: Represents negative infinity.
+- **`Number.NaN`**: Represents a value that is "Not-a-Number".
 
 ### 1. **`Number.prototype.toExponential()`**
 Returns a string representing the number in exponential notation.
