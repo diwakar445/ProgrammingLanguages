@@ -25,12 +25,12 @@ let num3: string = hexadeciaml.toString(10); // string 10
 
 let number: number = 10;
 let bin: string = number.toString(2); // coverts to string notation of base 2
-console.log(bin, typeof(bin) + ' base 2');
+console.log(bin, typeof(bin) + ' base 2'); // string
 
 let number1: number = 10;
 let bin1: string = number1.toString(8); // coverts to string notation of base 8
-console.log(bin1, typeof(bin1) + ' base 8');
+console.log(bin1, typeof(bin1) + ' base 8'); // string
 
 let number2: number = 10;
 let bin2: string = number2.toString(16); // coverts to string notation of base 16
-console.log(bin2, typeof(bin2) + ' base 16');
+console.log(bin2, typeof(bin2) + ' base 16'); // string
