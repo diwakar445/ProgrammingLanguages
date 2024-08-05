@@ -32,21 +32,6 @@ Angular Interview Questions For Freshers
 24. What is String Interpolation in Angular?
 25. What are Template statements?
 
-Angular Interview Questions for Experienced
-
-44. What are RxJs in Angular?
-45. What exactly is a parameterized pipe?
-46. What are class decorators?
-47. What are Method decorators?
-48. What are property decorators?
-49. What are router links?
-50. What exactly is the router state?
-51. What does Angular Material mean?
-52. What is transpiling in Angular?
-53. What are HTTP interceptors?
-54. What is Change Detection, and how does the Change Detection Mechanism work?
-55. What is a bootstrapping module?
-
 Angular Interview Questions For Advanced Level 
 
 26. What is the difference between AOT and JIT?
@@ -67,6 +52,21 @@ Angular Interview Questions For Advanced Level
 41. How do you share data between components in Angular?
 42. Explain the concept of dependency injection.
 43. Explain MVVM architecture.
+
+Angular Interview Questions for Experienced
+
+44. What are RxJs in Angular?
+45. What exactly is a parameterized pipe?
+46. What are class decorators?
+47. What are Method decorators?
+48. What are property decorators?
+49. What are router links?
+50. What exactly is the router state?
+51. What does Angular Material mean?
+52. What is transpiling in Angular?
+53. What are HTTP interceptors?
+54. What is Change Detection, and how does the Change Detection Mechanism work?
+55. What is a bootstrapping module?
 
 
 Angular Scenario Based Interview Questions
