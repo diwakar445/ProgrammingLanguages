@@ -50,7 +50,7 @@ React Interview Questions and Answers (2024) – Intermediate Level
 4. Explain the lifecycle methods of components
 5. Explain the methods used in mounting phase of components
 6. What is this.setState function in React?
-7.  What is the use of ref in React?
+7. What is the use of ref in React?
 8. What are hooks in React?
 9. Explain the useState hook in React?
 10. Explain the useEffect hook in react?
