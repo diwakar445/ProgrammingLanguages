@@ -1,15 +1,20 @@
-Topic : "xyz"
+Topic : "Topic/Concept"
 
-1. What is "xyz"? and how to define "xyz" in the context of 
+1. What is "Topic/Concept"? and how to define "Topic/Concept" in the context of 
     a.SOLID principles
     b.JS-TS
     c.Anguar-React-ExpressJS with code examples?
 
-2. What are the problems exist before invention of "xyz" & how "xyz" solves them with code examples?
-3. "xyz" usage or implementation in realtime business use cases in the context of
+2. What are the problems exist before invention of "Topic/Concept" 
+    & how "Topic/Concept" solves them with code examples?
+
+3. "Topic/Concept" usage or implementation in realtime business use cases in the context of
     a.SOLID principles
     b.JS-TS
     c.Anguar-React-ExpressJS with code examples?
-4. What are the other ways of implementing "xyz"?
-5. What are the uses and drawbacks of "xyz"?
+
+4. What are the other ways of implementing "Topic/Concept"?
+
+5. What are the uses and drawbacks of "Topic/Concept"?
+
 6. Quiz/Interview/Challanges/Project level questions practice & revision !
