@@ -1,0 +1,15 @@
+Topic : "xyz"
+
+1. What is "xyz"? and how to define "xyz" in the context of 
+    a.SOLID principles
+    b.JS-TS
+    c.Anguar-React-ExpressJS with code examples?
+
+2. What are the problems exist before invention of "xyz" & how "xyz" solves them with code examples?
+3. "xyz" usage or implementation in realtime business use cases in the context of
+    a.SOLID principles
+    b.JS-TS
+    c.Anguar-React-ExpressJS with code examples?
+4. What are the other ways of implementing "xyz"?
+5. What are the uses and drawbacks of "xyz"?
+6. Quiz/Interview/Challanges/Project level questions practice & revision !
