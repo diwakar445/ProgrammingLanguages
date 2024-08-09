@@ -25,9 +25,9 @@ Topic : [Topic/Concept]
 6. What are the uses and drawbacks of [Topic/Concept] with elaborate code examples?
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-7. Practice for Quiz, Interview, Challenges, and Project-level questions with elaborate code examples.
+7. Practice for Quiz, Interview, Challenges, and Project-level questions on [Topic/Concept] with elaborate code examples.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-8. Revision for Quiz, Interview, Challenges, and Project-level questions with elaborate code examples.
+8. Revision for Quiz, Interview, Challenges, and Project-level questions on [Topic/Concept] with elaborate code examples.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
