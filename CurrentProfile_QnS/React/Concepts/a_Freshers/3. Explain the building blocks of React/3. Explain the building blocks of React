@@ -2,4 +2,299 @@ Question : 3. Explain the building blocks of React
 Topic : [Building blocks of React]
 
 1. Explain the building blocks of React with elaborate code examples? 
+React is a popular JavaScript library for building user interfaces, especially single-page applications. It is based on several core concepts or "building blocks" that help you create dynamic and efficient UIs. The main building blocks of React include:
+
+1. **Components**
+2. **JSX (JavaScript XML)**
+3. **State**
+4. **Props**
+5. **Lifecycle Methods (Class Components)**
+6. **Hooks (Functional Components)**
+7. **Context**
+8. **Refs**
+9. **Error Boundaries**
+
+Here's an elaborate explanation of each building block with code examples:
+
+### 1. **Components**
+
+Components are the fundamental building blocks in React. They can be either class-based or functional. Components encapsulate the UI and logic.
+
+**Functional Component Example:**
+
+```jsx
+// Functional component
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+// Usage
+function App() {
+  return <Welcome name="Alice" />;
+}
+```
+
+**Class Component Example:**
+
+```jsx
+import React, { Component } from 'react';
+
+// Class component
+class Welcome extends Component {
+  render() {
+    return <h1>Hello, {this.props.name}!</h1>;
+  }
+}
+
+// Usage
+class App extends Component {
+  render() {
+    return <Welcome name="Bob" />;
+  }
+}
+```
+
+### 2. **JSX (JavaScript XML)**
+
+JSX is a syntax extension that allows you to write HTML elements and components in JavaScript. It makes the code more readable and resembles HTML.
+
+**Example:**
+
+```jsx
+function App() {
+  return (
+    <div>
+      <h1>Welcome to React</h1>
+      <p>This is a JSX example.</p>
+    </div>
+  );
+}
+```
+
+### 3. **State**
+
+State is used to store data that can change over time within a component. It allows a component to maintain its own data and respond to user actions or other events.
+
+**Functional Component with Hooks:**
+
+```jsx
+import React, { useState } from 'react';
+
+function Counter() {
+  // Declare a state variable named "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
+```
+
+**Class Component with State:**
+
+```jsx
+import React, { Component } from 'react';
+
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    // Initialize state
+    this.state = { count: 0 };
+  }
+
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={this.increment}>Click me</button>
+      </div>
+    );
+  }
+}
+```
+
+### 4. **Props**
+
+Props (short for properties) are used to pass data from a parent component to a child component. Props are read-only and help in component composition.
+
+**Example:**
+
+```jsx
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+function App() {
+  return <Greeting name="Charlie" />;
+}
+```
+
+### 5. **Lifecycle Methods (Class Components)**
+
+Lifecycle methods are special methods in class components that get called at different stages of a component's life, such as when it is created, updated, or destroyed.
+
+**Example:**
+
+```jsx
+import React, { Component } from 'react';
+
+class LifecycleDemo extends Component {
+  componentDidMount() {
+    // Called after the component is mounted
+    console.log('Component did mount');
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    // Called after the component updates
+    console.log('Component did update');
+  }
+
+  componentWillUnmount() {
+    // Called before the component is unmounted
+    console.log('Component will unmount');
+  }
+
+  render() {
+    return <h1>Lifecycle Demo</h1>;
+  }
+}
+```
+
+### 6. **Hooks (Functional Components)**
+
+Hooks are functions that let you use state and other React features in functional components. The most commonly used hooks are `useState` and `useEffect`.
+
+**Example with `useEffect`:**
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function DataFetcher() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    // Fetch data on component mount
+    fetch('https://api.example.com/data')
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []); // Empty dependency array means this effect runs only once
+
+  if (!data) return <p>Loading...</p>;
+  return <pre>{JSON.stringify(data, null, 2)}</pre>;
+}
+```
+
+### 7. **Context**
+
+Context is used to manage global state and share data between components without passing props explicitly through every level of the component tree.
+
+**Example:**
+
+```jsx
+import React, { createContext, useContext, useState } from 'react';
+
+// Create a Context
+const ThemeContext = createContext('light');
+
+function ThemedButton() {
+  // Use the context value
+  const theme = useContext(ThemeContext);
+  return <button style={{ background: theme === 'dark' ? '#333' : '#FFF' }}>Themed Button</button>;
+}
+
+function App() {
+  const [theme, setTheme] = useState('light');
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <ThemedButton />
+      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+        Toggle Theme
+      </button>
+    </ThemeContext.Provider>
+  );
+}
+```
+
+### 8. **Refs**
+
+Refs provide a way to access DOM nodes or React elements directly. They are useful for managing focus, text selection, or triggering animations.
+
+**Example:**
+
+```jsx
+import React, { useRef } from 'react';
+
+function FocusInput() {
+  const inputRef = useRef(null);
+
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
+
+  return (
+    <div>
+      <input ref={inputRef} type="text" />
+      <button onClick={focusInput}>Focus Input</button>
+    </div>
+  );
+}
+```
+
+### 9. **Error Boundaries**
+
+Error Boundaries are components that catch JavaScript errors in their child components and display a fallback UI instead of crashing the whole app.
+
+**Example:**
+
+```jsx
+import React, { Component } from 'react';
+
+// Error Boundary Component
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    // Update state to render fallback UI
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, info) {
+    // Log error details
+    console.error('Error:', error);
+    console.error('Error Info:', info);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <h1>Something went wrong.</h1>;
+    }
+
+    return this.props.children; 
+  }
+}
+
+// Usage of Error Boundary
+function App() {
+  return (
+    <ErrorBoundary>
+      <SomeComponent />
+    </ErrorBoundary>
+  );
+}
+```
+
+### Summary
+
+React's building blocks—Components, JSX, State, Props, Lifecycle Methods, Hooks, Context, Refs, and Error Boundaries—provide a powerful set of tools for building dynamic and efficient user interfaces. Each block plays a crucial role in the architecture of a React application, helping developers create well-structured and maintainable code.
 
