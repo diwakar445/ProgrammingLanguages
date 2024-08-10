@@ -2,14 +2,20 @@ Question : 4.What are Single Page Applications (SPA) with elaborate code example
 Topic : [Single Page Applications]
 
 1. What is [Single Page Applications]?
-A **Single Page Application (SPA)** is a web application that interacts with the user by dynamically rewriting the current page, rather than loading entire new pages from the server. This approach improves the user experience by making interactions faster and more fluid, resembling a native application.
+A **Single Page Application (SPA)** is a web application that interacts with the user by dynamically rewriting the current page, 
+rather than loading entire new pages from the server. This approach improves the user experience by making interactions faster and 
+more fluid, resembling a native application.
 
 ### Key Characteristics of SPAs
 
-1. **Single HTML Page**: The application loads a single HTML page and dynamically updates the content based on user interactions or application state.
-2. **Client-Side Routing**: Navigation within the application is handled on the client side, using JavaScript to update the URL and display different views or components without reloading the page.
-3. **AJAX/Fetch Requests**: SPAs make asynchronous requests to the server to fetch or send data, typically using AJAX (Asynchronous JavaScript and XML) or Fetch API.
-4. **JavaScript Frameworks/Libraries**: SPAs are often built using JavaScript frameworks or libraries like React, Angular, Vue.js, or Svelte, which provide tools for building dynamic and responsive user interfaces.
+1. **Single HTML Page**: The application loads a single HTML page and dynamically updates the content based on user interactions 
+or application state.
+2. **Client-Side Routing**: Navigation within the application is handled on the client side, using JavaScript to update the URL 
+and display different views or components without reloading the page.
+3. **AJAX/Fetch Requests**: SPAs make asynchronous requests to the server to fetch or send data, typically using 
+AJAX (Asynchronous JavaScript and XML) or Fetch API.
+4. **JavaScript Frameworks/Libraries**: SPAs are often built using JavaScript frameworks or libraries like React, Angular, Vue.js, 
+or Svelte, which provide tools for building dynamic and responsive user interfaces.
 
 ### Example: Building a Simple SPA with React
 
@@ -250,8 +256,8 @@ Open your browser and navigate to `http://localhost:8080`. You should see the Ho
 ------------------------------------------------------------------------------------------------------------------------------------------
 2. How do you define [Single Page Applications] in the context of 
     a.SOLID principles
-    b.JS-TS
-    c.Anguar-React-ExpressJS with elaborate code examples?
+    b.JS, TS
+    c.Anguar,React,ExpressJS with elaborate code examples?
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 3. What problems existed before the invention of [Single Page Applications], 

@@ -6,8 +6,8 @@ Topic : [Topic/Concept]
 ------------------------------------------------------------------------------------------------------------------------------------------
 2. How do you define [Topic/Concept] in the context of 
     a.SOLID principles
-    b.JS-TS
-    c.Anguar-React-ExpressJS with elaborate code examples?
+    b.JS, TS
+    c.Anguar, React, ExpressJS with elaborate code examples?
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 3. What problems existed before the invention of [Topic/Concept], 
@@ -16,8 +16,8 @@ Topic : [Topic/Concept]
 ------------------------------------------------------------------------------------------------------------------------------------------
 4. [Topic/Concept] Implementation in Real-time Business Use Cases in the Context of
     a.SOLID principles
-    b.JS-TS
-    c.Anguar-React-ExpressJS with elaborate code examples?
+    b.JS,   TS
+    c.Anguar, React, ExpressJS with elaborate code examples?
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 5. What are the alternative ways to implement [Topic/Concept] with elaborate code examples?
