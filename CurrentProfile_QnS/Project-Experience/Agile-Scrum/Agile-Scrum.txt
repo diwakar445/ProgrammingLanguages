@@ -1,0 +1,75 @@
+Here are some common interview questions related to Agile and Scrum, along with brief explanations for each:
+
+### **Agile Methodology:**
+1. **What is Agile, and how is it different from traditional Waterfall methodology?**
+   - Agile is an iterative and incremental approach to software development, emphasizing flexibility and customer satisfaction, unlike Waterfall, which is linear and sequential.
+
+2. **What are the key principles of Agile?**
+   - Customer satisfaction through early and continuous delivery
+   - Welcoming changing requirements, even late in development
+   - Delivering working software frequently
+   - Close, daily cooperation between business people and developers
+   - Motivated individuals and self-organizing teams
+
+3. **What is the Agile Manifesto?**
+   - The Agile Manifesto is a set of 4 values and 12 principles that guide Agile development. These values emphasize individuals and interactions, working software, customer collaboration, and responding to change.
+
+4. **What are some common Agile frameworks?**
+   - Scrum, Kanban, Lean, Extreme Programming (XP), and Crystal are popular Agile frameworks.
+
+5. **How do you handle changing requirements in Agile?**
+   - Agile embraces change by maintaining a flexible backlog, prioritizing work based on business value, and regularly delivering increments of work to allow for adjustments.
+
+### **Scrum Framework:**
+1. **What is Scrum?**
+   - Scrum is a framework within Agile that helps teams work together. It involves roles, ceremonies, and artifacts designed to enable iterative development.
+
+2. **What are the roles in Scrum?**
+   - **Product Owner:** Responsible for maximizing the value of the product by managing the backlog.
+   - **Scrum Master:** Facilitates the Scrum process, removes impediments, and ensures the team adheres to Scrum practices.
+   - **Development Team:** Cross-functional team members who are responsible for delivering a potentially shippable product increment at the end of each sprint.
+
+3. **What is a Sprint?**
+   - A Sprint is a time-boxed iteration, typically 2-4 weeks long, during which a potentially shippable product increment is developed.
+
+4. **What are the key ceremonies in Scrum?**
+   - **Sprint Planning:** The team decides what work will be done during the Sprint.
+   - **Daily Standup (Daily Scrum):** A short meeting where team members discuss progress and any impediments.
+   - **Sprint Review:** The team showcases the completed work to stakeholders.
+   - **Sprint Retrospective:** The team reflects on the Sprint to identify improvements.
+
+5. **What is a Product Backlog?**
+   - A prioritized list of features, enhancements, bug fixes, and other work items that the team needs to deliver. The Product Owner manages and refines the backlog.
+
+6. **What is a Sprint Backlog?**
+   - A list of tasks identified by the Scrum team to be completed during the Sprint, derived from the Product Backlog.
+
+7. **How do you measure success in Scrum?**
+   - Success can be measured by the team’s ability to deliver a working product increment that meets the Product Owner’s acceptance criteria and contributes to business goals.
+
+8. **What are Story Points and how do you use them?**
+   - Story Points are a unit of measure for expressing the overall effort required to fully implement a product backlog item or any other piece of work. They are relative and help in estimating the complexity and effort.
+
+9. **Can you explain the concept of a “Definition of Done” (DoD)?**
+   - The Definition of Done is a shared understanding within the team of what it means for work to be complete, including coding, testing, documentation, and anything else needed to release the software.
+
+10. **What is the role of a Scrum Master in conflict resolution?**
+    - The Scrum Master helps resolve conflicts by facilitating open communication, encouraging collaboration, and addressing impediments that may lead to conflict.
+
+### **Advanced/Scenario-Based Questions:**
+1. **How would you handle a situation where a team member consistently misses deadlines?**
+   - This might involve understanding the root cause, offering support, mentoring, and if necessary, involving the Scrum Master to remove any impediments or address team dynamics.
+
+2. **What would you do if the Product Owner is not available during the Sprint?**
+   - The Scrum Master may need to facilitate better communication channels or ensure that the Product Owner’s input is available through backlog refinement meetings and prioritization sessions.
+
+3. **How do you deal with technical debt in an Agile environment?**
+   - Technical debt should be regularly addressed during Sprint Planning and prioritized based on its impact on future development.
+
+4. **Can you describe a time when your team didn’t meet a Sprint goal? How did you handle it?**
+   - This is a behavioral question where you might discuss how the team conducted a Retrospective to identify and resolve issues that led to the missed goal.
+
+5. **How do you integrate feedback from a Sprint Review into the next Sprint?**
+   - Feedback from the Sprint Review is added to the Product Backlog, reprioritized by the Product Owner, and considered in the upcoming Sprint Planning session.
+
+These questions can help gauge a candidate's understanding of Agile and Scrum practices, their ability to handle real-world scenarios, and their commitment to continuous improvement.
