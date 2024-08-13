@@ -1,0 +1,65 @@
+Here are some common interview questions related to **TMS (Ticket Management Systems)** or **JIRA**:
+
+### General TMS Questions:
+1. **What is a Ticket Management System (TMS)?**
+   - Can you explain the purpose of a TMS in project management?
+
+2. **What are the key features you would look for in a TMS?**
+   - Which features are essential for effective team collaboration and project tracking?
+
+3. **How do you prioritize tickets in a TMS?**
+   - What criteria do you use to determine the priority of a ticket?
+
+4. **How do you manage and track the progress of multiple tickets in a TMS?**
+   - What strategies do you use to ensure that all tasks are being addressed efficiently?
+
+5. **Can you explain the process of handling a ticket from creation to closure?**
+   - How do you ensure that the process is smooth and all necessary steps are followed?
+
+6. **What challenges have you faced while using a TMS? How did you overcome them?**
+   - Can you provide an example of a specific challenge and your solution?
+
+7. **How do you ensure that your team adheres to the process outlined in the TMS?**
+   - What methods do you use to maintain consistency and compliance?
+
+8. **How do you use reporting features in a TMS to track project progress?**
+   - What kind of reports do you generate, and how do they help in project management?
+
+### JIRA-Specific Questions:
+1. **What is JIRA, and how is it used in project management?**
+   - Can you describe the core functionalities of JIRA?
+
+2. **How do you set up a project in JIRA?**
+   - What are the steps involved in configuring a new project?
+
+3. **What are JIRA workflows, and how do you create and customize them?**
+   - Can you walk me through the process of setting up a custom workflow?
+
+4. **How do you use JIRA for Agile project management (e.g., Scrum or Kanban)?**
+   - Can you explain how JIRA supports Agile methodologies?
+
+5. **How do you manage and assign issues in JIRA?**
+   - What best practices do you follow for issue assignment and tracking?
+
+6. **What are JIRA filters, and how do you create and use them?**
+   - Can you give an example of a custom filter you've created?
+
+7. **How do you generate and analyze reports in JIRA?**
+   - What types of reports do you find most useful for your projects?
+
+8. **What are JIRA dashboards, and how do you use them to monitor project status?**
+   - How do you customize dashboards for different stakeholders?
+
+9. **How do you handle permissions and roles in JIRA?**
+   - What considerations do you take into account when setting up user roles and permissions?
+
+10. **Can you explain how JIRA integrates with other tools?**
+    - Have you worked with any specific integrations, such as with Confluence, Bitbucket, or Slack?
+
+11. **Have you customized JIRA for your team's needs? If so, how?**
+    - What plugins or custom configurations have you implemented?
+
+12. **How do you handle large projects or multiple teams in JIRA?**
+    - What strategies do you use to manage complexity in JIRA?
+
+These questions can help assess a candidate's familiarity with TMS and JIRA, their understanding of project management processes, and their ability to customize and use these tools effectively.
