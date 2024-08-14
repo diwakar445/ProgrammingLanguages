@@ -1,0 +1,17 @@
+News Paper Learnings
+    1.All important things to know about topic/question:
+        [
+            1.what it is,
+            2.why it is invented,
+            3.how to implement,
+            4.other ways to implement,
+            5.use cases,
+            6.side effects
+        ]
+    2.Puzzles
+    3.Interview Q&A
+    4.Followup topics/Q
+    5.Comparative understanding
+    etc.
+
+    or questionnaire to follow.
