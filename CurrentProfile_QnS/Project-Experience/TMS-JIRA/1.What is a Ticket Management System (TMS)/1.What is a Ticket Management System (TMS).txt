@@ -1,0 +1,56 @@
+1.What is a Ticket Management System (TMS) - Can you explain the purpose of a TMS in project management ?
+
+### **What is a Ticket Management System (TMS)?**
+
+A **Ticket Management System (TMS)** is a software tool used to manage and track issues, tasks, or requests in various types of projects
+ and workflows. In project management, TMS helps teams organize, prioritize, and resolve tasks efficiently by categorizing them 
+ as "tickets." Each ticket represents a specific task, issue, bug, or customer request that needs attention.
+
+### **Purpose of a TMS in Project Management:**
+
+1. **Centralized Tracking:**
+   - A TMS provides a centralized platform for logging, tracking, and managing all tasks or issues related to a project. 
+   This ensures that nothing falls through the cracks and that all team members have visibility into the work being done.
+
+2. **Task Prioritization:**
+   - Tickets can be prioritized based on urgency, importance, or impact. This helps the team focus on the most critical tasks first, 
+   ensuring that resources are allocated effectively.
+
+3. **Workflow Management:**
+   - A TMS supports the creation and management of workflows, helping teams define processes for handling different types of tickets. 
+   For example, a bug might go through stages like "Open," "In Progress," "In Review," and "Closed."
+
+4. **Collaboration:**
+   - Team members can collaborate within the TMS by adding comments, attaching files, and updating ticket statuses. 
+   This fosters communication and ensures that everyone is on the same page.
+
+5. **Accountability:**
+   - Each ticket is usually assigned to a specific team member or group, making it clear who is responsible for completing the task. 
+   This promotes accountability and ownership.
+
+6. **Reporting and Analytics:**
+   - TMS tools often include reporting and analytics features that provide insights into the team's performance, such as how many 
+   tickets are opened, closed, or pending. These insights help in monitoring progress and identifying bottlenecks.
+
+7. **Customer Support:**
+   - In customer-facing projects, a TMS can be used to manage customer support tickets. This allows teams to respond to customer 
+   inquiries, issues, or feedback in a timely manner, improving customer satisfaction.
+
+8. **Documentation:**
+   - TMS acts as a historical record of all the work done on a project, including what issues were encountered, how they were resolved, 
+   and any decisions made. This documentation can be invaluable for future reference.
+
+9. **Integration:**
+   - Many TMS tools integrate with other project management tools, version control systems, and communication platforms, streamlining 
+   the overall workflow and reducing the need to switch between multiple applications.
+
+### **Examples of TMS Tools:**
+- **JIRA:** Widely used in software development for issue tracking and project management.
+- **Zendesk:** Commonly used for customer support ticketing.
+- **Trello:** A more visual, board-based approach to managing tasks and tickets.
+- **ServiceNow:** Often used in IT service management for handling incidents, requests, and changes.
+
+### **Conclusion:**
+A Ticket Management System (TMS) is crucial for effectively managing tasks, issues, and requests in any project. 
+It enhances transparency, prioritization, collaboration, and accountability, ultimately leading to more efficient project delivery 
+and better outcomes.
