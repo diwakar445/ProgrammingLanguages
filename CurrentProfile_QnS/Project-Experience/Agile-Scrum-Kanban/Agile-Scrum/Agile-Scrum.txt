@@ -1,6 +1,6 @@
 Here are some common interview questions related to Agile and Scrum, along with brief explanations for each:
 
-### **Agile Methodology:**
+### **What is Agile Methodology:**
 1. **What is Agile, and how is it different from traditional Waterfall methodology?**
    - Agile is an iterative and incremental approach to software development, emphasizing flexibility and customer satisfaction, unlike Waterfall, which is linear and sequential.
 
