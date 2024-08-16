@@ -3,7 +3,9 @@ Here are some common interview questions on Agile and Kanban, along with possibl
 ### **Agile Interview Questions**
 
 1. **What is Agile methodology?**
-   - Agile is a project management and product development methodology that promotes iterative development, collaboration, flexibility, and customer feedback. It is based on the principles outlined in the Agile Manifesto.
+   - Agile is a project management and product development methodology that promotes iterative development, collaboration within the team, 
+   flexibility, and customer feedback. 
+   It is based on the principles outlined in the Agile Manifesto.
 
 2. **What are the key principles of Agile?**
    - Customer satisfaction through early and continuous delivery.
