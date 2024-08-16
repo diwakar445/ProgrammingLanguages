@@ -1,0 +1,88 @@
+Here are some common interview questions on Agile and Kanban, along with possible answers or points to consider when answering:
+
+### **Agile Interview Questions**
+
+1. **What is Agile methodology?**
+   - Agile is a project management and product development methodology that promotes iterative development, collaboration, flexibility, and customer feedback. It is based on the principles outlined in the Agile Manifesto.
+
+2. **What are the key principles of Agile?**
+   - Customer satisfaction through early and continuous delivery.
+   - Welcome changing requirements, even late in development.
+   - Deliver working software frequently.
+   - Business and developers must work together daily.
+   - Build projects around motivated individuals.
+   - Face-to-face conversation is the best form of communication.
+   - Working software is the primary measure of progress.
+   - Sustainable development is promoted.
+   - Continuous attention to technical excellence and good design.
+   - Simplicity is essential.
+   - Self-organizing teams are encouraged.
+   - Reflect on how to become more effective regularly.
+
+3. **Explain the difference between Agile and Waterfall.**
+   - Agile is iterative, flexible, and emphasizes continuous delivery and customer collaboration. Waterfall is linear, structured, and follows a sequential approach where each phase must be completed before moving to the next.
+
+4. **What is a Sprint in Agile?**
+   - A Sprint is a time-boxed iteration in which a specific set of work is completed and made ready for review. Sprints typically last between 1 to 4 weeks.
+
+5. **What roles are typically involved in an Agile team?**
+   - Product Owner: Represents the stakeholders and defines the product backlog.
+   - Scrum Master: Facilitates the process and ensures the team adheres to Agile principles.
+   - Development Team: The cross-functional group responsible for delivering the product increment.
+
+6. **What is a User Story?**
+   - A User Story is a simple description of a feature or requirement from the perspective of an end-user. It typically follows the format: "As a [type of user], I want [goal] so that [reason]."
+
+7. **How do you prioritize User Stories in Agile?**
+   - User stories are prioritized based on their business value, customer needs, and the team's capacity. The Product Owner typically manages this prioritization.
+
+8. **What is the Definition of Done (DoD)?**
+   - The Definition of Done is a shared understanding of what it means for work to be considered complete. It includes criteria like coding, testing, documentation, and deployment readiness.
+
+9. **Can you explain what a Burndown Chart is?**
+   - A Burndown Chart is a graphical representation of work remaining versus time. It shows how much work is left to do in the current Sprint or project.
+
+10. **How do you handle changing requirements in an Agile project?**
+    - Agile embraces change. Requirements can be re-prioritized and added to the product backlog, and the team adjusts the work in future Sprints to accommodate these changes.
+
+### **Kanban Interview Questions**
+
+1. **What is Kanban?**
+   - Kanban is a visual workflow management method used in Lean production and Agile projects. It focuses on visualizing work, limiting work in progress (WIP), and improving flow.
+
+2. **How does Kanban differ from Scrum?**
+   - Kanban is continuous, without fixed-length iterations, while Scrum uses fixed Sprints. Kanban focuses on workflow visualization and WIP limits, while Scrum emphasizes time-boxed cycles and roles.
+
+3. **What are the key elements of a Kanban board?**
+   - A Kanban board typically includes columns representing different stages of the workflow (e.g., To Do, In Progress, Done) and cards that represent work items.
+
+4. **What is the purpose of WIP (Work In Progress) limits in Kanban?**
+   - WIP limits restrict the number of work items in progress at any stage of the workflow to prevent bottlenecks, reduce multitasking, and improve focus.
+
+5. **How do you measure flow efficiency in Kanban?**
+   - Flow efficiency is measured by dividing the actual work time by the total time a work item spends in the system, including wait time. It indicates how smoothly work items move through the process.
+
+6. **What is the role of a Kanban Master?**
+   - While not a formal role like Scrum Master in Scrum, a Kanban Master (if used) typically facilitates the Kanban process, helps the team implement Kanban principles, and ensures continuous improvement.
+
+7. **How does Kanban handle high-priority items or urgent tasks?**
+   - Kanban allows for flexibility; urgent tasks can be pulled into the workflow without disrupting the overall process, provided WIP limits are respected.
+
+8. **Can you explain what Lead Time and Cycle Time are in Kanban?**
+   - Lead Time is the total time taken from the moment a work item is requested until it is delivered. Cycle Time is the time it takes from when the work starts until it is completed.
+
+9. **What is a Cumulative Flow Diagram (CFD) in Kanban?**
+   - A Cumulative Flow Diagram shows the amount of work in different stages of the process over time. It helps visualize bottlenecks and track progress.
+
+10. **How does Kanban support continuous improvement?**
+    - Kanban encourages regular analysis of workflow, WIP limits, and bottlenecks to make incremental improvements. Teams can hold Kaizen (improvement) events to focus on process optimization.
+
+### **General Agile/Kanban Questions**
+
+1. **How do you decide whether to use Agile, Kanban, or another methodology?**
+2. **Describe a challenging situation you faced in an Agile or Kanban project and how you handled it.**
+3. **How do you ensure collaboration and communication in a distributed Agile or Kanban team?**
+4. **What are the main challenges you have faced while implementing Agile/Kanban in a project?**
+5. **How do you measure success in Agile/Kanban?**
+
+These questions are designed to assess both your theoretical knowledge and practical experience with Agile and Kanban methodologies.
