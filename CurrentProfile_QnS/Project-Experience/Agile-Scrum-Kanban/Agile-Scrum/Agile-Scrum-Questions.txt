@@ -2,7 +2,8 @@ Here are some common interview questions related to Agile and Scrum, along with 
 
 ### **What is Agile Methodology:**
 1. **What is Agile, and how is it different from traditional Waterfall methodology?**
-   - Agile is an iterative and incremental approach to software development, emphasizing flexibility and customer satisfaction, unlike Waterfall, which is linear and sequential.
+   - Agile is an iterative and incremental approach to software development, emphasizing flexibility and customer satisfaction, 
+   unlike Waterfall, which is linear and sequential.
 
 2. **What are the key principles of Agile?**
    - Customer satisfaction through early and continuous delivery
@@ -12,7 +13,8 @@ Here are some common interview questions related to Agile and Scrum, along with 
    - Motivated individuals and self-organizing teams
 
 3. **What is the Agile Manifesto?**
-   - The Agile Manifesto is a set of 4 values and 12 principles that guide Agile development. These values emphasize individuals and interactions, working software, customer collaboration, and responding to change.
+   - The Agile Manifesto is a set of 4 values and 12 principles that guide Agile development. These values emphasize individuals and 
+   interactions, working software, customer collaboration, and responding to change.
 
 4. **What are some common Agile frameworks?**
    - Scrum, Kanban, Lean, Extreme Programming (XP), and Crystal are popular Agile frameworks.
