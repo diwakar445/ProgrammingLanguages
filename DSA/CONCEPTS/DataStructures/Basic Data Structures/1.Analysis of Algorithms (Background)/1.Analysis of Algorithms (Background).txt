@@ -14,7 +14,7 @@ Analysis of Algorithms (Background):
 - Recursion Tree method for solving recurrences 
 - More example recurrences 
 - Upper bound using Recursion tree method 
-- Space Complexit
+- Space Complexity
 -----------------------------------------------------------------------
 18-08-2024
 -----------

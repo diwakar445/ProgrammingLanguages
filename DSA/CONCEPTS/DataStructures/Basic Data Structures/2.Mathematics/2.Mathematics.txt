@@ -12,5 +12,3 @@ MATHEMATICS
 - Sieve of Eratosthenes 
 - Computing Power 
 - Iterative Power 
-
-Practice Problems This track contains many practice problems for the users  which are considered important and must-do as far as  Data Structure and Algorithm is concerned

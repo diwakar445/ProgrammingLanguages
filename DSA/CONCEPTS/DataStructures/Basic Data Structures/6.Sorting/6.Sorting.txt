@@ -22,7 +22,7 @@ SORTING
 - Analysis of Quick Sort 
 - Space Analysis of Quick Sort 
 - Heap Sort
-
+---------------------------------------------
 JavaScript
 SORTING
 - Stability in Sorting Algorithm 

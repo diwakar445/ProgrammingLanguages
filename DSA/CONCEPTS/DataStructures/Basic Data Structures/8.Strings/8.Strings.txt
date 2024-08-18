@@ -1,16 +1,16 @@
 STRING
 
-- Strings in Python 
+- Strings in Python / JS
 - Escape Sequences and Raw Strings 
-- Formatted String in Python 
-- String Comparison in Python 
+- Formatted String in Python / JS
+- String Comparison in Python / JS 
 - String Operations Part (1) 
 - String Operations Part (2) 
-- Reverse A String in Python 
+- Reverse A String in Python/JS 
 - Check if string is rotated 
-- Check For Palindrome In Python 
+- Check For Palindrome In Python / JS
 - Check if a String is Subsequence of Other 
-- Check for Anagram in Python 
+- Check for Anagram in Python / JS
 - Leftmost Repeating Character 
 - Leftmost Non-Repeating Element 
 - Reverse words in a string
