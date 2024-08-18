@@ -1,0 +1,7 @@
+DISJOINT SET
+
+- Disjoint Set Introduction 
+- Find and Union Operations on Disjoint Sets 
+- Union by Rank 
+- Path Compression 
+- Kruskal's Algorithm

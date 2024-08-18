@@ -1,0 +1,11 @@
+SEGMENT AND BINARY INDEXED TREES
+
+- Segment Tree (Introduction) 
+- Constructing Segment Tree 
+- Range Query on Segment Tree 
+- Update Query on Segment Tree 
+- Binary Indexed Tree (Intoductiion) 
+- Binary Indexed Tree (An Example Problem) 
+- Binary Indexed Tree (Prefix Sum) 
+- Binary Indexed Tree (Prefix Sum Implemention) 
+- Binary Indexed Tree (Update Operation)

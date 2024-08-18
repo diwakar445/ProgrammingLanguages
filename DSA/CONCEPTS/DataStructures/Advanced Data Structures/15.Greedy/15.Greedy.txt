@@ -1,0 +1,21 @@
+GREEDY
+
+- Introduction to Greedy Algorithms 
+- Activity Selection Problem 
+- Activity selection 
+- Fractional Knapsack
+- Fractional Knapsack in Python 
+- Job Sequencing Problem 
+- Huffman Coding (introduction) 
+- Huffman Algorithms 
+- Python Implementation of Huffman coding
+-----------------------------------------------------
+- Introduction to Greedy Algorithms 
+- Activity Selection Problem 
+- Activity selection 
+- Fractional Knapsack 
+- Fractional Knapsack in JavaScript 
+- Job Sequencing Problem 
+- Huffman Coding (introduction) 
+- Huffman Algorithms 
+- JavaScript Implementation of Huffman coding
