@@ -1,0 +1,18 @@
+HEAP
+
+- Binary Heap Introduction 
+- Heap Python Implementation (Introduction) 
+- Binary Heap Insert 
+- Binary Heap (Extract min and Heapify) 
+- Decrease Key and Delete Operations 
+- Build Heap 
+- Heap Sort 
+- Heapq in Python
+--------------------------------------------------
+- Binary Heap Introduction 
+- Heap JavaScript Implementation (Introduction) 
+- Binary Heap Insert 
+- Binary Heap (Extract min and Heapify) 
+- Decrease Key and Delete Operations 
+- Build Heap 
+- Heap Sort

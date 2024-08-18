@@ -1,0 +1,43 @@
+Python:
+LINKED LIST
+
+- Video - Problems with Array Data Structure 
+- Linked List Introduction in Python 
+- Simple Linked List Implementation in Python 
+- Applications of Linked List 
+- Traversing a Linked List in Python 
+- Search in Linked List 
+- Insert At The Bigenning of Linked list in Python 
+- Insert at The End Of Linked List 
+- Insert at Given Position in Singly Linked list 
+- Delete First Node Of Linked List in Python 
+- Delete Last Node of Linked List 
+- Delete a node with pointer given to it 
+- Sorted Insert Linked List in Python 
+- Middle of Linked List 
+- Nth Node From end of Linked List 
+- Remove duplicates from a sorted Singly Linked List 
+- Reverse a Linked List In Python 
+- Recursive Reverse A Linked List (Part 1) 
+- Recursive Reverse A Linked List (Part 2)
+------------------------------------------------------
+JavaScript:
+LINKED LIST
+
+- Linked List Introduction in JavaScript 
+- Simple Linked List Implementation in JavaScript 
+- Applications of Linked List 
+- Traversing a Linked List in JavaScript 
+- Search in Linked List 
+- Insert At The Beginning of Linked list in JavaScript 
+- Insert at The End Of Linked List 
+- Insert at Given Position in Singly Linked list 
+- Delete First Node Of Linked List in JavaScript 
+- Delete Last Node of Linked List 
+- Delete a node with pointer given to it 
+- Sorted Insert Linked List in JavaScript 
+- Middle of Linked List - Nth Node From end of Linked List 
+- Remove duplicates from a sorted Singly Linked List 
+- Reverse a Linked List In JavaScript 
+- Recursive Reverse A Linked List (Part 1) 
+- Recursive Reverse A Linked List (Part 2)

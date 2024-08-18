@@ -1,0 +1,15 @@
+SEARCHING
+
+- Search in Sorted Rotated Array 
+- Median of two sorted arrays 
+- Repeating Elements Part (1) 
+- Repeating Elements Part (2) 
+- Allocate Minimum Pages (Naive Method) 
+- Allocate Minimum Pages (Binary Search)
+--------------------------------------------------
+- Search in Sorted Rotated Array 
+- Median of two sorted arrays 
+- Repeating Elements Part (1) 
+- Repeating Elements Part (2) 
+- Allocate Minimum Pages (Naive Method) 
+- Allocate Minimum Pages (Binary Search)

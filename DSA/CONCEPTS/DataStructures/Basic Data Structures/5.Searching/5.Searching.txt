@@ -1,0 +1,10 @@
+SEARCHING
+
+- Binary Search (Iterative) 
+- Binary Search (Recursive) 
+- Analysis of Binary Search
+- Index of first Occurrence in Sorted 
+- Index of last Occurrence in Sorted 
+- Count Occurrences in Sorted 
+- Count 1s in a Sorted Binary Array 
+- Square root

@@ -1,0 +1,35 @@
+Python:
+HASHING
+
+-Introduction to Hashing 
+- Hashing Application 
+- Direct Address Table 
+- Hashing Functions 
+- Collision Handling 
+- Chaining 
+- Implementation of Chaining in Python 
+- Open Addressing 
+- Double Hashing 
+- Implementation of Open Addressing in Python 
+- Chaining vs Open Addressing 
+- Set in Python 
+- Dictionary in Python 
+- Count Distinct Elements in a List 
+- Frequencies of array elements
+
+JavaScript:
+
+HASHING
+- Introduction to Hashing 
+- Hashing Application 
+- Direct Address Table 
+- Hashing Functions 
+- Collision Handling 
+- Chaining 
+- Implementation of Chaining 
+- Open Addressing 
+- Double Hashing 
+- Implementation of Open Addressing  
+- Chaining vs Open Addressing 
+- Count Distinct Elements in an Array 
+- Frequencies of array elements

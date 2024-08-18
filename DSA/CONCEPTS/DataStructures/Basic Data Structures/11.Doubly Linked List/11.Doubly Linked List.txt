@@ -1,0 +1,21 @@
+Python:
+DOUBLY LINKED LIST
+
+- Doubly Linked List in Python 
+- Singly Vs Doubly Linked List (Advantages & Disadvantages) 
+- Insert at the Beginning of DLL in Python 
+- Insert at the End of DLL in Python 
+- Delete Head of A Doubly Linked List 
+- Delete Last Node of DLL in Python 
+- Reverse A Doubly Linked Llist in Python
+-------------------------------------------------
+JavaScript:
+DOUBLY LINKED LIST
+
+- Doubly Linked List in JavaScript 
+- Singly Vs Doubly Linked List (Advantages & Disadvantages) 
+- Insert at the Beginning of DLL in JavaScript 
+- Insert at the End of DLL in JavaScript 
+- Delete Head of A Doubly Linked List 
+- Delete Last Node of DLL in JavaScript 
+- Reverse A Doubly Linked List in JavaScript
