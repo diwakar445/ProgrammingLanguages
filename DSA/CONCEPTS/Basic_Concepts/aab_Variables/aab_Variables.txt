@@ -1,0 +1,11 @@
+----------JS------------------
+var,let,const;
+
+var:
+    - Global scope.
+    - these variables are hoisted and initialized undefined at first.
+    - can be re declare within the same scope.
+----------JS------------------
+
+----------Python------------------
+----------Python------------------
