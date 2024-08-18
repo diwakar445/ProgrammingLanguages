@@ -1,0 +1,9 @@
+****** Datatypes in JS **********
+primitives(7)
+    -number, bigint, string, boolean, null, undefined, symbol
+non-primitive(5)
+    -object, array, function, date, regex
+special(2)
+    -NaN, Infinity
+
+****** Datatypes in JS **********

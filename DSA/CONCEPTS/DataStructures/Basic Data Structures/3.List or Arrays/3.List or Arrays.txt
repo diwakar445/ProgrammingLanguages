@@ -1,0 +1,31 @@
+LIST
+
+- List (Dynamic Sized Array) Introduction 
+- Working of List in Python 
+- Average or Mean of a List 
+- Separate Even and Odd 
+- Get Smaller Elements 
+- Slicing (List,Tuple And String) 
+- Comprehensions in Python 
+- Largest Element in a List 
+- Second Largest Element in a list 
+- Check if a list is Sorted 
+- Find the only Odd 
+- Reverse a List in Python 
+- Remove duplicates from sorted array 
+- Move Zeros to End 
+- Leaders in an Array problem 
+- Frequencies in a sorted array  
+- Left Rotate a List by on
+------------------------------------------------------
+
+Arrays
+- Arrays Introduction 
+- Working of Arrays in JavaScript 
+- Largest Element in a List 
+- Second Largest Element in a list 
+- Check if an Array is Sorted 
+- Reverse an Array 
+- Remove duplicates from a sorted array 
+- Move Zeros to End 
+- Left Rotate an Array by On
