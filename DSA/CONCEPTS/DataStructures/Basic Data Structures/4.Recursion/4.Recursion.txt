@@ -6,8 +6,8 @@ RECURSION
 - Tail Recursion 
 - Practice For Recursion (Part 1) 
 - Practice For Recursion (Part 2) 
-- Print N to 1 using Recursion in Python 
-- Print 1 to N using Recursion in Python 
+- Print N to 1 using Recursion in Python/JS 
+- Print 1 to N using Recursion in Python/JS
 - Sum of Natural Numbers Using Recursion 
 - Sum Of Digits Using Recursion 
 - Palindrome Check using Recursion
