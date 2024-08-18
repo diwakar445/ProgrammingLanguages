@@ -1,0 +1,118 @@
+****** Datatypes in Pyhon **********
+1. Numeric Types
+    -int, float, complex, 
+2. Sequence Types
+    -str, list, tuple, range
+3. Mapping Type
+    -dict, 
+4. Set Types    
+    set, frozenset, 
+5. Boolean Type
+    bool, 
+6. Binary Types    
+    bytes, bytearray, memoryview
+7. None Type
+    -NoneType
+8. Callable Types
+    -function, lambda, generator, coroutine
+9. Custom Types
+    -class
+
+****** Datatypes in Pyhon **********
+Python provides a variety of built-in data types to handle different kinds of data. Here's a list of the most commonly used data types in Python:
+
+### **1. Numeric Types**
+   - **`int`**: Integer type, representing whole numbers.
+     ```python
+     x = 10
+     y = -5
+     ```
+   - **`float`**: Floating-point type, representing numbers with a decimal point.
+     ```python
+     x = 3.14
+     y = -0.001
+     ```
+   - **`complex`**: Complex number type, representing numbers with a real and imaginary part.
+     ```python
+     x = 1 + 2j
+     y = -3j
+     ```
+
+### **2. Sequence Types**
+   - **`str`**: String type, representing text (sequences of characters).
+     ```python
+     x = "Hello, world!"
+     ```
+   - **`list`**: List type, representing an ordered, mutable collection of elements.
+     ```python
+     x = [1, 2, 3, "apple", 4.5]
+     ```
+   - **`tuple`**: Tuple type, representing an ordered, immutable collection of elements.
+     ```python
+     x = (1, 2, 3, "apple", 4.5)
+     ```
+   - **`range`**: Range type, representing a sequence of numbers, commonly used for looping.
+     ```python
+     x = range(1, 10)  # Creates a sequence from 1 to 9
+     ```
+
+### **3. Mapping Type**
+   - **`dict`**: Dictionary type, representing key-value pairs, where keys are unique.
+     ```python
+     x = {"name": "Alice", "age": 25, "city": "New York"}
+     ```
+
+### **4. Set Types**
+   - **`set`**: Set type, representing an unordered collection of unique elements.
+     ```python
+     x = {1, 2, 3, 4, 4, 5}  # Duplicates will be removed
+     ```
+   - **`frozenset`**: Immutable set type, representing an unordered collection of unique elements that cannot be modified.
+     ```python
+     x = frozenset([1, 2, 3, 4, 4, 5])
+     ```
+
+### **5. Boolean Type**
+   - **`bool`**: Boolean type, representing `True` or `False`.
+     ```python
+     x = True
+     y = False
+     ```
+
+### **6. Binary Types**
+   - **`bytes`**: Immutable sequence of bytes.
+     ```python
+     x = b"Hello"
+     ```
+   - **`bytearray`**: Mutable sequence of bytes.
+     ```python
+     x = bytearray(b"Hello")
+     ```
+   - **`memoryview`**: A memory view object, which exposes the buffer-protocol interface and allows you to access the internal data of an object that supports the buffer protocol without copying.
+     ```python
+     x = memoryview(b"Hello")
+     ```
+
+### **7. None Type**
+   - **`NoneType`**: Represents the absence of a value or a null value. There is only one instance of `NoneType`, which is `None`.
+     ```python
+     x = None
+     ```
+
+### **8. Callable Types**
+   - **`function`**: Functions created using the `def` keyword or lambda expressions.
+   - **`lambda`**: Anonymous functions created using the `lambda` keyword.
+   - **`generator`**: A type of iterable, like a list or a tuple, but unlike lists or tuples, generators do not store their contents in memory. Instead, they generate the items on the fly.
+   - **`coroutine`**: Functions declared with `async def`, used in asynchronous programming.
+
+### **9. Custom Types**
+   - **`class`**: User-defined types created using the `class` keyword.
+     ```python
+     class MyClass:
+         pass
+
+     x = MyClass()
+     ```
+
+### **Summary:**
+Python offers a rich set of built-in data types to handle a wide range of data and operations. These data types form the basis for all operations in Python, and understanding them is crucial for effective programming.

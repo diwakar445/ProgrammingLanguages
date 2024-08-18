@@ -1,0 +1,16 @@
+MATHEMATICS
+
+- Python DSA - Count Digits 
+- Palindrome Number 
+- Factorial of a number 
+- Trailing Zeros in Factorial 
+- GCD and HCF of two numbers 
+- LCM of two numbers 
+- Check for Prime 
+- Prime Factors 
+- All Divisors of a Number 
+- Sieve of Eratosthenes 
+- Computing Power 
+- Iterative Power 
+
+Practice Problems This track contains many practice problems for the users  which are considered important and must-do as far as  Data Structure and Algorithm is concerned

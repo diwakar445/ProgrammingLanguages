@@ -1,0 +1,17 @@
+Analysis of Algorithms (Background):
+
+- Analysis of Algorithms (Background) 
+- Asymptotic Analysis 
+- Order of Growth 
+- Best, Average and Worst Cases 
+- Asymptotic Notations 
+- Big O Notation 
+- Omega Notation 
+- Theta Notation 
+- Analysis of Common Loops 
+- Analysis of multiple loops 
+- Analysis of Recursion 
+- Recursion Tree method for solving recurrences 
+- More example recurrences 
+- Upper bound using Recursion tree method 
+- Space Complexit
