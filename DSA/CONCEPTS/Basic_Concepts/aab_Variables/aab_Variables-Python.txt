@@ -24,7 +24,8 @@ print("MyMethod", MyClass.my_method.__doc__);
 -------------------------------------------------------------
 
 
-In Python, variables can be declared in several different ways depending on their intended use, scope, and behavior. Here's an overview of the different types of variable declarations available in Python:
+In Python, variables can be declared in several different ways depending on their intended use, scope, and behavior. Here's an overview 
+of the different types of variable declarations available in Python:
 
 ### 1. **Simple Variable Declaration**
    - **Syntax**: `variable_name = value`
@@ -60,6 +61,8 @@ In Python, variables can be declared in several different ways depending on thei
      class MyClass:
          def __init__(self, value):
              self.value = value
+    obj = MyClass(5)
+    print(obj.value) # prints 5 - self same as this keyword in JS
      ```
    - **Description**: Instance variables are declared within a class and are unique to each instance of the class.
 
@@ -73,12 +76,58 @@ In Python, variables can be declared in several different ways depending on thei
          def __init__(self):
              MyClass.class_variable += 1
      ```
+     1. Shared State Across Instances
+2. Default Values for All Instances
+3. Shared Configuration
+4. Class-level Methods
+5. Singleton Pattern
+
    - **Description**: Class variables are shared across all instances of a class.
 
 ### 6. **Constants**
    - **Syntax**: Conventionally written in all uppercase letters.
    - **Example**: `PI = 3.14159`
-   - **Description**: Python doesn’t have a native constant keyword. By convention, constants are defined with uppercase letters and should not be changed.
+   - **Description**: Python doesn’t have a native constant keyword. By convention, constants are defined with uppercase letters 
+   and should not be changed.
+   class Constants:
+    _PI = 3.14
+
+    @property
+    def PI(self):
+        return self._PI
+
+constants = Constants()
+print(constants.PI)  # Outputs: 3.14
+
+# Attempting to change PI
+# constants.PI = 5  # This will raise an AttributeError
+----------------------from collections import namedtuple
+
+Constants = namedtuple('Constants', ['PI'])
+constants = Constants(PI=3.14)
+print(constants.PI)  # Outputs: 3.14
+
+# Attempting to change PI
+# constants.PI = 5  # This will raise an AttributeError
+--------------------------------
+class ConstantValue:
+    def __init__(self, value):
+        self._value = value
+
+    @property
+    def value(self):
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        raise AttributeError("Cannot change the value of a constant")
+
+PI = ConstantValue(3.14)
+print(PI.value)  # Outputs: 3.14
+
+# Attempting to change PI
+# PI.value = 5  # This will raise an AttributeError
+---------------------------
 
 ### 7. **Mutable and Immutable Variables**
    - **Mutable Example**: 
@@ -91,7 +140,8 @@ In Python, variables can be declared in several different ways depending on thei
      my_string = "hello"  # Strings are immutable
      my_string[0] = 'H'  # This will raise an error
      ```
-   - **Description**: Variables in Python can hold mutable (changeable) objects like lists or dictionaries, or immutable (unchangeable) objects like strings and tuples.
+   - **Description**: Variables in Python can hold mutable (changeable) objects like lists or dictionaries, or immutable (unchangeable) 
+   objects like strings and tuples.
 
 ### 8. **Static Variables**
    - **Syntax**: Defined using the `@staticmethod` decorator.
@@ -102,12 +152,14 @@ In Python, variables can be declared in several different ways depending on thei
          def my_static_method():
              print("Static method called")
      ```
-   - **Description**: Static methods belong to the class rather than any object instance and can be accessed without creating an instance of the class.
+   - **Description**: Static methods belong to the class rather than any object instance and can be accessed without creating an 
+   instance of the class.
 
 ### 9. **Annotations**
    - **Syntax**: `variable_name: type = value`
    - **Example**: `x: int = 10`
-   - **Description**: Python supports type annotations to specify the expected data type of variables, but these are optional and do not enforce the type at runtime.
+   - **Description**: Python supports type annotations to specify the expected data type of variables, but these are optional and do 
+   not enforce the type at runtime.
 
 ### 10. **Nonlocal Variables**
    - **Syntax**: `nonlocal variable_name`
@@ -122,7 +174,8 @@ In Python, variables can be declared in several different ways depending on thei
      ```
    - **Description**: The `nonlocal` keyword allows you to modify a variable in the nearest enclosing scope (not global scope).
 
-These various types of variable declarations allow Python developers to manage the scope, mutability, and usage of variables effectively in different programming contexts.
+These various types of variable declarations allow Python developers to manage the scope, mutability, and usage of variables effectively 
+in different programming contexts.
 ------------------------------------------------------------------
 
 ----------Python------------------
