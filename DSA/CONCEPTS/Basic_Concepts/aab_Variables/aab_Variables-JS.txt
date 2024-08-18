@@ -39,3 +39,13 @@ console.log("x-value",x) // x is part of global scope, **: 10
 //console.log("y-value",y) // y is part of example functional scope, **: not defined.
 
 ----------JS------------------
+//different data types in Js (14 data types available in JS)
+//primitive; number, bigint, string, boolean, null, undefined, symbol
+//non-primitive: object, array, function, date, regexp
+//special: infinite, nan, (14)
+
+//data types in TS (21 data types available in TS)
+//primitive: number, bigint, string, boolean, null, undefined, symbol
+//non-primitive: object, array, enum, tuple, any, unknown, never, void
+//advanced types: uniton, intersection, type aliases, intefaces, generics, literal types. (21)
+--------------------------------------------
