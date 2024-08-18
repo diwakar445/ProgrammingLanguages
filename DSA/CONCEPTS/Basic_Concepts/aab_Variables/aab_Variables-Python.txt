@@ -1,3 +1,128 @@
 ----------Python------------------
+#how to wirte comments in python - Single line Comment
+"how to wirte comments in python"  # treats as a document string
+'how to wirte comments in python' # treats as a document string
+
+'''
+how to wirte comments in python
+how to wirte comments in python
+''' # treats as a document string
+
+class MyClass:
+    '''
+    this class does some thing important
+    '''
+    def my_method(self):
+        '''
+        this method implemented inside MyClass
+        '''
+        return "My Method Executed!"
+
+print("MyClass", MyClass.__doc__);
+print("MyMethod", MyClass.my_method.__doc__);
+
+-------------------------------------------------------------
+
+
+In Python, variables can be declared in several different ways depending on their intended use, scope, and behavior. Here's an overview of the different types of variable declarations available in Python:
+
+### 1. **Simple Variable Declaration**
+   - **Syntax**: `variable_name = value`
+   - **Example**: `x = 10`
+   - **Description**: This is the most basic type of variable declaration where a variable is assigned a value.
+
+### 2. **Global Variables**
+   - **Syntax**: `global variable_name`
+   - **Example**: 
+     ```python
+     x = 10
+     
+     def update():
+         global x
+         x = 20
+     ```
+   - **Description**: Global variables are declared outside any function and can be accessed inside functions using the `global` keyword.
+
+### 3. **Local Variables**
+   - **Syntax**: Defined within a function without any specific keyword.
+   - **Example**:
+     ```python
+     def my_function():
+         x = 10
+         print(x)
+     ```
+   - **Description**: Variables declared inside a function are local to that function and cannot be accessed outside it.
+
+### 4. **Instance Variables**
+   - **Syntax**: `self.variable_name`
+   - **Example**:
+     ```python
+     class MyClass:
+         def __init__(self, value):
+             self.value = value
+     ```
+   - **Description**: Instance variables are declared within a class and are unique to each instance of the class.
+
+### 5. **Class Variables**
+   - **Syntax**: Defined directly within a class but outside any methods.
+   - **Example**:
+     ```python
+     class MyClass:
+         class_variable = 0
+         
+         def __init__(self):
+             MyClass.class_variable += 1
+     ```
+   - **Description**: Class variables are shared across all instances of a class.
+
+### 6. **Constants**
+   - **Syntax**: Conventionally written in all uppercase letters.
+   - **Example**: `PI = 3.14159`
+   - **Description**: Python doesn’t have a native constant keyword. By convention, constants are defined with uppercase letters and should not be changed.
+
+### 7. **Mutable and Immutable Variables**
+   - **Mutable Example**: 
+     ```python
+     my_list = [1, 2, 3]  # Lists are mutable
+     my_list[0] = 10
+     ```
+   - **Immutable Example**: 
+     ```python
+     my_string = "hello"  # Strings are immutable
+     my_string[0] = 'H'  # This will raise an error
+     ```
+   - **Description**: Variables in Python can hold mutable (changeable) objects like lists or dictionaries, or immutable (unchangeable) objects like strings and tuples.
+
+### 8. **Static Variables**
+   - **Syntax**: Defined using the `@staticmethod` decorator.
+   - **Example**:
+     ```python
+     class MyClass:
+         @staticmethod
+         def my_static_method():
+             print("Static method called")
+     ```
+   - **Description**: Static methods belong to the class rather than any object instance and can be accessed without creating an instance of the class.
+
+### 9. **Annotations**
+   - **Syntax**: `variable_name: type = value`
+   - **Example**: `x: int = 10`
+   - **Description**: Python supports type annotations to specify the expected data type of variables, but these are optional and do not enforce the type at runtime.
+
+### 10. **Nonlocal Variables**
+   - **Syntax**: `nonlocal variable_name`
+   - **Example**:
+     ```python
+     def outer_function():
+         x = 10
+         
+         def inner_function():
+             nonlocal x
+             x = 20
+     ```
+   - **Description**: The `nonlocal` keyword allows you to modify a variable in the nearest enclosing scope (not global scope).
+
+These various types of variable declarations allow Python developers to manage the scope, mutability, and usage of variables effectively in different programming contexts.
+------------------------------------------------------------------
 
 ----------Python------------------
