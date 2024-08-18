@@ -1,0 +1,41 @@
+----------JS------------------
+var,let,const;
+
+var:
+    - Functional scope - if variable is declared in the global scope and it will be consider as global scope
+    - these variables are hoisted and initialized undefined at first- can declare any part of the global scope.
+    - can be re declare within the same scope where the varable dclaration is done.
+
+
+Ex: errors & hoisting
+------------------------
+//console.log(a,b,c,d); // a is not defined
+a = 1; 
+//console.log(a,b,c,d); // c and d are cannot accessible before its value initialization
+var b;
+let c;
+const d = 4;
+
+console.log(a,b,c,d); // undefined for let after declaration and before intialization - let & const are not hoisted
+    // undefined for var just before value initialization and can be declared anywhere - var and function def are hoisted to the top of the scope
+b = 2;
+c = 3;
+console.log(a,b,c,d);
+
+EX: scope
+----------
+console.log("x-value",x) // x is hoisted to global scope as declared in global scope **; undefined
+//console.log(y) // y is functional scope hoisted, **: not defined/ not declared
+
+var x = 10;
+function example() {
+    console.log("y-value",y) // y is hoistd in function scope as it is delared inside a function
+  var y = 20;
+}
+
+example();
+
+console.log("x-value",x) // x is part of global scope, **: 10
+//console.log("y-value",y) // y is part of example functional scope, **: not defined.
+
+----------JS------------------
