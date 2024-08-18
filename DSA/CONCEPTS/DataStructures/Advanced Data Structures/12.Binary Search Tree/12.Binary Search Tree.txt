@@ -1,0 +1,21 @@
+BINARY SEARCH TREE
+
+- Ceiling on the left side in an array 
+- Find Kth Smallest in BST 
+- Check for BST 
+- Fix BST with Two Nodes Swapped 
+- Pair Sum with Given BST 
+- Vertical Sum in a Binary Tree 
+- Vertical Traversal of binary tree 
+- Top View of Binary Tree 
+- bottom view of binary tree
+---------------------------------------------
+- Ceiling on the left side in an array 
+- Find Kth Smallest in BST 
+- Check for BST 
+- Fix BST with Two Nodes Swapped 
+- Pair Sum with Given BST 
+- Vertical Sum in a Binary Tree 
+- Vertical Traversal of binary tree 
+- Top View of Binary Tree 
+- Bottom view of binary tree

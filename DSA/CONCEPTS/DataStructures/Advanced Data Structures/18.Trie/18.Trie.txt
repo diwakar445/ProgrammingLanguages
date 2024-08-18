@@ -1,0 +1,6 @@
+TRIE
+
+- Trie Data Structure (Introduction) 
+- Trie (Representation, Search and Insert) 
+- Trie Delete 
+- Count Distinct Rows in a Binary Matrix

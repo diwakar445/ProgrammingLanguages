@@ -1,0 +1,19 @@
+QUEUE
+
+- (Queue and Deque) 
+- Queue Implementation using Circular List 
+- Implementing stack using queue 
+- Reversing a Queue 
+- Generate numbers with given digits 
+- Design a data structure with min/max operations 
+- Maximums of all subarrays of size k 
+- First Circular Tour
+------------------------------------------------------
+- Queue and Deque 
+- Queue Implementation using Circular List 
+- Implementing stack using queue 
+- Reversing a Queue 
+- Generate numbers with given digits 
+- Design a data structure with min/max operations 
+- Maximums of all subarrays of size k 
+- First Circular Tour

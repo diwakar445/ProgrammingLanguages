@@ -1,0 +1,32 @@
+DYNAMIC PROGRAMMING
+
+- Introduction to DP 
+- Dynamic Programming Memoization 
+- Dynamic Programming Tabulation 
+- Longest Common Subsequence (Part 1) 
+- Longest Common Subsequence (Part 2) 
+- Variation of LCS 
+- Coin Change Count Combinations 
+- Edit Distance Problem 
+- Edit Distance Problem DP solution 
+- Longest Increasing Sub sequence Problem 
+- Longest Increasing Subsequence O(nlogn) 
+- Variation of LIS (Part 1) 
+- Variations of LIS (Part 2) 
+- Maximum Cuts 
+- Minimum coins to make a value 
+- Minimum Jumps to reach the end 
+- 0-1 knapsack problem 
+- 0-1 knapsack problem DP solution
+- Optimal Strategy for a Game 
+- Egg Dropping Puzzle - Part 1 
+- Egg Dropping Puzzle - Part 2 
+- Count BSTs with n keys 
+- Maximum sum with no two consecutive 
+- Subset sum problem 
+- Subset Sum Problem (DP Solution) 
+- Matrix Chain Multiplication 
+- Matrix Chain Multiplication (DP Solution) 
+- Palindrome Partitioning 
+- Allocate Minimum Pages (Naive Method) 
+- Allocate Minimum Pages (DP Solution)

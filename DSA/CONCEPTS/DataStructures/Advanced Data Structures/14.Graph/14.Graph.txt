@@ -1,0 +1,34 @@
+GRAPH
+
+- Introduction to Graph 
+- Graph Representation (Adjacency Matrix) 
+- Graph Representation (Adjacency List) 
+- Graph Adjacency List Representation in Python 
+- Adjacency Matrix and List Comparison 
+- Breadth First Search in Python 
+- BFS for Disconnected Graph 
+- Connected Components in an Undirected Graph using BFS 
+- Applications of BFS 
+- Depth First Search 
+- DFS For Disconnected Graph 
+- Connected Components in an Undirected Graph using DFS 
+- Applications of DFS 
+- Shortest Path in an Unweighted Graph 
+- Detect Cycle in Undirected Graph 
+- Detect Cycle in a Directed Graph (Part 1) 
+- Topological Sorting (Kahn's BFS Based Algortihm) 
+- Detect Cycle in a Directed Graph (Part 2) 
+- Topological Sorting (DFS Based Algorithm) 
+- Shortest Path in DAG 
+- Prim's Algorithm/Minimum Spanning Tree 
+- Implementation of Prim's Algorithm 
+- Dijkstra's Shortest Path Algorithm 
+- Implementation of Dijkstra's Algorithm 
+- Kosaraju's Algorithm Part 1 
+- Kosaraju's Algorithm Part 2 
+- Bellman Ford Shortest Path Algorithm 
+- Articulation Point 
+- Bridges in Graph 
+- Tarjans Algorithm 
+- Kruskal's Algorithm
+-----------------------------------------------------

@@ -1,0 +1,15 @@
+HEAP
+
+- Sort K Sorted Array 
+- Purchase Maximum Items 
+- K Largest Elements 
+- K Closest Elements 
+- Merge K Sorted Arrays 
+- Median of a Stream
+---------------------------------------
+- Sort K Sorted Array 
+- Purchase Maximum Items 
+- K Largest Elements 
+- K Closest Elements 
+- Merge K Sorted Arrays 
+- Median of a Stream
