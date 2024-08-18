@@ -1,6 +1,6 @@
 console.log("Move Zeros to end of the list: ");
 
-let arr = [1,0,2,0,0,1];
+let arr1 = [1,0,2,0,0,1];
 
 function moveZeros(arr){
     let n = arr.length;
@@ -39,4 +39,10 @@ function moveZerosTwo(arr){
 }
 
 // moveZeros(arr);
-moveZerosTwo(arr);
+// moveZerosTwo(arr);
+let arr = [1, 2, 3, 4, 5];
+let indexToDelete = 2; // Deleting the element at index 2 (3)
+arr[indexToDelete] = arr[arr.length - 1]; // Overwrite with the last element
+console.log(arr);
+arr.pop(); // Remove the last element
+console.log(arr); // Output: [1, 2, 5, 4]
