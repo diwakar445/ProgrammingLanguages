@@ -1,0 +1,27 @@
+LIST
+
+- Left Rotate by d Places 
+- Maximum difference 
+- Stock Buy & Sell Part 2 
+- Trapping Rainwater  
+- Maximum Consecutive 1s 
+- Longest even odd subarray 
+- Majority element 
+- Minimum Consecutive flips 
+- Sliding Window Technique 
+- Maximum subarray sum 
+- Maximum circular sum subarray 
+- Prefix Sum Technique
+-----------------------------------------
+- Left Rotate by d Places 
+- Maximum difference 
+- Stock Buy &Sell Part 2 
+- Trapping Rainwater 
+- Maximum Consecutive 1s 
+- Longest even odd subarray 
+- Majority element 
+- Minimum Consecutive flips 
+- Sliding Window Technique 
+- Maximum subarray sum 
+- Maximum circular sum subarray 
+- Prefix Sum Technique

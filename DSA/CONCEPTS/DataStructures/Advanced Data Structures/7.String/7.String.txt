@@ -1,0 +1,23 @@
+STRING
+
+- Overview of Pattern Searching 
+- Pattern Searching in Python 
+- Naive Pattern Searching 
+- Improved Naive Pattern Searching for Distinct 
+- Rabin Karp Algorithm 
+- KMP Algorithm (Part 1 : Constructing LPS Array) 
+- KMP Algorithm (Part 2 : Complete Algorithm) 
+- Anagram Search 
+- Lexicographic rank of a String 
+- Longest Substring With Distinct Characters
+--------------------------------------------------------
+- Overview of Pattern Searching 
+- Pattern Searching in JavaScript 
+- Naive Pattern Searching 
+- Improved Naive Pattern Searching for Distinct 
+- Rabin Karp Algorithm 
+- KMP Algorithm (Part 1 : Constructing LPS Array) 
+- KMP Algorithm (Part 2 : Complete Algorithm) 
+- Anagram Search 
+- Lexicographic rank of a String 
+- Longest Substring With Distinct Characters

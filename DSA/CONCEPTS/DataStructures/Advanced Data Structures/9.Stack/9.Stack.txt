@@ -1,0 +1,35 @@
+STACK
+
+- Two stacks in an array 
+- K Stacks in an array 
+- Previous Greater Element 
+- Next Greater Element 
+- Stock span problem 
+- Largest Rectangular Area in a Histogram (Part 1)
+- Largest Rectangular Area in a Histogram (Part 2) 
+- Largest Rectangle with all 1's 
+- Stack with getMin() in O(1) 
+- Design a stack with getMin() in O(1) space 
+- Infix to Postfix (Simple Solution) 
+- Infix to Postfix (Efficient Solution) 
+- Evaluation of Postfix 
+- Infix to Prefix (Simple Solution) 
+- Infix to Prefix (Efficient Solution) 
+- Evaluation of Prefix
+--------------------------------------------------------
+- Two stacks in an array 
+- K Stacks in an array 
+- Previous Greater Element 
+- Next Greater Element 
+- Stock span problem 
+- Largest Rectangular Area in a Histogram (Part 1) 
+- Largest Rectangular Area in a Histogram (Part 2) 
+- Largest Rectangle with all 1's 
+- Stack with getMin() in O(1) 
+- Design a stack with getMin() in O(1) space 
+- Infix to Postfix (Simple Solution) 
+- Infix to Postfix (Efficient Solution) 
+- Evaluation of Postfix 
+- Infix to Prefix (Simple Solution) 
+- Infix to Prefix (Efficient Solution) 
+- Evaluation of Prefix

@@ -1,0 +1,19 @@
+BIT MAGIC
+- Bitwise Operator in Python - Part  1 
+- Bitwise Operator in Python - Part  2 
+- Check Kth bit is set or not  
+- Count Set Bits 
+- Power of Two 
+- One Odd Occuring 
+- Two Odd Occuring 
+- Power Set Using Bitwise 
+--------------------------------------------------
+- Bitwise Operator in JavaScript - Part 1 
+- Bitwise Operator in JavaScript - Part 2 
+- Bitwise Operator in JavaScript - Part 3 
+- Check Kth bit is set or not 
+- Count Set Bits 
+- Power of Two 
+- One Odd Occuring 
+- Two Odd Occuring 
+- Power Set Using Bitwise

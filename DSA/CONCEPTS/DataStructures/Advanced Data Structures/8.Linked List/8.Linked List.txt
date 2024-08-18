@@ -1,0 +1,23 @@
+LINKED LIST
+
+- Reverse a linked list in groups of size k 
+- Detect loop using floyd's cycle detection algorithm 
+- Detect and remove loop in linked list 
+- Intersection Point of two linked list 
+- Segregate even odd nodes of linked list 
+- Pairwise swap nodes of linked list 
+- Clone a linked list using a random pointer 
+- LRU Cache Design  
+- Merge two sorted linked lists 
+- Palindrome Linked List
+------------------------------------------------
+- Reverse a linked list in groups of size k 
+- Detect loop using floyd's cycle detection algorithm 
+- Detect and remove loop in linked list 
+- Intersection Point of two linked list 
+- Segregate even odd nodes of linked list 
+- Pairwise swap nodes of linked list 
+- Clone a linked list using a random pointer 
+- LRU Cache Design 
+- Merge two sorted linked lists 
+- Palindrome Linked List

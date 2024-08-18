@@ -1,0 +1,13 @@
+DEQUE
+
+- Deque Introduction 
+- Deque Applications 
+- Deque in Python 
+- List Implementation of Deque in Python 
+- Linked List Implementation of Deque
+-------------------------------------------------
+- Deque Introduction 
+- Deque Applications 
+- Deque in JavaScript 
+- List Implementation of Deque in JavaScript 
+- Linked List Implementation of Deque
