@@ -15,3 +15,268 @@ Analysis of Algorithms (Background):
 - More example recurrences 
 - Upper bound using Recursion tree method 
 - Space Complexit
+-----------------------------------------------------------------------
+18-08-2024
+-----------
+Analysis of Algorithms (Background) :
+    ### **Analysis of Algorithms: An Overview**
+
+    **Algorithm analysis** is a fundamental concept in computer science that involves determining the efficiency and performance of an algorithm. The goal is to understand how an algorithm scales with input size, both in terms of time (how fast it runs) and space (how much memory it uses).
+
+    ### **1. Importance of Algorithm Analysis**
+
+    - **Performance Prediction**: Helps predict how an algorithm will perform with large inputs.
+    - **Efficiency Comparison**: Allows comparing different algorithms to find the most efficient one for a given problem.
+    - **Resource Optimization**: Ensures optimal use of computational resources (time and memory).
+
+    ### **2. Time Complexity**
+
+    **Time Complexity** measures the amount of time an algorithm takes to complete as a function of the size of the input (usually denoted as `n`). It helps determine the efficiency of an algorithm by estimating the running time.
+
+    #### **Common Time Complexities:**
+    - **O(1)**: Constant Time
+    - The running time is constant, regardless of input size.
+    - Example: Accessing an element in an array by index.
+    
+    - **O(log n)**: Logarithmic Time
+    - The running time grows logarithmically with the input size.
+    - Example: Binary search in a sorted array.
+    
+    - **O(n)**: Linear Time
+    - The running time grows linearly with the input size.
+    - Example: Traversing an array or list.
+    
+    - **O(n log n)**: Linearithmic Time
+    - The running time grows faster than linear but slower than quadratic.
+    - Example: Efficient sorting algorithms like Merge Sort and Quick Sort.
+    
+    - **O(n²)**: Quadratic Time
+    - The running time grows quadratically with the input size.
+    - Example: Nested loops, as in Bubble Sort.
+    
+    - **O(2ⁿ)**: Exponential Time
+    - The running time doubles with each additional element in the input.
+    - Example: Solving the Traveling Salesman Problem using brute force.
+    
+    - **O(n!)**: Factorial Time
+    - The running time grows factorially with the input size.
+    - Example: Generating all permutations of a set.
+
+    #### **Big-O Notation:**
+    - Big-O notation is used to express the worst-case time complexity of an algorithm.
+    - It describes the upper bound of the algorithm's running time, helping to compare the efficiency of algorithms as input size grows.
+
+    ### **3. Space Complexity**
+
+    **Space Complexity** measures the amount of memory an algorithm uses as a function of the input size. It includes both the memory needed for the input data and any additional memory allocated by the algorithm.
+
+    #### **Common Space Complexities:**
+    - **O(1)**: Constant Space
+    - The algorithm uses a fixed amount of memory regardless of input size.
+    - Example: A single variable to store a result.
+    
+    - **O(n)**: Linear Space
+    - The algorithm’s memory usage grows linearly with the input size.
+    - Example: Creating a new list or array of size `n`.
+    
+    - **O(n²)**: Quadratic Space
+    - Memory usage grows quadratically with input size.
+    - Example: A 2D matrix for dynamic programming.
+
+    ### **4. Best, Worst, and Average Case Analysis**
+
+    - **Best Case**: The scenario where the algorithm performs the minimum possible number of operations.
+    - Example: Insertion Sort has a best-case time complexity of O(n) when the array is already sorted.
+    
+    - **Worst Case**: The scenario where the algorithm performs the maximum possible number of operations.
+    - Example: Insertion Sort has a worst-case time complexity of O(n²) when the array is sorted in reverse order.
+    
+    - **Average Case**: The expected number of operations an algorithm performs for a random input.
+    - This is often more complex to calculate and is usually a function of both the input distribution and the algorithm.
+
+    ### **5. Amortized Analysis**
+
+    **Amortized Analysis** is used when an algorithm has multiple operations, some of which may be expensive, but the average time per operation is small over a sequence of operations.
+
+    - **Example**: Consider a dynamic array (like Python's list) that doubles in size when it runs out of space. The resizing operation is expensive (O(n)), but it happens infrequently. Amortized over a series of insertions, the cost per insertion is O(1).
+
+    ### **6. Trade-offs: Time vs. Space**
+
+    Often, algorithms involve trade-offs between time and space:
+    - **Time-Space Trade-off**: Sometimes, you can reduce the running time by using more memory, or save memory at the cost of increased running time.
+    - **Example**: Memoization in dynamic programming uses extra space to save time by storing intermediate results.
+
+    ### **7. Complexity Classes**
+
+    Algorithms are classified into complexity classes based on their time or space requirements:
+    - **P (Polynomial Time)**: Problems that can be solved in polynomial time (e.g., O(n^k) for some constant `k`).
+    - **NP (Non-deterministic Polynomial Time)**: Problems for which a solution can be verified in polynomial time.
+    - **NP-Complete**: The hardest problems in NP, for which no known polynomial-time solutions exist.
+    - **NP-Hard**: Problems that are at least as hard as the hardest problems in NP but may not be in NP themselves.
+
+    ### **Summary:**
+
+    Understanding the analysis of algorithms is crucial for writing efficient code, especially when dealing with large datasets. By analyzing both time and space complexity, you can predict how an algorithm will perform and choose the most appropriate algorithm for a given problem.
+-----------------------------------------------------------------------
+Asymptotic Analysis:
+    ### **Asymptotic Analysis Overview**
+
+    Asymptotic analysis is a method used to describe the efficiency of algorithms in terms of their time and space complexities, focusing on the behavior as the input size grows infinitely large. The most common forms of asymptotic notation are Big-O (O), Omega (Ω), and Theta (Θ).
+
+    - **Big-O Notation (O)**: Represents the upper bound (worst-case) of an algorithm's running time.
+    - **Omega Notation (Ω)**: Represents the lower bound (best-case) of an algorithm's running time.
+    - **Theta Notation (Θ)**: Represents the tight bound (average-case) of an algorithm's running time.
+
+    ### **1. Constant Time Complexity (O(1))**
+
+    - **Explanation**: The running time does not change regardless of the input size.
+
+    **Example:**
+    ```python
+    def get_first_element(arr):
+        return arr[0]
+
+    arr = [1, 2, 3, 4, 5]
+    print(get_first_element(arr))  # Output: 1
+    ```
+    - **Analysis**: The function `get_first_element()` accesses the first element of the array, which takes constant time O(1).
+
+    ### **2. Linear Time Complexity (O(n))**
+
+    - **Explanation**: The running time increases linearly with the size of the input.
+
+    **Example:**
+    ```python
+    def print_all_elements(arr):
+        for element in arr:
+            print(element)
+
+    arr = [1, 2, 3, 4, 5]
+    print_all_elements(arr)
+    ```
+    - **Analysis**: The function `print_all_elements()` iterates through all elements of the array. If the array has `n` elements, the time complexity is O(n).
+
+    ### **3. Quadratic Time Complexity (O(n²))**
+
+    - **Explanation**: The running time increases quadratically with the size of the input, usually due to nested loops.
+
+    **Example:**
+    ```python
+    def print_pairs(arr):
+        for i in range(len(arr)):
+            for j in range(len(arr)):
+                print(arr[i], arr[j])
+
+    arr = [1, 2, 3]
+    print_pairs(arr)
+    ```
+    - **Analysis**: The function `print_pairs()` has two nested loops, each iterating through the array. If the array has `n` elements, the time complexity is O(n²).
+
+    ### **4. Logarithmic Time Complexity (O(log n))**
+
+    - **Explanation**: The running time increases logarithmically with the size of the input, often seen in algorithms that divide the problem in half.
+
+    **Example:**
+    ```python
+    def binary_search(arr, target):
+        left, right = 0, len(arr) - 1
+        while left <= right:
+            mid = (left + right) // 2
+            if arr[mid] == target:
+                return mid
+            elif arr[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return -1
+
+    arr = [1, 2, 3, 4, 5]
+    print(binary_search(arr, 3))  # Output: 2
+    ```
+    - **Analysis**: The `binary_search()` function repeatedly divides the search interval in half, leading to a time complexity of O(log n).
+
+    ### **5. Linearithmic Time Complexity (O(n log n))**
+
+    - **Explanation**: The running time increases in a manner proportional to `n log n`, commonly found in efficient sorting algorithms like Merge Sort and Quick Sort.
+
+    **Example:**
+    ```python
+    def merge_sort(arr):
+        if len(arr) > 1:
+            mid = len(arr) // 2
+            left_half = arr[:mid]
+            right_half = arr[mid:]
+
+            merge_sort(left_half)
+            merge_sort(right_half)
+
+            i = j = k = 0
+
+            while i < len(left_half) and j < len(right_half):
+                if left_half[i] < right_half[j]:
+                    arr[k] = left_half[i]
+                    i += 1
+                else:
+                    arr[k] = right_half[j]
+                    j += 1
+                k += 1
+
+            while i < len(left_half):
+                arr[k] = left_half[i]
+                i += 1
+                k += 1
+
+            while j < len(right_half):
+                arr[k] = right_half[j]
+                j += 1
+                k += 1
+
+    arr = [38, 27, 43, 3, 9, 82, 10]
+    merge_sort(arr)
+    print(arr)  # Output: [3, 9, 10, 27, 38, 43, 82]
+    ```
+    - **Analysis**: The `merge_sort()` algorithm recursively divides the array in half and then merges the sorted halves, resulting in a time complexity of O(n log n).
+
+    ### **6. Exponential Time Complexity (O(2ⁿ))**
+
+    - **Explanation**: The running time doubles with each additional element in the input, often seen in recursive algorithms with multiple recursive calls.
+
+    **Example:**
+    ```python
+    def fibonacci(n):
+        if n <= 1:
+            return n
+        return fibonacci(n-1) + fibonacci(n-2)
+
+    print(fibonacci(5))  # Output: 5
+    ```
+    - **Analysis**: The `fibonacci()` function computes the nth Fibonacci number using a naive recursive approach, leading to a time complexity of O(2ⁿ).
+
+    ### **7. Factorial Time Complexity (O(n!))**
+
+    - **Explanation**: The running time increases factorially with the size of the input, often seen in problems involving permutations or combinations.
+
+    **Example:**
+    ```python
+    from itertools import permutations
+
+    def all_permutations(arr):
+        return list(permutations(arr))
+
+    arr = [1, 2, 3]
+    print(all_permutations(arr))  
+    # Output: [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+    ```
+    - **Analysis**: Generating all permutations of a list involves factorial time complexity O(n!), where `n` is the number of elements in the list.
+
+    ### **Summary of Asymptotic Notations:**
+
+    - **O(1)**: Constant time.
+    - **O(n)**: Linear time.
+    - **O(n²)**: Quadratic time.
+    - **O(log n)**: Logarithmic time.
+    - **O(n log n)**: Linearithmic time.
+    - **O(2ⁿ)**: Exponential time.
+    - **O(n!)**: Factorial time.
+
+    Understanding these complexities helps in selecting and designing algorithms that perform well with large inputs.
