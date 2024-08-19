@@ -17,6 +17,7 @@ LIST
 - Leaders in an Array problem 
 - Frequencies in a sorted array  
 - Left Rotate a List by on
+- Two Sum
 ------------------------------------------------------
 
 Arrays
@@ -29,3 +30,4 @@ Arrays
 - Remove duplicates from a sorted array 
 - Move Zeros to End 
 - Left Rotate an Array by On
+- Two Sum
