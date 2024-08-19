@@ -5,9 +5,9 @@ Analysis of Algorithms (Background):
 - Order of Growth 
 - Best, Average and Worst Cases 
 - Asymptotic Notations 
-- Big O Notation 
-- Omega Notation 
-- Theta Notation 
+- Big O Notation - Worst case T & S Complexity
+- Omega Notation - Best case T & S Complexity
+- Theta Notation - Average case T & S Complexity
 - Analysis of Common Loops 
 - Analysis of multiple loops 
 - Analysis of Recursion 
